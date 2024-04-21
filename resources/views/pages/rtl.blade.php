@@ -100,13 +100,13 @@
                     alt="sidebar_illustration">
                 <div class="card-body text-center p-3 w-100 pt-0">
                     <div class="docs-info">
-                        <h6 class="mb-0 text-center">تحتاج مساعدة?</h6>
-                        <p class="text-xs font-weight-bold text-center mb-0">يرجى التحقق من مستنداتنا</p>
+                        <h6 class="mb-0 text-center">ajja</h6>
+                        <p class="text-xs font-weight-bold text-center mb-0">hola</p>
                     </div>
                 </div>
             </div>
             <a href="https://www.creative-tim.com/learning-lab/bootstrap/license/argon-dashboard" target="_blank"
-                class="btn btn-dark btn-sm w-100 mb-3">توثيق</a>
+                class="btn btn-dark btn-sm w-100 mb-3">ok</a>
             <a class="btn btn-primary btn-sm mb-0 w-100"
                 href="https://www.creative-tim.com/product/argon-dashboard-pro?ref=sidebarfree" type="button">التطور
                 للاحترافية</a>
@@ -989,9 +989,8 @@
                                 <script>
                                     document.write(new Date().getFullYear())
                                 </script>,
-                                made with <i class="fa fa-heart"></i> by
-                                <a href="https://www.creative-tim.com" class="font-weight-bold" target="_blank">Creative
-                                    Tim</a>
+                                Hecho con <i class="fa fa-heart"></i> by
+                                <a href="https://www.instagram.com/sunflower._ccp/" class="font-weight-bold" target="_blank">SunFlowers</a>
                                 for a better web.
                             </div>
                         </div>

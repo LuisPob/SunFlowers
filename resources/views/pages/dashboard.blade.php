@@ -1,7 +1,7 @@
 @extends('layouts.app', ['class' => 'g-sidenav-show bg-gray-100'])
 
 @section('content')
-    @include('layouts.navbars.auth.topnav', ['title' => 'Dashboard'])
+    @include('layouts.navbars.auth.topnav', ['title' => 'Panel de estadisticas'])
     <div class="container-fluid py-4">
         <div class="row">
             <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
@@ -108,10 +108,10 @@
             <div class="col-lg-7 mb-lg-0 mb-4">
                 <div class="card z-index-2 h-100">
                     <div class="card-header pb-0 pt-3 bg-transparent">
-                        <h6 class="text-capitalize">Sales overview</h6>
+                        <h6 class="text-capitalize">Resumen de Ventas</h6>
                         <p class="text-sm mb-0">
                             <i class="fa fa-arrow-up text-success"></i>
-                            <span class="font-weight-bold">4% more</span> in 2021
+                            <span class="font-weight-bold">4% más</span> En 2024
                         </p>
                     </div>
                     <div class="card-body p-3">
@@ -131,8 +131,8 @@
                                     <div class="icon icon-shape icon-sm bg-white text-center border-radius-md mb-3">
                                         <i class="ni ni-camera-compact text-dark opacity-10"></i>
                                     </div>
-                                    <h5 class="text-white mb-1">Get started with Argon</h5>
-                                    <p>There’s nothing I really wanted to do in life that I wasn’t able to get good at.</p>
+                                    <h5 class="text-white mb-1">Encuentra la magia en los detalles</h5>
+                                    <p>nuestra bisutería transforma lo ordinario en extraordinario.</p>
                                 </div>
                             </div>
                             <div class="carousel-item h-100" style="background-image: url('./img/carousel-2.jpg');
@@ -141,9 +141,8 @@
                                     <div class="icon icon-shape icon-sm bg-white text-center border-radius-md mb-3">
                                         <i class="ni ni-bulb-61 text-dark opacity-10"></i>
                                     </div>
-                                    <h5 class="text-white mb-1">Faster way to create web pages</h5>
-                                    <p>That’s my skill. I’m not really specifically talented at anything except for the
-                                        ability to learn.</p>
+                                    <h5 class="text-white mb-1">Crea tu propia belleza: </h5>
+                                    <p>nuestra colección de bisutería es el lienzo para tu expresión personal.</p>
                                 </div>
                             </div>
                             <div class="carousel-item h-100" style="background-image: url('./img/carousel-3.jpg');
@@ -152,8 +151,11 @@
                                     <div class="icon icon-shape icon-sm bg-white text-center border-radius-md mb-3">
                                         <i class="ni ni-trophy text-dark opacity-10"></i>
                                     </div>
-                                    <h5 class="text-white mb-1">Share with us your design tips!</h5>
-                                    <p>Don’t be afraid to be wrong because you can’t learn anything from a compliment.</p>
+                                    <h5 class="text-white mb-1"> Feminidad, brillo y glamour.!</h5>
+                                    <p>Sumérgete en el encanto de nuestra colección de bisutería,
+                                        donde cada detalle está meticulosamente diseñado para capturar
+                                        la esencia de la feminidad, la fuerza y la individualidad,
+                                        permitiéndote expresar tu singularidad con cada pieza que elijas llevar contigo.</p>
                                 </div>
                             </div>
                         </div>
@@ -220,20 +222,20 @@
                                                 <img src="./img/icons/flags/DE.png" alt="Country flag">
                                             </div>
                                             <div class="ms-4">
-                                                <p class="text-xs font-weight-bold mb-0">Country:</p>
-                                                <h6 class="text-sm mb-0">Germany</h6>
+                                                <p class="text-xs font-weight-bold mb-0">Ciudad:</p>
+                                                <h6 class="text-sm mb-0">Concepción</h6>
                                             </div>
                                         </div>
                                     </td>
                                     <td>
                                         <div class="text-center">
-                                            <p class="text-xs font-weight-bold mb-0">Sales:</p>
+                                            <p class="text-xs font-weight-bold mb-0">Ventas:</p>
                                             <h6 class="text-sm mb-0">3.900</h6>
                                         </div>
                                     </td>
                                     <td>
                                         <div class="text-center">
-                                            <p class="text-xs font-weight-bold mb-0">Value:</p>
+                                            <p class="text-xs font-weight-bold mb-0">Valor:</p>
                                             <h6 class="text-sm mb-0">$440,000</h6>
                                         </div>
                                     </td>
@@ -251,20 +253,20 @@
                                                 <img src="./img/icons/flags/GB.png" alt="Country flag">
                                             </div>
                                             <div class="ms-4">
-                                                <p class="text-xs font-weight-bold mb-0">Country:</p>
-                                                <h6 class="text-sm mb-0">Great Britain</h6>
+                                                <p class="text-xs font-weight-bold mb-0">Ciudad</p>
+                                                <h6 class="text-sm mb-0">Talcahuano</h6>
                                             </div>
                                         </div>
                                     </td>
                                     <td>
                                         <div class="text-center">
-                                            <p class="text-xs font-weight-bold mb-0">Sales:</p>
+                                            <p class="text-xs font-weight-bold mb-0">Ventas</p>
                                             <h6 class="text-sm mb-0">1.400</h6>
                                         </div>
                                     </td>
                                     <td>
                                         <div class="text-center">
-                                            <p class="text-xs font-weight-bold mb-0">Value:</p>
+                                            <p class="text-xs font-weight-bold mb-0">Valor</p>
                                             <h6 class="text-sm mb-0">$190,700</h6>
                                         </div>
                                     </td>
@@ -282,20 +284,20 @@
                                                 <img src="./img/icons/flags/BR.png" alt="Country flag">
                                             </div>
                                             <div class="ms-4">
-                                                <p class="text-xs font-weight-bold mb-0">Country:</p>
-                                                <h6 class="text-sm mb-0">Brasil</h6>
+                                                <p class="text-xs font-weight-bold mb-0">Ciudad</p>
+                                                <h6 class="text-sm mb-0">Santiago</h6>
                                             </div>
                                         </div>
                                     </td>
                                     <td>
                                         <div class="text-center">
-                                            <p class="text-xs font-weight-bold mb-0">Sales:</p>
+                                            <p class="text-xs font-weight-bold mb-0">Ventas</p>
                                             <h6 class="text-sm mb-0">562</h6>
                                         </div>
                                     </td>
                                     <td>
                                         <div class="text-center">
-                                            <p class="text-xs font-weight-bold mb-0">Value:</p>
+                                            <p class="text-xs font-weight-bold mb-0">Valor</p>
                                             <h6 class="text-sm mb-0">$143,960</h6>
                                         </div>
                                     </td>
@@ -314,7 +316,7 @@
             <div class="col-lg-5">
                 <div class="card">
                     <div class="card-header pb-0 p-3">
-                        <h6 class="mb-0">Categories</h6>
+                        <h6 class="mb-0">Categorias</h6>
                     </div>
                     <div class="card-body p-3">
                         <ul class="list-group">
@@ -324,9 +326,9 @@
                                         <i class="ni ni-mobile-button text-white opacity-10"></i>
                                     </div>
                                     <div class="d-flex flex-column">
-                                        <h6 class="mb-1 text-dark text-sm">Devices</h6>
-                                        <span class="text-xs">250 in stock, <span class="font-weight-bold">346+
-                                                sold</span></span>
+                                        <h6 class="mb-1 text-dark text-sm">Collares</h6>
+                                        <span class="text-xs">250 en stock, <span class="font-weight-bold">346+
+                                                vendidos</span></span>
                                     </div>
                                 </div>
                                 <div class="d-flex">
@@ -341,9 +343,9 @@
                                         <i class="ni ni-tag text-white opacity-10"></i>
                                     </div>
                                     <div class="d-flex flex-column">
-                                        <h6 class="mb-1 text-dark text-sm">Tickets</h6>
-                                        <span class="text-xs">123 closed, <span class="font-weight-bold">15
-                                                open</span></span>
+                                        <h6 class="mb-1 text-dark text-sm">Pulseras</h6>
+                                        <span class="text-xs">12 en stock, <span class="font-weight-bold">157
+                                                vendidas</span></span>
                                     </div>
                                 </div>
                                 <div class="d-flex">
@@ -358,9 +360,8 @@
                                         <i class="ni ni-box-2 text-white opacity-10"></i>
                                     </div>
                                     <div class="d-flex flex-column">
-                                        <h6 class="mb-1 text-dark text-sm">Error logs</h6>
-                                        <span class="text-xs">1 is active, <span class="font-weight-bold">40
-                                                closed</span></span>
+                                        <h6 class="mb-1 text-dark text-sm">Tobilleras</h6>
+                                        <span class="text-xs">14 en stock , <span class="font-weight-bold">20 vendidas </span></span>
                                     </div>
                                 </div>
                                 <div class="d-flex">
@@ -375,8 +376,24 @@
                                         <i class="ni ni-satisfied text-white opacity-10"></i>
                                     </div>
                                     <div class="d-flex flex-column">
-                                        <h6 class="mb-1 text-dark text-sm">Happy users</h6>
-                                        <span class="text-xs font-weight-bold">+ 430</span>
+                                        <h6 class="mb-1 text-dark text-sm">Aros</h6>
+                                        <span class="text-xs">75 en stock , <span class="font-weight-bold">34 vendidas </span></span>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <button
+                                        class="btn btn-link btn-icon-only btn-rounded btn-sm text-dark icon-move-right my-auto"><i
+                                            class="ni ni-bold-right" aria-hidden="true"></i></button>
+                                </div>
+                            </li>
+                            <li class="list-group-item border-0 d-flex justify-content-between ps-0 border-radius-lg">
+                                <div class="d-flex align-items-center">
+                                    <div class="icon icon-shape icon-sm me-3 bg-gradient-dark shadow text-center">
+                                        <i class="ni ni-satisfied text-white opacity-10"></i>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <h6 class="mb-1 text-dark text-sm">Usuarios felices</h6>
+                                        <span class="text-xs font-weight-bold"> + 587</span>
                                     </div>
                                 </div>
                                 <div class="d-flex">
