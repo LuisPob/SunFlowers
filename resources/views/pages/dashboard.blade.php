@@ -10,13 +10,13 @@
                         <div class="row">
                             <div class="col-8">
                                 <div class="numbers">
-                                    <p class="text-sm mb-0 text-uppercase font-weight-bold">Today's Money</p>
+                                    <p class="text-sm mb-0 text-uppercase font-weight-bold">Dinero de hoy</p>
                                     <h5 class="font-weight-bolder">
                                         $53,000
                                     </h5>
                                     <p class="mb-0">
                                         <span class="text-success text-sm font-weight-bolder">+55%</span>
-                                        since yesterday
+                                        ayer
                                     </p>
                                 </div>
                             </div>
@@ -35,13 +35,13 @@
                         <div class="row">
                             <div class="col-8">
                                 <div class="numbers">
-                                    <p class="text-sm mb-0 text-uppercase font-weight-bold">Today's Users</p>
+                                    <p class="text-sm mb-0 text-uppercase font-weight-bold">Usuarios de hoy</p>
                                     <h5 class="font-weight-bolder">
                                         2,300
                                     </h5>
                                     <p class="mb-0">
                                         <span class="text-success text-sm font-weight-bolder">+3%</span>
-                                        since last week
+                                        semana pasada
                                     </p>
                                 </div>
                             </div>
@@ -60,13 +60,13 @@
                         <div class="row">
                             <div class="col-8">
                                 <div class="numbers">
-                                    <p class="text-sm mb-0 text-uppercase font-weight-bold">New Clients</p>
+                                    <p class="text-sm mb-0 text-uppercase font-weight-bold">Nuevos Clientes</p>
                                     <h5 class="font-weight-bolder">
                                         +3,462
                                     </h5>
                                     <p class="mb-0">
                                         <span class="text-danger text-sm font-weight-bolder">-2%</span>
-                                        since last quarter
+                                       ultimo trimestre
                                     </p>
                                 </div>
                             </div>
@@ -85,12 +85,12 @@
                         <div class="row">
                             <div class="col-8">
                                 <div class="numbers">
-                                    <p class="text-sm mb-0 text-uppercase font-weight-bold">Sales</p>
+                                    <p class="text-sm mb-0 text-uppercase font-weight-bold">Ventas</p>
                                     <h5 class="font-weight-bolder">
                                         $103,430
                                     </h5>
                                     <p class="mb-0">
-                                        <span class="text-success text-sm font-weight-bolder">+5%</span> than last month
+                                        <span class="text-success text-sm font-weight-bolder">+5%</span> Mes pasado
                                     </p>
                                 </div>
                             </div>
@@ -176,7 +176,7 @@
                 <div class="card ">
                     <div class="card-header pb-0 p-3">
                         <div class="d-flex justify-content-between">
-                            <h6 class="mb-2">Sales by Country</h6>
+                            <h6 class="mb-2">Ventas por Ciudad</h6>
                         </div>
                     </div>
                     <div class="table-responsive">
@@ -189,20 +189,20 @@
                                                 <img src="./img/icons/flags/US.png" alt="Country flag">
                                             </div>
                                             <div class="ms-4">
-                                                <p class="text-xs font-weight-bold mb-0">Country:</p>
-                                                <h6 class="text-sm mb-0">United States</h6>
+                                                <p class="text-xs font-weight-bold mb-0">Ciudad:</p>
+                                                <h6 class="text-sm mb-0">Chillan</h6>
                                             </div>
                                         </div>
                                     </td>
                                     <td>
                                         <div class="text-center">
-                                            <p class="text-xs font-weight-bold mb-0">Sales:</p>
+                                            <p class="text-xs font-weight-bold mb-0">Ventas</p>
                                             <h6 class="text-sm mb-0">2500</h6>
                                         </div>
                                     </td>
                                     <td>
                                         <div class="text-center">
-                                            <p class="text-xs font-weight-bold mb-0">Value:</p>
+                                            <p class="text-xs font-weight-bold mb-0">Valor:</p>
                                             <h6 class="text-sm mb-0">$230,900</h6>
                                         </div>
                                     </td>
