@@ -15,12 +15,16 @@ class UsersTableSeeder extends Seeder
     public function run()
     {
         DB::table('users')->insert([
-            'name' => 'Admin Admin',
+            'username' => 'admin',
+            'role_id' => 1,
+            'firstname' => 'Admin',
+            'lastname' => 'Admin',
             'email' => 'admin@argon.com',
-            'email_verified_at' => now(),
-            'password' => Hash::make('secret'),
-            'created_at' => now(),
-            'updated_at' => now()
+            'phone' => 987564221,
+            'password' => bcrypt('secret'),
+            'address' => 'golondrinas 144, Lima, Peru',
+            'email_verified_at' => now()
         ]);
+        
     }
 }
