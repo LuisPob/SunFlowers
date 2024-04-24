@@ -13,10 +13,10 @@
                 <div class="col-auto my-auto">
                     <div class="h-100">
                         <h5 class="mb-1">
-                            Sayo Kravits
+                            HoLAAA
                         </h5>
                         <p class="mb-0 font-weight-bold text-sm">
-                            Public Relations
+                            helou
                         </p>
                     </div>
                 </div>
@@ -27,7 +27,7 @@
                                 <a class="nav-link mb-0 px-0 py-1 active d-flex align-items-center justify-content-center "
                                     data-bs-toggle="tab" href="javascript:;" role="tab" aria-selected="true">
                                     <i class="ni ni-app"></i>
-                                    <span class="ms-2">App</span>
+                                    <span class="ms-2">Apppi</span>
                                 </a>
                             </li>
                             <li class="nav-item">

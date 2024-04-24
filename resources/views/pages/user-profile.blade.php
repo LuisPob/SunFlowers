@@ -16,7 +16,7 @@
                             {{ auth()->user()->firstname ?? 'Firstname' }} {{ auth()->user()->lastname ?? 'Lastname' }}
                         </h5>
                         <p class="mb-0 font-weight-bold text-sm">
-                            Public Relations
+                            Emprendedora
                         </p>
                     </div>
                 </div>
@@ -27,21 +27,21 @@
                                 <a class="nav-link mb-0 px-0 py-1 active d-flex align-items-center justify-content-center "
                                     data-bs-toggle="tab" href="javascript:;" role="tab" aria-selected="true">
                                     <i class="ni ni-app"></i>
-                                    <span class="ms-2">App</span>
+                                    <span class="ms-2">Redes</span>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link mb-0 px-0 py-1 d-flex align-items-center justify-content-center "
                                     data-bs-toggle="tab" href="javascript:;" role="tab" aria-selected="false">
                                     <i class="ni ni-email-83"></i>
-                                    <span class="ms-2">Messages</span>
+                                    <span class="ms-2">Mensajes</span>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link mb-0 px-0 py-1 d-flex align-items-center justify-content-center "
                                     data-bs-toggle="tab" href="javascript:;" role="tab" aria-selected="false">
                                     <i class="ni ni-settings-gear-65"></i>
-                                    <span class="ms-2">Settings</span>
+                                    <span class="ms-2">Configuración</span>
                                 </a>
                             </li>
                         </ul>
@@ -61,73 +61,73 @@
                         @csrf
                         <div class="card-header pb-0">
                             <div class="d-flex align-items-center">
-                                <p class="mb-0">Edit Profile</p>
-                                <button type="submit" class="btn btn-primary btn-sm ms-auto">Save</button>
+                                <p class="mb-0">Editar Perfil</p>
+                                <button type="submit" class="btn btn-primary btn-sm ms-auto text-dark">Guardar</button>
                             </div>
                         </div>
                         <div class="card-body">
-                            <p class="text-uppercase text-sm">User Information</p>
+                            <p class="text-uppercase text-sm">Informacion de usuario</p>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="example-text-input" class="form-control-label">Username</label>
+                                        <label for="example-text-input" class="form-control-label">Nombre de usuario</label>
                                         <input class="form-control" type="text" name="username" value="{{ old('username', auth()->user()->username) }}">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="example-text-input" class="form-control-label">Email address</label>
+                                        <label for="example-text-input" class="form-control-label">Correo electronico</label>
                                         <input class="form-control" type="email" name="email" value="{{ old('email', auth()->user()->email) }}">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="example-text-input" class="form-control-label">First name</label>
+                                        <label for="example-text-input" class="form-control-label">Primer nombre</label>
                                         <input class="form-control" type="text" name="firstname"  value="{{ old('firstname', auth()->user()->firstname) }}">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="example-text-input" class="form-control-label">Last name</label>
+                                        <label for="example-text-input" class="form-control-label">Apellido</label>
                                         <input class="form-control" type="text" name="lastname" value="{{ old('lastname', auth()->user()->lastname) }}">
                                     </div>
                                 </div>
                             </div>
                             <hr class="horizontal dark">
-                            <p class="text-uppercase text-sm">Contact Information</p>
+                            <p class="text-uppercase text-sm">INFORMACIÓN DE CONTACTO</p>
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label for="example-text-input" class="form-control-label">Address</label>
+                                        <label for="example-text-input" class="form-control-label">Dirección</label>
                                         <input class="form-control" type="text" name="address"
                                             value="{{ old('address', auth()->user()->address) }}">
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label for="example-text-input" class="form-control-label">City</label>
+                                        <label for="example-text-input" class="form-control-label">Ciudad</label>
                                         <input class="form-control" type="text" name="city" value="{{ old('city', auth()->user()->city) }}">
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label for="example-text-input" class="form-control-label">Country</label>
+                                        <label for="example-text-input" class="form-control-label">País</label>
                                         <input class="form-control" type="text" name="country" value="{{ old('country', auth()->user()->country) }}">
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label for="example-text-input" class="form-control-label">Postal code</label>
+                                        <label for="example-text-input" class="form-control-label">Código postal</label>
                                         <input class="form-control" type="text" name="postal" value="{{ old('postal', auth()->user()->postal) }}">
                                     </div>
                                 </div>
                             </div>
                             <hr class="horizontal dark">
-                            <p class="text-uppercase text-sm">About me</p>
+                            <p class="text-uppercase text-sm">SOBRE MÍ</p>
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label for="example-text-input" class="form-control-label">About me</label>
+                                        <label for="example-text-input" class="form-control-label">Sobre mí</label>
                                         <input class="form-control" type="text" name="about"
                                             value="{{ old('about', auth()->user()->about) }}">
                                     </div>
@@ -152,11 +152,11 @@
                     </div>
                     <div class="card-header text-center border-0 pt-0 pt-lg-2 pb-4 pb-lg-3">
                         <div class="d-flex justify-content-between">
-                            <a href="javascript:;" class="btn btn-sm btn-info mb-0 d-none d-lg-block">Connect</a>
+                            <a href="javascript:;" class="btn btn-sm btn-info mb-0 d-none d-lg-block">Conectar</a>
                             <a href="javascript:;" class="btn btn-sm btn-info mb-0 d-block d-lg-none"><i
                                     class="ni ni-collection"></i></a>
                             <a href="javascript:;"
-                                class="btn btn-sm btn-dark float-right mb-0 d-none d-lg-block">Message</a>
+                                class="btn btn-sm btn-dark float-right mb-0 d-none d-lg-block">Mensajes</a>
                             <a href="javascript:;" class="btn btn-sm btn-dark float-right mb-0 d-block d-lg-none"><i
                                     class="ni ni-email-83"></i></a>
                         </div>
@@ -167,15 +167,15 @@
                                 <div class="d-flex justify-content-center">
                                     <div class="d-grid text-center">
                                         <span class="text-lg font-weight-bolder">22</span>
-                                        <span class="text-sm opacity-8">Friends</span>
+                                        <span class="text-sm opacity-8">Amigos</span>
                                     </div>
                                     <div class="d-grid text-center mx-4">
                                         <span class="text-lg font-weight-bolder">10</span>
-                                        <span class="text-sm opacity-8">Photos</span>
+                                        <span class="text-sm opacity-8">Fotos</span>
                                     </div>
                                     <div class="d-grid text-center">
                                         <span class="text-lg font-weight-bolder">89</span>
-                                        <span class="text-sm opacity-8">Comments</span>
+                                        <span class="text-sm opacity-8">Comentarios</span>
                                     </div>
                                 </div>
                             </div>
@@ -188,10 +188,10 @@
                                 <i class="ni location_pin mr-2"></i>Bucharest, Romania
                             </div>
                             <div class="h6 mt-4">
-                                <i class="ni business_briefcase-24 mr-2"></i>Solution Manager - Creative Tim Officer
+                                <i class="ni business_briefcase-24 mr-2"></i>Gerente de Soluciones - Creative Tim Officer
                             </div>
                             <div>
-                                <i class="ni education_hat mr-2"></i>University of Computer Science
+                                <i class="ni education_hat mr-2"></i>Universidad de Ciencias de la Computación
                             </div>
                         </div>
                     </div>

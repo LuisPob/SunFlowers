@@ -6,7 +6,7 @@
         <a class="navbar-brand m-0" href="{{ route('home') }}"
             target="_blank">
             <img src="./img/logo-ct-dark.png" class="navbar-brand-img h-100" alt="main_logo">
-            <span class="ms-1 font-weight-bold">Argon Dashboard 2 Laravel</span>
+            <span class="ms-1 font-weight-bold">Panel de configuración SunFlower</span>
         </a>
     </div>
     <hr class="horizontal dark mt-0">
@@ -18,14 +18,14 @@
                         class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="ni ni-tv-2 text-primary text-sm opacity-10"></i>
                     </div>
-                    <span class="nav-link-text ms-1">Dashboard</span>
+                    <span class="nav-link-text ms-1">Tablero Principal</span>
                 </a>
             </li>
             <li class="nav-item mt-3 d-flex align-items-center">
                 <div class="ps-4">
                     <i class="fab fa-laravel" style="color: #f4645f;"></i>
                 </div>
-                <h6 class="ms-2 text-uppercase text-xs font-weight-bolder opacity-6 mb-0">Laravel Examples</h6>
+                <h6 class="ms-2 text-uppercase text-xs font-weight-bolder opacity-6 mb-0">MÁS OPCIONES</h6>
             </li>
             <li class="nav-item">
                 <a class="nav-link {{ Route::currentRouteName() == 'profile' ? 'active' : '' }}" href="{{ route('profile') }}">
@@ -33,7 +33,7 @@
                         class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="ni ni-single-02 text-dark text-sm opacity-10"></i>
                     </div>
-                    <span class="nav-link-text ms-1">Profile</span>
+                    <span class="nav-link-text ms-1">Perfil</span>
                 </a>
             </li>
             <li class="nav-item">
@@ -41,11 +41,11 @@
                     <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="ni ni-bullet-list-67 text-dark text-sm opacity-10"></i>
                     </div>
-                    <span class="nav-link-text ms-1">User Management</span>
+                    <span class="nav-link-text ms-1">Gestión de Usuarios</span>
                 </a>
             </li>
             <li class="nav-item mt-3">
-                <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Pages</h6>
+                <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">PÁGINAS</h6>
             </li>
             <li class="nav-item">
                 <a class="nav-link {{ str_contains(request()->url(), 'tables') == true ? 'active' : '' }}" href="{{ route('page', ['page' => 'tables']) }}">
@@ -53,7 +53,7 @@
                         class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="ni ni-calendar-grid-58 text-warning text-sm opacity-10"></i>
                     </div>
-                    <span class="nav-link-text ms-1">Tables</span>
+                    <span class="nav-link-text ms-1">TABLAS</span>
                 </a>
             </li>
             <li class="nav-item">
@@ -62,7 +62,7 @@
                         class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="ni ni-credit-card text-success text-sm opacity-10"></i>
                     </div>
-                    <span class="nav-link-text ms-1">Billing</span>
+                    <span class="nav-link-text ms-1">facturación</span>
                 </a>
             </li>
             <li class="nav-item">
@@ -71,7 +71,7 @@
                         class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="ni ni-app text-info text-sm opacity-10"></i>
                     </div>
-                    <span class="nav-link-text ms-1">Virtual Reality</span>
+                    <span class="nav-link-text ms-1">Realidad Virtual</span>
                 </a>
             </li>
             <li class="nav-item">
@@ -84,7 +84,7 @@
                 </a>
             </li>
             <li class="nav-item mt-3">
-                <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Account pages</h6>
+                <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">PÁGINAS DE CUENTA</h6>
             </li>
             <li class="nav-item">
                 <a class="nav-link {{ Route::currentRouteName() == 'profile-static' ? 'active' : '' }}" href="{{ route('profile-static') }}">
@@ -92,7 +92,7 @@
                         class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="ni ni-single-02 text-dark text-sm opacity-10"></i>
                     </div>
-                    <span class="nav-link-text ms-1">Profile</span>
+                    <span class="nav-link-text ms-1">Perfil</span>
                 </a>
             </li>
             <li class="nav-item">
@@ -101,7 +101,7 @@
                         class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="ni ni-single-copy-04 text-warning text-sm opacity-10"></i>
                     </div>
-                    <span class="nav-link-text ms-1">Sign In</span>
+                    <span class="nav-link-text ms-1">Iniciar sesión</span>
                 </a>
             </li>
             <li class="nav-item">
@@ -110,7 +110,7 @@
                         class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="ni ni-collection text-info text-sm opacity-10"></i>
                     </div>
-                    <span class="nav-link-text ms-1">Sign Up</span>
+                    <span class="nav-link-text ms-1">Registrarse</span>
                 </a>
             </li>
         </ul>
@@ -121,14 +121,14 @@
                 alt="sidebar_illustration">
             <div class="card-body text-center p-3 w-100 pt-0">
                 <div class="docs-info">
-                    <h6 class="mb-0">Need help?</h6>
-                    <p class="text-xs font-weight-bold mb-0">Please check our docs</p>
+                    <h6 class="mb-0">¿Necesitas ayuda?</h6>
+                    <p class="text-xs font-weight-bold mb-0">Por favor, consulte nuestros documentos</p>
                 </div>
             </div>
         </div>
         <a href="/docs/bootstrap/overview/argon-dashboard/index.html" target="_blank"
-            class="btn btn-dark btn-sm w-100 mb-3">Documentation</a>
-        <a class="btn btn-primary btn-sm mb-0 w-100"
-            href="https://www.creative-tim.com/product/argon-dashboard-pro-laravel" target="_blank" type="button">Upgrade to PRO</a>
+            class="btn btn-dark btn-sm w-100 mb-3">Documentacion</a>
+        <a class="btn btn-primary btn-sm mb-0 w-100 text-dark"
+            href="https://www.creative-tim.com/product/argon-dashboard-pro-laravel" target="_blank" type="button">Actualizar a PRO</a>
     </div>
 </aside>
