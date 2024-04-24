@@ -1,7 +1,8 @@
-<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark shadow-sm">
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-warning shadow-sm">
     <div class="container">
         <a class="navbar-brand" href="{{ url('/') }}">
-            SunFlowers
+            SunFlower
+            
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
             <span class="navbar-toggler-icon"></span>
