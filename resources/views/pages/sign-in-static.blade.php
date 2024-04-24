@@ -69,7 +69,7 @@
                         <div class="col-xl-4 col-lg-5 col-md-7 d-flex flex-column mx-lg-0 mx-auto">
                             <div class="card card-plain">
                                 <div class="card-header pb-0 text-start">
-                                    <h4 class="font-weight-bolder">Sign In</h4>
+                                    <h4 class="font-weight-bolder"> Iniciar sesion</h4>
                                     <p class="mb-0">Enter your email and password to sign in</p>
                                 </div>
                                 <div class="card-body">
@@ -84,7 +84,7 @@
                                         </div>
                                         <div class="form-check form-switch">
                                             <input class="form-check-input" type="checkbox" id="rememberMe">
-                                            <label class="form-check-label" for="rememberMe">Remember me</label>
+                                            <label class="form-check-label" for="rememberMe">HOLAAAA CELIIIPITO</label>
                                         </div>
                                         <div class="text-center">
                                             <button type="button" class="btn btn-lg btn-primary btn-lg w-100 mt-4 mb-0">Sign
@@ -94,9 +94,8 @@
                                 </div>
                                 <div class="card-footer text-center pt-0 px-lg-2 px-1">
                                     <p class="mb-4 text-sm mx-auto">
-                                        Don't have an account?
-                                        <a href="javascript:;" class="text-primary text-gradient font-weight-bold">Sign
-                                            up</a>
+                                    Don't have an account?
+                                        <a href="javascript:;" class="text-primary text-gradient font-weight-bold">registrarse</a>
                                     </p>
                                 </div>
                             </div>
@@ -107,10 +106,8 @@
                                 style="background-image: url('https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/signin-ill.jpg');
               background-size: cover;">
                                 <span class="mask bg-gradient-primary opacity-6"></span>
-                                <h4 class="mt-5 text-white font-weight-bolder position-relative">"Attention is the new
-                                    currency"</h4>
-                                <p class="text-white position-relative">The more effortless the writing looks, the more
-                                    effort the writer actually put into the process.</p>
+                                <h4 class="mt-5 text-white font-weight-bolder position-relative">"Bienvenido a flower!"</h4>
+                                <p class="text-dark position-relative">NOVEOOOOO.</p>
                             </div>
                         </div>
                     </div>
