@@ -10,17 +10,17 @@ class CartController extends Controller
     public function shop()
     {
         $products = Product::all();
-        return view('shop')->withTitle('E-COMMERCE STORE | SHOP')->with(['products' => $products]);
+        return view('shop')->withTitle('SunFlowers | SHOP')->with(['products' => $products]);
     }
 
     public function cart()  {
         $cartCollection = \Cart::getContent();
         //dd($cartCollection);
-        return view('cart')->withTitle('E-COMMERCE STORE | CART')->with(['cartCollection' => $cartCollection]);;
+        return view('cart')->withTitle('SunFlowers | CART')->with(['cartCollection' => $cartCollection]);;
     }
     public function remove(Request $request){
         \Cart::remove($request->id);
-        return redirect()->route('cart.index')->with('success_msg', 'Item is removed!');
+        return redirect()->route('cart.index')->with('success_msg', 'Producto Eliminado');
     }
 
     public function add(Request$request){
@@ -34,7 +34,7 @@ class CartController extends Controller
                 'slug' => $request->slug
             )
         ));
-        return redirect()->route('cart.index')->with('success_msg', 'Item Agregado a sú Carrito!');
+        return redirect()->route('cart.index')->with('success_msg', 'Producto Agregado a sú Carrito!');
     }
 
     public function update(Request $request){
@@ -45,12 +45,12 @@ class CartController extends Controller
                     'value' => $request->quantity
                 ),
         ));
-        return redirect()->route('cart.index')->with('success_msg', 'Cart is Updated!');
+        return redirect()->route('cart.index')->with('success_msg', 'Carrito Actualizado');
     }
 
     public function clear(){
         \Cart::clear();
-        return redirect()->route('cart.index')->with('success_msg', 'Car is cleared!');
+        return redirect()->route('cart.index')->with('success_msg', 'Carrito Vacio');
     }
 
  
