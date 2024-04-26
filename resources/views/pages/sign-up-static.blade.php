@@ -30,13 +30,6 @@
 </nav>
 <!-- End Navbar -->
 <main class="main-content  mt-0">
-    <div class="page-header align-items-start min-vh-50 pt-5 pb-11 m-3 border-radius-lg"
-    <title>LLUNA PAPELERÍA</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name="description" content="Planificar es tener ✦ tiempo para todo ✦ así que creamos Papelería que te ayuda a organizar tu tiempo y a enfocarte en lo importante✨ Diseño nacional con caligrafía e ilustraciones a mano ❤️ Planners, Agendas, Planificadores sin fechas, para comenzar cuando tú quieras, enfocadas en tí, en autocuidado, gestión de tu tiempo, motivación y prioridades." />
-  <meta name="robots" content="follow, all" />
-
-    </div>
     <div class="container">
     <div class="container  header-block trsn py-lg-4 py-0">
     <div class="row align-items-center no-gutters">
@@ -47,15 +40,11 @@
               <i class="fab fa-instagram fa-fw"></i>
             </a>
           </li>
-
-          
           <li class="list-inline-item">
-            <a href="https://api.whatsapp.com/send?phone=56973069652&text=Hola%20LLUNA PAPELERÍA" class="trsn" title="WhatsApp" target="_blank">
+            <a href="https://chat.whatsapp.com/LX23F1KZtbBDWD6IFK8Uu8"  title="WhatsApp">
               <i class="fab fa-whatsapp fa-fw"></i>
             </a>
-          </li>
-          
-          
+          </li>          
         </ul>
 
       </div>
@@ -64,9 +53,9 @@
         <a href="https://www.llunapapeleria.cl" title="LLUNA PAPELERÍA">
           
             
-          <h1 class="visually-hidden">LLUNA PAPELERÍA</h1>
+          <h1 class="visually-hidden">SUNFLOWER</h1>
           
-          <img src="https://images.jumpseller.com/store/lluna-papeleria/store/logo/Copia_de_LogoLLUNA_lila.png?1685569757" class="navbar-brand store-image img-fluid" alt="LLUNA PAPELERÍA" />
+          <img src="https://cdn.discordapp.com/attachments/1222345748805324901/1222346713969328128/IMG-20240326-WA0086.jpg?ex=662ba2d6&is=662a5156&hm=78752dcf94fdb06738423951119056f68151cd58770778bf8ce88790f9bfe994&" class="navbar-brand store-image img-fluid" alt="LLUNA PAPELERÍA" />
           
         </a>
       </div>
@@ -138,15 +127,6 @@
         <input type="text" value="" name="q" class="form-text" onFocus="javascript:this.value=''" placeholder="Buscar productos" />
       </form>
     </div>
-    
-    
-
-    <div class="nav-icon">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
   </div>  
       <li>
         <div class="login" >
@@ -162,21 +142,15 @@
       <li>
         
       </li>
-      
 
-      
-
-      
-      
       <li class="social-item">
         <a href="https://www.instagram.com/llunapapeleria" class="trsn" title="Ir a Instagram" target="_blank">
           <i class="fab fa-instagram fa-fw"></i>Instagram
         </a>
       </li>
-      
-      
+
       <li class="social-item">
-        <a href="https://api.whatsapp.com/send?phone=56973069652&text=Hola%20LLUNA PAPELERÍA" class="trsn" title="WhatsApp" target="_blank">
+        <a href="https://chat.whatsapp.com/LX23F1KZtbBDWD6IFK8Uu8" class="trsn" title="WhatsApp" target="_blank">
           <i class="fab fa-whatsapp fa-fw"></i>WhatsApp
         </a>
       </li>
@@ -233,63 +207,7 @@
   <img src="https://assets.jumpseller.com/store/lluna-papeleria/themes/388104/options/56779196/2021-11-12T23%3A48%3A15.592ZCapturadePantalla2021-11-12ala%28s%2920.46.43.png?1636761258" class="w-100" alt="" title=""/>
   
 </div></div><div id='component-332667' class='theme-component show' >
-<div id="featured-products-332667" class="container mb-5">
-  
-  <div class="col-12">
-    <h2 class="block-header text-center">DESTACADOS</h2>
-  </div>
-  
-  <div class="row mb-md-5 mb-4 mx-md-n2 mx-n1 no-gutters">
-    
-    
-    <div class="col-lg-3 col-6 px-md-2 px-1">
-      <div class="product-block text-center mb-md-3 mb-2 p-md-3 p-2 rounded trsn">
-  <a href="/nit-planificador-mensual" class="product-image d-block ">
 
-    
-
-    
-
-    
-    <img class="img-fluid img-portfolio img-hover mb-2" src="https://cdnx.jumpseller.com/lluna-papeleria/image/46333166/resize/255/255?1710253082" srcset="https://cdnx.jumpseller.com/lluna-papeleria/image/46333166/resize/255/255?1710253082 1x,https://cdnx.jumpseller.com/lluna-papeleria/image/46333166/resize/510/510?1710253082 2x" alt="&quot;Nit&quot; Planner Mensual " />
-    
-  </a>
-  
-  
-  
-  <div class="caption">
-    <div class="brand-name small trsn">
-      
-      <h4><a href="/nit-planificador-mensual">"Nit" Planner Mensual </a></h4>
-    </div>
-    
-    <div class="list-price">
-      
-      <span class="product-block-list">$22.990</span>
-      
-    </div>
-    
-    
-    <div class="mt-2 trsn btn_container">
-      
-      
-      <form id="product-form-24216600-332667" action="/cart/add/24216600" method="post" enctype="multipart/form-data" name="buy">
-        <div class="row adc-form no-gutters product-stock product-available">
-          <div class="col-sm-8">
-            
-            <div class="quantity mr-md-2 mb-md-0 mb-2">
-              <div class="product-qty">
-                <input type="number" class="qty form-control text-center" id="input-qty-24216600-332667" name="qty" min="1" value="1" readonly="readonly"  max="10" >
-                <div class="quantity-nav"><div class="quantity-button quantity-up">+</div><div class="quantity-button quantity-down">-</div></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            
-            <button type="button" onclick="addToCart('24216600', '&quot;Nit&quot; Planner Mensual ', $('#input-qty-24216600-332667').val(), getProductOptions('#product-form-24216600-332667'));" class="adc btn btn-adc btn-block btn-primary" value="¡ME LO LLEVO!" ><i class="fas fa-cart-plus"></i></button>
-            
-          </div>
-        </div>
       </form>
       
       
@@ -335,69 +253,6 @@ jQuery('#product-form-24216600-332667 .quantity').each(function() {
 });
 </script>
 
-
-
-
-    </div>
-    
-    <div class="col-lg-3 col-6 px-md-2 px-1">
-      <div class="product-block text-center mb-md-3 mb-2 p-md-3 p-2 rounded trsn">
-  <a href="/docente-poma-planificador-anual" class="product-image d-block ">
-
-    
-
-    
-
-    
-    <img class="img-fluid img-portfolio img-hover mb-2" src="https://cdnx.jumpseller.com/lluna-papeleria/image/45645617/resize/255/255?1708286757" srcset="https://cdnx.jumpseller.com/lluna-papeleria/image/45645617/resize/255/255?1708286757 1x,https://cdnx.jumpseller.com/lluna-papeleria/image/45645617/resize/510/510?1708286757 2x" alt="&quot;Docente Poma&quot; Planner Anual" />
-    
-  </a>
-  
-  
-  
-  <div class="caption">
-    <div class="brand-name small trsn">
-      
-      <h4><a href="/docente-poma-planificador-anual">"Docente Poma" Planner Anual</a></h4>
-    </div>
-    
-    <div class="list-price">
-      
-      <span class="product-block-list">$45.990</span>
-      
-    </div>
-    
-    
-    <div class="mt-2 trsn btn_container">
-      
-      
-      <form id="product-form-23993247-332667" action="/cart/add/23993247" method="post" enctype="multipart/form-data" name="buy">
-        <div class="row adc-form no-gutters product-stock product-available">
-          <div class="col-sm-8">
-            
-            <div class="quantity mr-md-2 mb-md-0 mb-2">
-              <div class="product-qty">
-                <input type="number" class="qty form-control text-center" id="input-qty-23993247-332667" name="qty" min="1" value="1" readonly="readonly"  max="8" >
-                <div class="quantity-nav"><div class="quantity-button quantity-up">+</div><div class="quantity-button quantity-down">-</div></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            
-            <button type="button" onclick="addToCart('23993247', '&quot;Docente Poma&quot; Planner Anual', $('#input-qty-23993247-332667').val(), getProductOptions('#product-form-23993247-332667'));" class="adc btn btn-adc btn-block btn-primary" value="¡ME LO LLEVO!" ><i class="fas fa-cart-plus"></i></button>
-            
-          </div>
-        </div>
-      </form>
-      
-      
-    </div>
-    
-  </div>
-</div>
-
-
-
 <script>
 jQuery('#product-form-23993247-332667 .quantity').each(function() {
   var spinner = jQuery(this),
@@ -433,65 +288,9 @@ jQuery('#product-form-23993247-332667 .quantity').each(function() {
 });
 </script>
 
-
-
-
-    </div>
-    
-    <div class="col-lg-3 col-6 px-md-2 px-1">
-      <div class="product-block text-center mb-md-3 mb-2 p-md-3 p-2 rounded trsn">
-  <a href="/docente-planificador-anual" class="product-image d-block ">
-
-    
-
-    
-
-    
-    <img class="img-fluid img-portfolio img-hover mb-2" src="https://cdnx.jumpseller.com/lluna-papeleria/image/25756879/resize/255/255?1658291999" srcset="https://cdnx.jumpseller.com/lluna-papeleria/image/25756879/resize/255/255?1658291999 1x,https://cdnx.jumpseller.com/lluna-papeleria/image/25756879/resize/510/510?1658291999 2x" alt="&quot;Docente&quot; Planner Anual" />
-    
-  </a>
-  
-  
-  
-  <div class="caption">
-    <div class="brand-name small trsn">
-      
-      <h4><a href="/docente-planificador-anual">"Docente" Planner Anual</a></h4>
-    </div>
-    
-    <div class="list-price">
-      
-      <span class="product-block-list">$45.990</span>
-      
-    </div>
+</div>
     
     
-    <div class="mt-2 trsn btn_container">
-      
-      
-      <form id="product-form-14616472-332667" action="/cart/add/14616472" method="post" enctype="multipart/form-data" name="buy">
-        <div class="row adc-form no-gutters product-stock product-available">
-          <div class="col-sm-8">
-            
-            <div class="quantity mr-md-2 mb-md-0 mb-2">
-              <div class="product-qty">
-                <input type="number" class="qty form-control text-center" id="input-qty-14616472-332667" name="qty" min="1" value="1" readonly="readonly"  max="8" >
-                <div class="quantity-nav"><div class="quantity-button quantity-up">+</div><div class="quantity-button quantity-down">-</div></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            
-            <button type="button" onclick="addToCart('14616472', '&quot;Docente&quot; Planner Anual', $('#input-qty-14616472-332667').val(), getProductOptions('#product-form-14616472-332667'));" class="adc btn btn-adc btn-block btn-primary" value="¡ME LO LLEVO!" ><i class="fas fa-cart-plus"></i></button>
-            
-          </div>
-        </div>
-      </form>
-      
-      
-    </div>
-    
-  </div>
 </div>
 
 
@@ -536,61 +335,10 @@ jQuery('#product-form-14616472-332667 .quantity').each(function() {
 
     </div>
     
-    <div class="col-lg-3 col-6 px-md-2 px-1">
-      <div class="product-block text-center mb-md-3 mb-2 p-md-3 p-2 rounded trsn">
-  <a href="/superpoderes-xl-planificador-anual-universitario" class="product-image d-block ">
-
     
-
-    
-
-    
-    <img class="img-fluid img-portfolio img-hover mb-2" src="https://cdnx.jumpseller.com/lluna-papeleria/image/20629118/resize/255/255?1658040777" srcset="https://cdnx.jumpseller.com/lluna-papeleria/image/20629118/resize/255/255?1658040777 1x,https://cdnx.jumpseller.com/lluna-papeleria/image/20629118/resize/510/510?1658040777 2x" alt="&quot;Superpoderes XL&quot; Planner Anual Universitario " />
-    
-  </a>
   
   
-  
-  <div class="caption">
-    <div class="brand-name small trsn">
-      
-      <h4><a href="/superpoderes-xl-planificador-anual-universitario">"Superpoderes XL" Planner Anual U..</a></h4>
-    </div>
-    
-    <div class="list-price">
-      
-      <span class="product-block-list">$32.990</span>
-      
-    </div>
-    
-    
-    <div class="mt-2 trsn btn_container">
-      
-      
-      <form id="product-form-12205662-332667" action="/cart/add/12205662" method="post" enctype="multipart/form-data" name="buy">
-        <div class="row adc-form no-gutters product-stock product-available">
-          <div class="col-sm-8">
-            
-            <div class="quantity mr-md-2 mb-md-0 mb-2">
-              <div class="product-qty">
-                <input type="number" class="qty form-control text-center" id="input-qty-12205662-332667" name="qty" min="1" value="1" readonly="readonly"  max="7" >
-                <div class="quantity-nav"><div class="quantity-button quantity-up">+</div><div class="quantity-button quantity-down">-</div></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            
-            <button type="button" onclick="addToCart('12205662', '&quot;Superpoderes XL&quot; Planner Anual Universitario ', $('#input-qty-12205662-332667').val(), getProductOptions('#product-form-12205662-332667'));" class="adc btn btn-adc btn-block btn-primary" value="¡ME LO LLEVO!" ><i class="fas fa-cart-plus"></i></button>
-            
-          </div>
-        </div>
-      </form>
-      
-      
-    </div>
-    
-  </div>
-</div>
+ 
 
 
 
@@ -642,7 +390,7 @@ jQuery('#product-form-12205662-332667 .quantity').each(function() {
   <div class="row align-items-center">
     <div class="col-md-6 order-md-1">
       
-      <img src="https://assets.jumpseller.com/store/lluna-papeleria/themes/388104/options/56779201/2021-11-12T23%3A52%3A39.582Z1.png?1636761258" alt="PLANIS ANUALES" class="w-100"/>
+      <img src="https://cdn.discordapp.com/attachments/1222345748805324901/1222346713969328128/IMG-20240326-WA0086.jpg?ex=662ba2d6&is=662a5156&hm=78752dcf94fdb06738423951119056f68151cd58770778bf8ce88790f9bfe994&" alt="PLANIS ANUALES" class="w-100"/>
       
     </div>    
     <div class="col-md-6 order-md-2">
