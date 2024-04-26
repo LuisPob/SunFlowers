@@ -329,19 +329,6 @@ jQuery('#product-form-14616472-332667 .quantity').each(function() {
   });
 });
 </script>
-
-
-
-
-    </div>
-    
-    
-  
-  
- 
-
-
-
 <script>
 jQuery('#product-form-12205662-332667 .quantity').each(function() {
   var spinner = jQuery(this),
@@ -397,7 +384,7 @@ jQuery('#product-form-12205662-332667 .quantity').each(function() {
       <h4>PLANIS ANUALES</h4>
       <p>Planificadores con vista mensual y semanal ♡</p>
       
-      <a href="https://www.llunapapeleria.cl/planificadores-anuales" class="btn btn-primary">VER LOS PLANIS ANUALES DE LLUNA</a>
+      <a href="https://www.llunapapeleria.cl/planificadores-anuales" class="btn btn-primary text-dark">VER LOS PLANIS ANUALES DE LLUNA</a>
       
     </div>
   </div>
@@ -412,7 +399,7 @@ jQuery('#product-form-12205662-332667 .quantity').each(function() {
       <h4>PLANIS SEMESTRALES</h4>
       <p>Planificadores con vista mensual y diaria ♡</p>
       
-      <a href="https://www.llunapapeleria.cl/planificadores-semestrales" class="btn btn-primary">VER LOS PLANIS SEMESTRALES DE LLUNA</a>
+      <a href="https://www.llunapapeleria.cl/planificadores-semestrales" class="btn btn-primary text-dark">VER LOS PLANIS SEMESTRALES DE LLUNA</a>
       
     </div>
   </div>
@@ -427,7 +414,7 @@ jQuery('#product-form-12205662-332667 .quantity').each(function() {
       <h4>PLANIS SEMANALES</h4>
       <p>Planificadores con vista semanal ♡</p>
       
-      <a href="https://www.llunapapeleria.cl/planificadores-semanales" class="btn btn-primary">VER LOS PLANIS SEMANALES DE LLUNA</a>
+      <a href="https://www.llunapapeleria.cl/planificadores-semanales" class="btn btn-primary text-dark">VER LOS PLANIS SEMANALES DE LLUNA</a>
       
     </div>
   </div>
@@ -442,7 +429,7 @@ jQuery('#product-form-12205662-332667 .quantity').each(function() {
       <h4>PLANIS MENSUALES</h4>
       <p>Planificadores con vista mensual ♡</p>
       
-      <a href="https://www.llunapapeleria.cl/planificadores-mensuales" class="btn btn-primary">VER LOS PLANIS MENSUALES DE LLUNA</a>
+      <a href="https://www.llunapapeleria.cl/planificadores-mensuales" class="btn btn-primary text-dark">VER LOS PLANIS MENSUALES DE LLUNA</a>
       
     </div>
   </div>
@@ -457,7 +444,7 @@ jQuery('#product-form-12205662-332667 .quantity').each(function() {
       <h4>PLANIS DIARIOS</h4>
       <p>Planificadores con vista diaria ♡</p>
       
-      <a href="https://www.llunapapeleria.cl/planificadores-diarios" class="btn btn-primary">VER LOS PLANI DIARIOS DE LLUNA</a>
+      <a href="https://www.llunapapeleria.cl/planificadores-diarios" class="btn btn-primary text-dark">VER LOS PLANI DIARIOS DE LLUNA</a>
       
     </div>
   </div>
@@ -472,7 +459,7 @@ jQuery('#product-form-12205662-332667 .quantity').each(function() {
       <h4>PAPELERÍA Y COMPLEMENTOS</h4>
       <p>Organizador de Gastos, Menú Semanal, Diario de Gratitud, Turnario, Cuadernos, Notas Adhesivas, Lista de Tareas, Diario Consciente, Stickers, Marcapáginas, Lápices, Destacadores y más para complementar tu planificación ♡</p>
       
-      <a href="https://www.llunapapeleria.cl/complementos" class="btn btn-primary">VER LOS COMPLEMENTOS DE LLUNA</a>
+      <a href="https://www.llunapapeleria.cl/complementos" class="btn btn-primary text-dark">VER LOS COMPLEMENTOS DE LLUNA</a>
       
     </div>
   </div>
@@ -480,12 +467,12 @@ jQuery('#product-form-12205662-332667 .quantity').each(function() {
 <div class="container-fluid mb-5">
   <div class="row">
     <div class="col-12">
-      <h2 class="block-header text-center">@LLUNAPAPELERIA</h2>
+      <h2 class="block-header text-center text-dark">@LLUNAPAPELERIA</h2>
     </div>
     <div id="instagram-102190" class="component_instagram col-12"></div>
     
-    <a href="https://www.instagram.com/llunapapeleria" target="_blank" title="Síguenos @llunapapeleria" class="btn btn-primary mt-5">
-      <i class="fab fa-instagram" aria-hidden="true"></i> Síguenos
+    <a href="https://www.instagram.com/llunapapeleria" target="_blank" title="Síguenos @llunapapeleria" class="btn btn-primary mt-5 text-dark">
+      <i class="fab fa-instagram text-dark" aria-hidden="true"></i>  Síguenos
     </a>
   </div>
 </div>
@@ -535,7 +522,7 @@ Aprender técnicas concretas, tips aplicables y ser capaz de reconocer los disti
 
 Eso es justamente lo que abordamos en nuestros Cursos, para que así puedas aprender a organizarte mejor y lograr disponer de tu tiempo para utilizarlo en todas esas cosas que son necesarias e importantes para ti😍  </p>
       
-      <a href="https://escuelalluna.wisboo.com/catalog" class="btn btn-primary">Ver los cursos de la escuela</a>
+      <a href="https://escuelalluna.wisboo.com/catalog" class="btn btn-primary text-dark">Ver los cursos de la escuela</a>
       
     </div>
   </div>
