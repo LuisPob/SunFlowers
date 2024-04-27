@@ -26,6 +26,9 @@ Route::post('/clear', [CartController::class, 'clear'])->name('cart.clear');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+use App\Http\Controllers\TipoProductoController;
+Route::resource('tipo-productos', TipoProductoController::class);
+
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\RegisterController;
@@ -53,9 +56,7 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::get('/sign-in-static', [PageController::class, 'signin'])->name('sign-in-static');
 	Route::get('/sign-up-static', [PageController::class, 'signup'])->name('sign-up-static'); 
 	Route::get('/{page}', [PageController::class, 'index'])->name('page');
-	Route::post('logout', [LoginController::class, 'logout'])->name('logout');
-
-	
+	Route::post('logout', [LoginController::class, 'logout'])->name('logout');	
 });
 
 Route::get('/', [CartController::class, 'shop'])->name('shop');
@@ -64,3 +65,6 @@ Route::post('/add', [CartController::class, 'add'])->name('cart.store');
 Route::post('/update', [CartController::class, 'update'])->name('cart.update');
 Route::post('/remove', [CartController::class, 'remove'])->name('cart.remove');
 Route::post('/clear', [CartController::class, 'clear'])->name('cart.clear');
+
+//Route::resource('tipo-modulos', TipoModuloController::class);
+//Route::resource('data', DataController::class);
