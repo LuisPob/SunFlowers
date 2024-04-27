@@ -8,22 +8,22 @@
   <a href="/"  title="Inicio" class="level-1 trsn nav-link text-dark" >Inicio</a>
 </li>
       <li class="nav-item dropdown ">
-  <a href="/planificadores"  title="Planners" class="dropdown-toggle level-1 trsn nav-link text-dark" data-toggle="">Planners</a>
+  <a href="/"  title="Planners" class="dropdown-toggle level-1 trsn nav-link text-dark" data-toggle="">Categorias</a>
 </li>
       <li class="nav-item dropdown active">
-  <a href="/"  title="Papelería" class="dropdown-toggle level-1 trsn nav-link text-dark" data-toggle="">Papelería</a>
+  <a href="/"  title="Papelería" class="dropdown-toggle level-1 trsn nav-link text-dark" data-toggle="">Contacto</a>
   </li>
       <li class="nav-item dropdown active">
-  <a href="/"  title="Complementos" class="dropdown-toggle level-1 trsn nav-link text-dark" data-toggle="">Complementos</a>
+  <a href="/"  title="Complementos" class="dropdown-toggle level-1 trsn nav-link text-dark" data-toggle="">Nosotros</a>
 </li>
       <li class="nav-item dropdown ">
-  <a href="/informacion"  title="Información" class="dropdown-toggle level-1 trsn nav-link text-dark" data-toggle="">Información</a>
+  <a href="/"  title="Información" class="dropdown-toggle level-1 trsn nav-link text-dark" data-toggle="">Información</a>
 </li>    
       <li class="nav-item  ">
-  <a href="/todos-los-productos"  title="TODOS LOS PRODUCTOS" class="level-1 trsn nav-link text-dark" >TODOS LOS PRODUCTOS</a>
+  <a href="/"  title="TODOS LOS PRODUCTOS" class="level-1 trsn nav-link text-dark" >Todos los productos</a>
 </li>
       <li class="nav-item  ">
-  <a href="/escuela-lluna"  title="Escuela LLUNA" class="level-1 trsn nav-link text-dark" >Escuela LLUNA</a>
+  <a href="/"  title="Escuela LLUNA" class="level-1 trsn nav-link text-dark" >Mapa</a>
 </li>
     </ul>
   </div>
@@ -55,7 +55,7 @@
             
           <h1 class="visually-hidden">SUNFLOWER</h1>
           
-          <img src="https://cdn.discordapp.com/attachments/1222345748805324901/1222346713969328128/IMG-20240326-WA0086.jpg?ex=662ba2d6&is=662a5156&hm=78752dcf94fdb06738423951119056f68151cd58770778bf8ce88790f9bfe994&" class="navbar-brand store-image img-fluid" alt="LLUNA PAPELERÍA" />
+          <img src="https://cdn.discordapp.com/attachments/1224140724132515922/1233584931041443902/ICONO_SINFONDO.png?ex=662da0fe&is=662c4f7e&hm=8727f799cf9bd339d3061099db7d6e24d629b14f07299b71ebb4dad8d55bb3a7&" class="navbar-brand store-image img-fluid" />
           
         </a>
       </div>
@@ -168,6 +168,45 @@
 <div id='components'><div id='component-102112' class='theme-component show' ><div id="component_slider-102112" class="component_slider owl-carousel mb-5">
   
   
+<style>
+  .carousel-img-small {
+    max-height: 500px; /* ajusta este valor según tus necesidades */
+    max-width: 1270px;
+    max-auto:
+  }
+</style>
+
+<div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="/img/collar1.jpg" class="d-block w-100 carousel-img-small mx-auto " >
+    </div>
+    <div class="carousel-item">
+      <img src="/img/aros1.jpg" class="d-block w-100 carousel-img-small  mx-auto" >
+    </div>
+    <div class="carousel-item">
+      <img src="/img/pulsera1.jpg" class="d-block w-100 carousel-img-small  mx-auto" >
+    </div>
+    <div class="carousel-item">
+      <img src="/img/tobillera.jpg" class="d-block w-100 carousel-img-small  mx-auto" >
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
   <div class="item" style="background-image:url('https://assets.jumpseller.com/store/lluna-papeleria/themes/388104/options/42941205/20230908_123742-01.jpeg?1694798595')">
     <a href="https://www.llunapapeleria.cl/alba-planificador-anual">
     <div class="layer" style="background-color: #000000; opacity: 0;"></div>
@@ -368,8 +407,6 @@ jQuery('#product-form-12205662-332667 .quantity').each(function() {
 
 
     </div>
-    
-    
   </div>
 </div>
 
@@ -379,7 +416,8 @@ jQuery('#product-form-12205662-332667 .quantity').each(function() {
       
       <img src="https://cdn.discordapp.com/attachments/1222345748805324901/1222346713969328128/IMG-20240326-WA0086.jpg?ex=662ba2d6&is=662a5156&hm=78752dcf94fdb06738423951119056f68151cd58770778bf8ce88790f9bfe994&" alt="PLANIS ANUALES" class="w-100"/>
       
-    </div>    
+    </div>  
+
     <div class="col-md-6 order-md-2">
       <h4>PLANIS ANUALES</h4>
       <p>Planificadores con vista mensual y semanal ♡</p>
@@ -467,12 +505,12 @@ jQuery('#product-form-12205662-332667 .quantity').each(function() {
 <div class="container-fluid mb-5">
   <div class="row">
     <div class="col-12">
-      <h2 class="block-header text-center text-dark">@LLUNAPAPELERIA</h2>
+      <h2 class="block-header text-center text-dark">@SUNFLOWER._CCP</h2>
     </div>
     <div id="instagram-102190" class="component_instagram col-12"></div>
     
     <a href="https://www.instagram.com/llunapapeleria" target="_blank" title="Síguenos @llunapapeleria" class="btn btn-primary mt-5 text-dark">
-      <i class="fab fa-instagram text-dark" aria-hidden="true"></i>  Síguenos
+      <i class="fab fa-instagram text-dark" aria-hidden="true"></i> SÍGUENOS
     </a>
   </div>
 </div>
