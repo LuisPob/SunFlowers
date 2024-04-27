@@ -243,7 +243,7 @@
 </script>
 </div><div id='component-332666' class='theme-component show' ><div id="big-banner-332666" class="container mb-5">
   
-  <img src="https://assets.jumpseller.com/store/lluna-papeleria/themes/388104/options/56779196/2021-11-12T23%3A48%3A15.592ZCapturadePantalla2021-11-12ala%28s%2920.46.43.png?1636761258" class="w-100" alt="" title=""/>
+  <img src="https://cdn.discordapp.com/attachments/1224140724132515922/1233595454558699530/image.png?ex=662daacb&is=662c594b&hm=8663f9277551611ff50e0cc90824c11384b45324c7f4fb9281d081ea4e6bb67d&" class="w-100" alt="" title=""/>
   
 </div></div><div id='component-332667' class='theme-component show' >
 
@@ -414,30 +414,34 @@ jQuery('#product-form-12205662-332667 .quantity').each(function() {
   <div class="row align-items-center">
     <div class="col-md-6 order-md-1">
       
-      <img src="https://cdn.discordapp.com/attachments/1222345748805324901/1222346713969328128/IMG-20240326-WA0086.jpg?ex=662ba2d6&is=662a5156&hm=78752dcf94fdb06738423951119056f68151cd58770778bf8ce88790f9bfe994&" alt="PLANIS ANUALES" class="w-100"/>
+      <img src="/img/collar2.jpg" alt="PLANIS ANUALES" class="w-100"/>
       
     </div>  
 
     <div class="col-md-6 order-md-2">
-      <h4>PLANIS ANUALES</h4>
-      <p>Planificadores con vista mensual y semanal ♡</p>
+      <h4>ELEGANCIA</h4>
+      <p>Para esos días en los que deseas un toque de elegancia sutil,
+        nuestros collares son la elección ideal que añadirá un brillo discreto a tu look.</p>
       
-      <a href="https://www.llunapapeleria.cl/planificadores-anuales" class="btn btn-primary text-dark">VER LOS PLANIS ANUALES DE LLUNA</a>
+      <a href="/" class="btn btn-primary text-dark">VER COLLARES ELEGANTES</a>
       
     </div>
   </div>
-</div></div><div id='component-332694' class='theme-component show' ><div id="image-w-text-332694" class="container mb-5">
+</div>
+</div>
+<div id='component-332694' class='theme-component show' ><div id="image-w-text-332694" class="container mb-5">
   <div class="row align-items-center">
     <div class="col-md-6 order-md-1">
       
-      <img src="https://assets.jumpseller.com/store/lluna-papeleria/themes/388104/options/56780792/2021-11-13T00%3A08%3A01.238Z5.png?1636762353" alt="PLANIS SEMESTRALES" class="w-100"/>
+      <img src="/img/collar3.jpg" alt="PLANIS SEMESTRALES" class="w-100"/>
       
     </div>    
     <div class="col-md-6 order-md-2">
-      <h4>PLANIS SEMESTRALES</h4>
-      <p>Planificadores con vista mensual y diaria ♡</p>
+      <h4>CASUAL</h4>
+      <p>Desde la oficina hasta una cena con amigos, nuestros collares
+        te acompañarán con estilo y distinción en cada momento de tu día</p>
       
-      <a href="https://www.llunapapeleria.cl/planificadores-semestrales" class="btn btn-primary text-dark">VER LOS PLANIS SEMESTRALES DE LLUNA</a>
+      <a href="/" class="btn btn-primary text-dark">VER COLLARES CASUALES</a>
       
     </div>
   </div>
@@ -445,14 +449,16 @@ jQuery('#product-form-12205662-332667 .quantity').each(function() {
   <div class="row align-items-center">
     <div class="col-md-6 order-md-1">
       
-      <img src="https://assets.jumpseller.com/store/lluna-papeleria/themes/388104/options/56780798/2021-11-13T00%3A09%3A03.143Z3.png?1636762353" alt="PLANIS SEMANALES" class="w-100"/>
+      <img src="/img/aros2.jpg" alt="PLANIS SEMANALES" class="w-100"/>
       
     </div>    
     <div class="col-md-6 order-md-2">
-      <h4>PLANIS SEMANALES</h4>
-      <p>Planificadores con vista semanal ♡</p>
+      <h4>DELICADOS</h4>
+      <p>Descubre la sutileza y
+        la elegancia en cada par de nuestros aros delicados,
+        diseñados para añadir un toque de encanto a tu estilo diario.</p>
       
-      <a href="https://www.llunapapeleria.cl/planificadores-semanales" class="btn btn-primary text-dark">VER LOS PLANIS SEMANALES DE LLUNA</a>
+      <a href="/" class="btn btn-primary text-dark">VER AROS DELICADOS.</a>
       
     </div>
   </div>
@@ -460,14 +466,16 @@ jQuery('#product-form-12205662-332667 .quantity').each(function() {
   <div class="row align-items-center">
     <div class="col-md-6 order-md-1">
       
-      <img src="https://assets.jumpseller.com/store/lluna-papeleria/themes/388104/options/56780804/2021-11-13T00%3A09%3A37.825Z2.png?1636762353" alt="PLANIS MENSUALES" class="w-100"/>
+      <img src="/img/aros3.jpg" alt="PLANIS MENSUALES" class="w-100"/>
       
     </div>    
     <div class="col-md-6 order-md-2">
-      <h4>PLANIS MENSUALES</h4>
-      <p>Planificadores con vista mensual ♡</p>
+      <h4>PRIMAVERALES</h4>
+      <p>Deja que la energía del sol te acompañe a
+        donde vayas con nuestros aros verdes,
+        inspirados en la alegría y la luminosidad de los campos de girasoles.</p>
       
-      <a href="https://www.llunapapeleria.cl/planificadores-mensuales" class="btn btn-primary text-dark">VER LOS PLANIS MENSUALES DE LLUNA</a>
+      <a href="/" class="btn btn-primary text-dark">VER AROS PRIMAVERALES.</a>
       
     </div>
   </div>
@@ -475,14 +483,16 @@ jQuery('#product-form-12205662-332667 .quantity').each(function() {
   <div class="row align-items-center">
     <div class="col-md-6 order-md-1">
       
-      <img src="https://assets.jumpseller.com/store/lluna-papeleria/themes/388104/options/56780810/2021-11-13T00%3A11%3A09.523Z4.png?1636762354" alt="PLANIS DIARIOS" class="w-100"/>
+      <img src="/img/tobillera2.jpg" alt="PLANIS DIARIOS" class="w-100"/>
       
     </div>    
     <div class="col-md-6 order-md-2">
-      <h4>PLANIS DIARIOS</h4>
-      <p>Planificadores con vista diaria ♡</p>
+      <h4>MORADOS</h4>
+      <p>Explora la profundidad del color y la magia del amor
+        propio con nuestra tobillera morada,
+        diseñada para inspirar confianza y autoexpresión en cada paso que das.</p>
       
-      <a href="https://www.llunapapeleria.cl/planificadores-diarios" class="btn btn-primary text-dark">VER LOS PLANI DIARIOS DE LLUNA</a>
+      <a href="/" class="btn btn-primary text-dark">VER TOBILLERAS MORADAS.</a>
       
     </div>
   </div>
@@ -490,14 +500,15 @@ jQuery('#product-form-12205662-332667 .quantity').each(function() {
   <div class="row align-items-center">
     <div class="col-md-6 order-md-1">
       
-      <img src="https://assets.jumpseller.com/store/lluna-papeleria/themes/388104/options/56780816/2021-11-13T00%3A12%3A02.182Zqw.png?1636762354" alt="PAPELERÍA Y COMPLEMENTOS" class="w-100"/>
+      <img src="/img/tobillera3.jpg" alt="PAPELERÍA Y COMPLEMENTOS" class="w-100"/>
       
     </div>    
     <div class="col-md-6 order-md-2">
-      <h4>PAPELERÍA Y COMPLEMENTOS</h4>
-      <p>Organizador de Gastos, Menú Semanal, Diario de Gratitud, Turnario, Cuadernos, Notas Adhesivas, Lista de Tareas, Diario Consciente, Stickers, Marcapáginas, Lápices, Destacadores y más para complementar tu planificación ♡</p>
+      <h4>PRADERA</h4>
+      <p>Lleva la frescura y la vitalidad de un prado verde a cada paso con nuestra pulsera verde,
+        una pieza imprescindible para aquellos que buscan una conexión más profunda con la naturaleza.</p>
       
-      <a href="https://www.llunapapeleria.cl/complementos" class="btn btn-primary text-dark">VER LOS COMPLEMENTOS DE LLUNA</a>
+      <a href="/" class="btn btn-primary text-dark">VER PULSERAS.</a>
       
     </div>
   </div>
@@ -546,25 +557,7 @@ jQuery('#product-form-12205662-332667 .quantity').each(function() {
     });
 </script>
 
-</div><div id='component-545130' class='theme-component show' ><div id="image-w-text-545130" class="container mb-5">
-  <div class="row align-items-center">
-    <div class="col-md-6 order-md-1">
-      
-      <img src="https://assets.jumpseller.com/store/lluna-papeleria/themes/388104/options/69326789/20211024_131819-01.jpeg?1691595210" alt="Escuela LLUNA: una escuela digital donde te enseñamos a organizarte para poder utilizar bien tu tiempo y enfocarte en lo importante" class="w-100"/>
-      
-    </div>    
-    <div class="col-md-6 order-md-2">
-      <h4>Escuela LLUNA: una escuela digital donde te enseñamos a organizarte para poder utilizar bien tu tiempo y enfocarte en lo importante</h4>
-      <p>Con nuestros planners te entregamos la mejor herramienta de planificación según el estilo de vida y los requerimientos que puedas tener, pero muchas veces se necesita algo más:
-Aprender técnicas concretas, tips aplicables y ser capaz de reconocer los distintos problemas que podemos tener al gestionar nuestras actividades del día a día, para posteriormente solucionarlos y así tener una planificación más efectiva y eficiente.
-
-Eso es justamente lo que abordamos en nuestros Cursos, para que así puedas aprender a organizarte mejor y lograr disponer de tu tiempo para utilizarlo en todas esas cosas que son necesarias e importantes para ti😍  </p>
-      
-      <a href="https://escuelalluna.wisboo.com/catalog" class="btn btn-primary text-dark">Ver los cursos de la escuela</a>
-      
-    </div>
-  </div>
-</div></div></div>
+</div>
 
   <!-- Footer -->
   
@@ -573,22 +566,24 @@ Eso es justamente lo que abordamos en nuestros Cursos, para que así puedas apre
     <div class="row text-md-left text-center justify-content-center">
       
       <div class="col-lg-3 col-md-6">
-        <h5>Sobre Lluna</h5>
+        <h5>Sobre SunFlower</h5>
         <div class="footer-description text-center text-md-left mb-lg-0 mb-3">
           
-          Av. Providencia 2392, oficina 301, Providencia.
-<b>Planificar es tener ✦ tiempo para todo ✦</b> así que creamos Papelería que te ayuda a organizar tu tiempo y a enfocarte en lo importante✨ Diseño nacional con caligrafía e ilustraciones a mano ❤️
-          
+        📍 Talcahuano, Region del BioBio, Chile.
+          En nuestro universo de bisutería, cada pieza es más que un simple accesorio;
+          es una manifestación de arte y creatividad, diseñada para realzar tu belleza interior y exterior,
+          recordándote que la elegancia y el estilo pueden ser parte de tu día a día.❤️
+
         </div>
       </div>
       
       <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
         <h5>Contacto</h5>
         <ul>
-          <li><a href="mailto:contacto@llunapapeleria.cl" target="_blank" title="contacto@llunapapeleria.cl">contacto@llunapapeleria.cl</a></li>
+          <li><a href="mailto:contacto@llunapapeleria.cl" target="_blank" title="florencia.sanzana.ortega@gmail.com">florencia.sanzana.ortega@gmail.com</a></li>
           
           <li class="footer-top__menu-item">
-            <a href="tel:+56973069652" title="Llámanos">+56 9 7306 9652 </a>
+            <a href="tel:+56973069652" title="Llámanos">+56 9 5610 3084 </a>
           </li>
           
         </ul>
@@ -598,7 +593,7 @@ Eso es justamente lo que abordamos en nuestros Cursos, para que así puedas apre
         <ul class="navbar-nav mr-auto">
           
           <li>
-  <a href="/tienda-fisica"  title="TIENDA FÍSICA">TIENDA FÍSICA</a>
+  <a href="/tienda-fisica"  title="TIENDA FÍSICA">TIENDA ONLINE</a>
 </li>
 
 
@@ -619,7 +614,7 @@ Eso es justamente lo que abordamos en nuestros Cursos, para que así puedas apre
 
           
           <li>
-  <a href="/team-lluna-vip"  title="TEAM LLUNA VIP ✨">TEAM LLUNA VIP ✨</a>
+  <a href="/team-lluna-vip"  title="TEAM LLUNA VIP ✨">TEAM SUNFLOWER VIP ✨</a>
 </li>
 
 
@@ -640,7 +635,7 @@ Eso es justamente lo que abordamos en nuestros Cursos, para que así puedas apre
 
           
           <li>
-  <a href="/clientas"  title="TEAM LLUNA ♡">TEAM LLUNA ♡</a>
+  <a href="/clientas"  title="TEAM LLUNA ♡">TEAM SUNFLOWER ♡</a>
 </li>
 
 
@@ -657,7 +652,7 @@ Eso es justamente lo que abordamos en nuestros Cursos, para que así puedas apre
       </div>
       <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
         
-        <h5>¿ERES TEAM LLUNA?😍 ¡Suscríbete!</h5>
+        <h5>¿ERES TEAM SUNFLOWER?😍 ¡REGISTRATE!</h5>
         <div id="newsletter">
           <form action="https://llunapapeleria.us18.list-manage.com/subscribe/post?u=205020cca084f0b152eb42b98&amp;id=37b224430b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
             <div id="mc_embed_signup_scroll">
@@ -670,7 +665,7 @@ Eso es justamente lo que abordamos en nuestros Cursos, para que así puedas apre
                 <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                 <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_37d0843fc21a18eccb8d392eb_f7037d65c5" tabindex="-1" value=""></div>
               </div>
-              <small>Suscríbete para que estemos en contacto y podamos compartir la mejor información, tips, sorpresas, descuentos, lanzamientos y más!</small>
+              <small>¡Registrate para que estemos en contacto y podamos compartir la mejor información, tips, sorpresas, descuentos, lanzamientos y más!</small>
             </div>
           </form>
         </div>
@@ -682,31 +677,21 @@ Eso es justamente lo que abordamos en nuestros Cursos, para que así puedas apre
           <li class="list-inline-item">
             <strong>Síguenos:</strong>
           </li>
-          
-          
-
-          
-
-          
-          
           <li class="list-inline-item">
             <a href="https://www.instagram.com/llunapapeleria" title="Ir a Instagram" target="_blank">
               <i class="fab fa-instagram"></i>
             </a>
           </li>
-          
-          
+
           <li class="list-inline-item d-md-none">
             <a href="https://api.whatsapp.com/send?phone=56973069652&text=Hola LLUNA PAPELERÍA!" title="WhatsApp" target="_blank">
               <i class="fab fa-whatsapp fa-fw"></i>
             </a>
           </li>
-          
-          
+
         </ul>
         
       </div>
-
 
     </div>
   </div>
@@ -714,12 +699,12 @@ Eso es justamente lo que abordamos en nuestros Cursos, para que así puedas apre
   <div class="container-fluid">
     <div class="row align-items-center">
       <div class="col-md-4 text-lg-left text-center mb-lg-0 mb-3">
-        <div class="powered-by">&copy; 2024 LLUNA PAPELERÍA. <br>Todos los derechos reservados. </div>
+        <div class="powered-by">&copy; 2024 SunFlower, joyeria de bisuteria. <br>Todos los derechos reservados. </div>
       </div>
       <div class="col-md-4 text-center">
         <a href="https://www.llunapapeleria.cl" title="LLUNA PAPELERÍA">
           
-          <img src="https://images.jumpseller.com/store/lluna-papeleria/store/logo/Copia_de_LogoLLUNA_lila.png?1685569757" class="navbar-brand img-fluid mb-md-0 mb-3 mx-auto" alt="LLUNA PAPELERÍA" />
+          <img src="https://cdn.discordapp.com/attachments/1224140724132515922/1233584931041443902/ICONO_SINFONDO.png?ex=662da0fe&is=662c4f7e&hm=8727f799cf9bd339d3061099db7d6e24d629b14f07299b71ebb4dad8d55bb3a7&" class="navbar-brand img-fluid mb-md-0 mb-3 mx-auto" alt="LLUNA PAPELERÍA" />
           
         </a>
       </div>
