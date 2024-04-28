@@ -19,13 +19,7 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navigation">
                         <ul class="navbar-nav mx-auto">
-                            <li class="nav-item">
-                                <a class="nav-link d-flex align-items-center me-2 active" aria-current="page"
-                                    href="{{ route('home') }}">
-                                    <i class="fa fa-chart-pie opacity-6 text-dark me-1"></i>
-                                    Tablero
-                                </a>
-                            </li>
+                            
                             <li class="nav-item">
                                 <a class="nav-link me-2" href="{{ route('register') }}">
                                     <i class="fas fa-user-circle opacity-6 text-dark me-1"></i>
@@ -39,12 +33,7 @@
                                 </a>
                             </li>
                         </ul>
-                        <ul class="navbar-nav d-lg-block d-none">
-                            <li class="nav-item">
-                                <a href="https://www.creative-tim.com/product/argon-dashboard-laravel" target="_blank"
-                                    class="btn btn-sm mb-0 me-1 btn-primary text-dark">Descargar Gratis</a>
-                            </li>
-                        </ul>
+                        
                     </div>
                 </div>
             </nav>
