@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -29,6 +31,13 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 use App\Http\Controllers\TipoProductoController;
 Route::resource('tipo-productos', TipoProductoController::class);
 
+use App\Http\Controllers\ProductoController;
+Route::middleware(['auth:sanctum', 'verified'])->group(function(){
+    Route::resource('/productos', ProductoController::class);
+    Route::get('/dashboard', function(){
+        return view('dashboard');
+    })->name('dashboard');
+});
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\RegisterController;

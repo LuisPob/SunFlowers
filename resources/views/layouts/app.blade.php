@@ -45,7 +45,7 @@
             @include('components.fixed-plugin')
         @endif
     @endauth
-
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!--   Core JS Files   -->
     <script src="assets/js/core/popper.min.js"></script>
     <script src="assets/js/core/bootstrap.min.js"></script>
