@@ -44,6 +44,11 @@ Route::get('/change-password', [ChangePassword::class, 'show'])->middleware('gue
 Route::post('/change-password', [ChangePassword::class, 'update'])->middleware('guest')->name('change.perform');
 Route::get('/dashboard', [HomeController::class, 'index'])->name('home')->middleware('auth');
 
+Route::group(['middleware' => 'auth'], function() {
+	Route::get('/email/verify', [VerificationController::class, 'show'])->name('verification.notice');
+	Route::get('/email/verify/{id}/{hash}', [VerificationController::class, 'verify'])->name('verification.verify')->middleware(['signed']);
+	Route::post('/email/resend', [VerificationController::class, 'resend'])->name('verification.resend');
+});
 
 // Solo usuarios autenticados y con email verificado pueden acceder a las rutas dentro de este grupo
 Route::group(['middleware' => ['auth', 'verified']], function () {
@@ -59,8 +64,3 @@ Route::group(['middleware' => ['auth', 'verified']], function () {
 });
 
 				
-Route::group(['middleware' => 'auth'], function() {
-	Route::get('/email/verify', [VerificationController::class, 'show'])->name('verification.notice');
-	Route::get('/email/verify/{id}/{hash}', [VerificationController::class, 'verify'])->name('verification.verify')->middleware(['signed']);
-	Route::post('/email/resend', [VerificationController::class, 'resend'])->name('verification.resend');
-});
