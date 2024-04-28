@@ -218,24 +218,14 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-
   <div class="item" style="background-image:url('https://assets.jumpseller.com/store/lluna-papeleria/themes/388104/options/42941205/20230908_123742-01.jpeg?1694798595')">
     <a href="https://www.llunapapeleria.cl/alba-planificador-anual">
     <div class="layer" style="background-color: #000000; opacity: 0;"></div>
     </div>
-    
     </a>
   </div>
     </a>
   </div>
-  
-
-  
-
-  
-
-  
-
   <script>
     
     $('#component_slider-102112 .item').addClass('item-background');
@@ -258,16 +248,10 @@
   <img src="https://cdn.discordapp.com/attachments/1224140724132515922/1233595454558699530/image.png?ex=662daacb&is=662c594b&hm=8663f9277551611ff50e0cc90824c11384b45324c7f4fb9281d081ea4e6bb67d&" class="w-100" alt="" title=""/>
   
 </div></div><div id='component-332667' class='theme-component show' >
-
       </form>
-      
-      
-    </div>
-    
+    </div> 
   </div>
 </div>
-
-
 
 <script>
 jQuery('#product-form-24216600-332667 .quantity').each(function() {
@@ -339,13 +323,8 @@ jQuery('#product-form-23993247-332667 .quantity').each(function() {
 });
 </script>
 
+</div>  
 </div>
-    
-    
-</div>
-
-
-
 <script>
 jQuery('#product-form-14616472-332667 .quantity').each(function() {
   var spinner = jQuery(this),
@@ -414,10 +393,6 @@ jQuery('#product-form-12205662-332667 .quantity').each(function() {
   });
 });
 </script>
-
-
-
-
     </div>
   </div>
 </div>
@@ -606,60 +581,28 @@ jQuery('#product-form-12205662-332667 .quantity').each(function() {
           
           <li>
   <a href="/tienda-fisica"  title="TIENDA FÍSICA">TIENDA ONLINE</a>
-</li>
-
-
-
-          
+</li>   
           <li>
   <a href="/informacion-envios"  title="Plazos Despachos">Plazos Despachos</a>
 </li>
-
-
-
-          
           <li>
   <a href="/condiciones-entrega-despacho"  title="Condiciones Despachos">Condiciones Despachos</a>
 </li>
-
-
-
-          
           <li>
   <a href="/team-lluna-vip"  title="TEAM LLUNA VIP ✨">TEAM SUNFLOWER VIP ✨</a>
 </li>
-
-
-
-          
           <li>
   <a href="/politicas-de-cambios"  title="Políticas de Cambios y Devoluciones">Políticas de Cambios y Devoluciones</a>
 </li>
-
-
-
-          
           <li>
   <a href="/preguntas-frecuentes"  title="Preguntas Frecuentes">Preguntas Frecuentes</a>
 </li>
-
-
-
-          
           <li>
   <a href="/clientas"  title="TEAM LLUNA ♡">TEAM SUNFLOWER ♡</a>
 </li>
-
-
-
-          
           <li>
   <a href="/contact"  title="Contacto">Contacto</a>
 </li>
-
-
-
-          
         </ul>
       </div>
       <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
