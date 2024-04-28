@@ -1,114 +1,134 @@
 @extends('layouts.app')
 
 @section('content')
-<nav class="navbar navbar-expand-lg position-absolute top-0 z-index-3 w-100 shadow-none my-3 navbar-transparent mt-4">
-<div class="collapse navbar-collapse" id="navbarsContainer">
-    <ul class="navbar-nav m-auto">
-      <li class="nav-item  active">
-  <a href="/"  title="Inicio" class="level-1 trsn nav-link text-dark" >Inicio</a>
-</li>
-      <li class="nav-item dropdown ">
-  <a href="/"  title="Planners" class="dropdown-toggle level-1 trsn nav-link text-dark" data-toggle="">Categorias</a>
-</li>
-      <li class="nav-item dropdown active">
-  <a href="/"  title="Papelería" class="dropdown-toggle level-1 trsn nav-link text-dark" data-toggle="">Contacto</a>
+<style>
+    /* Estilos para fijar la barra de navegación */
+    .navbar-fixed {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000; /* Ajusta el valor según sea necesario */
+      background-color: #FBF451; /* Cambia el color de fondo según lo necesites */
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Opcional: añade una sombra */
+    }
+    .navbar-placeholder {
+      height: 60px; /* Ajusta la altura según el tamaño de tu barra de navegación */
+    }
+
+    /* Estilos para el grupo izquierdo de iconos */
+    .navbar-left {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .navbar-left .list-inline-item {
+      margin-right: 10px; /* Espacio entre los elementos */
+    }
+
+    /* Estilos para el grupo derecho de iconos */
+    .navbar-right {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    .navbar-right .list-inline-item {
+      margin-left: 10px; /* Espacio entre los elementos */
+    }
+
+    /* Estilos para aumentar el tamaño de los iconos y las letras */
+    .navbar-nav .nav-link i {
+      font-size: 24px; /* Tamaño del icono */
+    }
+
+    .navbar-nav .nav-link .customer-name {
+      font-size: 18px; /* Tamaño del texto */
+    }
+  </style>
+</head>
+<body>
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-fixed shadow-none my-3 navbar-transparent mt-4">
+    <div class="collapse navbar-collapse" id="navbarsContainer">
+      <ul class="navbar-nav m-auto navbar-left">
+        <!-- Grupo izquierdo de iconos -->
+        <li class="list-inline-item">
+          <a href="https://www.instagram.com/sunflower._ccp/" class="trsn" title="Ir a Instagram" target="_blank">
+            <i class="fab fa-instagram fa-fw"style="font-size: 30px;"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="https://chat.whatsapp.com/LX23F1KZtbBDWD6IFK8Uu8"  title="WhatsApp">
+            <i class="fab fa-whatsapp fa-fw" style="font-size: 30px;"></i>
+          </a>
+        </li>
+      </ul>
+      <ul class="navbar-nav m-auto" style="display: flex; gap: 15px;">
+  <li class="nav-item  active" id="navbarsContainer">
+    <a href="/" title="INICIO" class="level-1 trsn nav-link text-dark" style="font-size: 25px;">Inicio</a>
   </li>
-      <li class="nav-item dropdown active">
-  <a href="/"  title="Complementos" class="dropdown-toggle level-1 trsn nav-link text-dark" data-toggle="">Nosotros</a>
-</li>
-      <li class="nav-item dropdown ">
-  <a href="/"  title="Información" class="dropdown-toggle level-1 trsn nav-link text-dark" data-toggle="">Información</a>
-</li>    
-      <li class="nav-item  ">
-  <a href="/"  title="TODOS LOS PRODUCTOS" class="level-1 trsn nav-link text-dark" >Todos los productos</a>
-</li>
-      <li class="nav-item  ">
-  <a href="/"  title="Escuela LLUNA" class="level-1 trsn nav-link text-dark" >Mapa</a>
-</li>
-    </ul>
-  </div>
-</nav>
+  <li class="nav-item dropdown">
+    <a href="/" title="CATEGORIAS" class="dropdown-toggle level-1 trsn nav-link text-dark" data-toggle="" style="font-size: 25px;">Categorias</a>
+  </li>
+  <li class="nav-item dropdown active">
+    <a href="/" title="CONTACTO" class="dropdown-toggle level-1 trsn nav-link text-dark" data-toggle="" style="font-size: 25px;">Contacto</a>
+  </li>
+  <li class="nav-item dropdown active">
+    <a href="/" title="NOSOTROS" class="dropdown-toggle level-1 trsn nav-link text-dark" data-toggle="" style="font-size: 25px;">Nosotros</a>
+  </li>
+  <li class="nav-item dropdown">
+    <a href="/" title="INFORMACIÓN" class="dropdown-toggle level-1 trsn nav-link text-dark" data-toggle="" style="font-size: 25px;">Información</a>
+  </li>
+  <li class="nav-item">
+    <a href="/" title="TODOS LOS PRODUCTOS" class="level-1 trsn nav-link text-dark" style="font-size: 25px;">Todos los productos</a>
+  </li>
+  <li class="nav-item">
+    <a href="/" title="MAPA" class="level-1 trsn nav-link text-dark" style="font-size: 25px;">Mapa</a>
+  </li>
+</ul>
+
+      <ul class="navbar-nav m-auto navbar-right">
+        <!-- Grupo derecho de iconos -->
+        <li class="list-inline-item">
+          <a href="/customer/login" id="login-link" class="header_actions-link" title='Ingresar'  data-toggle="tooltip" data-placement="top">
+            <i class="fas fa-user-circle" style="font-size: 30px;"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <button type="button" data-toggle="modal" data-target="#search_modal" class="p-0 header_actions-link">
+            <i class="fas fa-search" style="font-size: 30px;" data-toggle="tooltip" title="Buscar" data-placement="top"></i>
+          </button>
+        </li>
+        <li class="list-inline-item cart">
+          <a id="cart-link" href="/cart" title="Carrito de Compras" class="header_actions-link" data-toggle="tooltip" data-placement="top">
+            <i class="fas fa-shopping-cart" style="font-size: 30px;"></i>
+            <span class="cart-size"style="font-size: 30px;">0</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Placeholder para evitar que el contenido se solape con la barra de navegación fija -->
+  <div class="navbar-placeholder"></div>
+
+
+
 <!-- End Navbar -->
 <main class="main-content  mt-0">
     <div class="container">
     <div class="container  header-block trsn py-lg-4 py-0">
     <div class="row align-items-center no-gutters">
-      <div class="col-lg-4 col-md-3 col-2">
-        <ul class="social d-none d-lg-block list-inline">
-          <li class="list-inline-item">
-            <a href="https://www.instagram.com/llunapapeleria" class="trsn" title="Ir a Instagram" target="_blank">
-              <i class="fab fa-instagram fa-fw"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="https://chat.whatsapp.com/LX23F1KZtbBDWD6IFK8Uu8"  title="WhatsApp">
-              <i class="fab fa-whatsapp fa-fw"></i>
-            </a>
-          </li>          
-        </ul>
-
-      </div>
+      <div class="col-lg-4 col-md-3 col-2"></div>
       <!-- Logo -->
       <div class="col-lg-4 col-md-6 col-8 text-center">
-        <a href="https://www.llunapapeleria.cl" title="LLUNA PAPELERÍA">
-          
-            
           <h1 class="visually-hidden">SUNFLOWER</h1>
-          
-          <img src="https://cdn.discordapp.com/attachments/1224140724132515922/1233584931041443902/ICONO_SINFONDO.png?ex=662da0fe&is=662c4f7e&hm=8727f799cf9bd339d3061099db7d6e24d629b14f07299b71ebb4dad8d55bb3a7&" class="navbar-brand store-image img-fluid" />
-          
-        </a>
-      </div>
-      <div class="col-lg-4 col-md-3 col-2">
-        <ul class="list-inline text-right header_actions m-0">
-          
-          
-          
-          <li class="list-inline-item d-none d-lg-inline-block">
-            <a href="/customer/login" id="login-link" class="header_actions-link" title='Ingresar'  data-toggle="tooltip" data-placement="top">
-              <i class="fas fa-user-circle"></i>
-            </a>
-          </li>
-          
-          
-          <li class="list-inline-item d-none d-lg-inline-block">
-            <button type="button" data-toggle="modal" data-target="#search_modal" class="p-0 header_actions-link">
-              <i class="fas fa-search" data-toggle="tooltip" title="Buscar" data-placement="top"></i>
-            </button>
-            <div id="search_modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="search_modal" aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title text-center d-block" id="search_modal">Buscar</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <i class="fas fa-times"></i>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <form id="header_search-form" class="search-form" method="get" action="/search">
-                      <input type="text" value="" name="q" class="form-control" onFocus="javascript:this.value=''" placeholder="Buscar productos" />
-                      <button type="submit"><i class="fas fa-search"></i></button>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-          
-          <li class="list-inline-item cart">
-            <a id="cart-link" href="/cart" title="Carrito de Compras" class="header_actions-link" data-toggle="tooltip" data-placement="top">
-              <i class="fas fa-shopping-cart"></i>
-              <span class="cart-size">0</span>
-            </a>
-          </li>
-          
-        </ul>
-
-      </div>
-         </div>
-        </div>
+          <img src="https://cdn.discordapp.com/attachments/1224140724132515922/1233584931041443902/ICONO_SINFONDO.png?ex=662da0fe&is=662c4f7e&hm=8727f799cf9bd339d3061099db7d6e24d629b14f07299b71ebb4dad8d55bb3a7&"
+          class="navbar-brand store-image img-fluid" />
+      </div></div></div></div>
         <nav id="main-menu" class="navbar-expand-md d-none d-lg-block vertical_menu navbar-fixed"">
-  
 </nav>
 <script>
   $(function () {
@@ -129,31 +149,23 @@
     </div>
   </div>  
       <li>
-        <div class="login" >
-          <a href="/customer/login" id="login-link-2" class="trsn nav-link" title="Ingresar / RegistrarseLLUNA PAPELERÍA">
-            <i class="fas fa-user"></i>
-            <span class="customer-name">
-              Ingresar / Registrarse
-            </span>
-          </a>
-        </div>
+        <<div class="login">
+  <a href="http://127.0.0.1:8000/login" id="login-link-2" class="trsn nav-link" title="Ingresar / RegistrarseLLUNA PAPELERÍA">
+    <i class="fas fa-user"></i>
+    <span class="customer-name">
+      Ingresar / Registrarse
+    </span>
+  </a>
+</div>
+
         
       </li>
       <li>
         
       </li>
 
-      <li class="social-item">
-        <a href="https://www.instagram.com/llunapapeleria" class="trsn" title="Ir a Instagram" target="_blank">
-          <i class="fab fa-instagram fa-fw"></i>Instagram
-        </a>
-      </li>
+      
 
-      <li class="social-item">
-        <a href="https://chat.whatsapp.com/LX23F1KZtbBDWD6IFK8Uu8" class="trsn" title="WhatsApp" target="_blank">
-          <i class="fab fa-whatsapp fa-fw"></i>WhatsApp
-        </a>
-      </li>
       
       
     </ul>
