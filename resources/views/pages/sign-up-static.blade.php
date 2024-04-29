@@ -129,7 +129,7 @@
       <div class="col-md-4 text-center">
         <a href="https://www.instagram.com/sunflower._ccp" title="SUNFLOWER">
           
-          <img src="https://cdn.discordapp.com/attachments/1224140724132515922/1233584931041443902/ICONO_SINFONDO.png?ex=662da0fe&is=662c4f7e&hm=8727f799cf9bd339d3061099db7d6e24d629b14f07299b71ebb4dad8d55bb3a7&" class="navbar-brand img-fluid mb-md-0 mb-3 mx-auto" alt="LLUNA PAPELERÍA" />
+          <img src="img/ICONO_SINFONDO.png" class="navbar-brand img-fluid mb-md-0 mb-3 mx-auto"/>
           
         </a>
       </div></div></div></div>
@@ -651,7 +651,7 @@ jQuery('#product-form-12205662-332667 .quantity').each(function() {
       <div class="col-md-4 text-center">
         <a href="https://www.instagram.com/sunflower._ccp" title="SUNFLOWER">
           
-          <img src="https://cdn.discordapp.com/attachments/1224140724132515922/1233584931041443902/ICONO_SINFONDO.png?ex=662da0fe&is=662c4f7e&hm=8727f799cf9bd339d3061099db7d6e24d629b14f07299b71ebb4dad8d55bb3a7&" class="navbar-brand img-fluid mb-md-0 mb-3 mx-auto" alt="LLUNA PAPELERÍA" />
+          <img src="img/ICONO_SINFONDO.png" class="navbar-brand img-fluid mb-md-0 mb-3 mx-auto" alt="LLUNA PAPELERÍA" />
           
         </a>
       </div>
