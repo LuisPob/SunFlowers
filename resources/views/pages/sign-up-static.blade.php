@@ -57,12 +57,12 @@
         
         <li class="list-inline-item">
           <a href="https://www.instagram.com/sunflower._ccp/" class="trsn" title="Ir a Instagram" target="_blank">
-            <i class="fab fa-instagram fa-fw"style="font-size: 30px;"></i>
+            <i class="fab fa-instagram fa-fw"style="font-size: 35px;"></i>
           </a>
         </li>
         <li class="list-inline-item">
           <a href="https://chat.whatsapp.com/LX23F1KZtbBDWD6IFK8Uu8"  title="WhatsApp">
-            <i class="fab fa-whatsapp fa-fw" style="font-size: 30px;"></i>
+            <i class="fab fa-whatsapp fa-fw" style="font-size: 35px;"></i>
           </a>
         </li>
       </ul>
@@ -97,9 +97,11 @@
             <i class="fas fa-user-circle" style="font-size: 30px;"></i>
           </a>
         </li>
+       <!-- CORREGIR DESPUES LO DE LA BUSQUEDA -->
         <li class="list-inline-item">
-          <button type="button" data-toggle="modal" data-target="#search_modal" class="p-0 header_actions-link">
-            <i class="fas fa-search" style="font-size: 30px;" data-toggle="tooltip" title="Buscar" data-placement="top"></i>
+        <a href="https://www.instagram.com/sunflower._ccp/" class="trsn" title="Ir a Instagram" target="_blank">
+          <i class="fa fa-search" aria-hidden="true" style="font-size: 30px;" title="Buscar" ></i>
+          
           </button>
         </li>
         <li class="list-inline-item cart">
