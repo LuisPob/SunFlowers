@@ -50,10 +50,11 @@
 </head>
 <body>
   <!-- Barra de navegación -->
-  <nav class="navbar navbar-expand-lg navbar-fixed shadow-none my-3 navbar-transparent mt-4">
+  <nav class="navbar navbar-expand-lg navbar-fixed shadow-none my-3 navbar-transparent mt-0">
     <div class="collapse navbar-collapse" id="navbarsContainer">
       <ul class="navbar-nav m-auto navbar-left">
         <!-- Grupo izquierdo de iconos -->
+        
         <li class="list-inline-item">
           <a href="https://www.instagram.com/sunflower._ccp/" class="trsn" title="Ir a Instagram" target="_blank">
             <i class="fab fa-instagram fa-fw"style="font-size: 30px;"></i>
@@ -67,7 +68,7 @@
       </ul>
       <ul class="navbar-nav m-auto" style="display: flex; gap: 15px;">
   <li class="nav-item  active" id="navbarsContainer">
-    <a href="/" title="INICIO" class="level-1 trsn nav-link text-dark" style="font-size: 25px;">Inicio</a>
+    <a href="/" title="INICIO" class="level-1 trsn nav-link text-dark" style="font-size: 25px;">🌻 Inicio</a>
   </li>
   <li class="nav-item dropdown">
     <a href="/" title="CATEGORIAS" class="dropdown-toggle level-1 trsn nav-link text-dark" data-toggle="" style="font-size: 25px;">Categorias</a>
@@ -85,7 +86,7 @@
     <a href="/" title="TODOS LOS PRODUCTOS" class="level-1 trsn nav-link text-dark" style="font-size: 25px;">Todos los productos</a>
   </li>
   <li class="nav-item">
-    <a href="/" title="MAPA" class="level-1 trsn nav-link text-dark" style="font-size: 25px;">Mapa</a>
+    <a href="/" title="MAPA" class="level-1 trsn nav-link text-dark" style="font-size: 25px;">Mapa 🌻</a>
   </li>
 </ul>
 
@@ -123,10 +124,12 @@
     <div class="row align-items-center no-gutters">
       <div class="col-lg-4 col-md-3 col-2"></div>
       <!-- Logo -->
-      <div class="col-lg-4 col-md-6 col-8 text-center">
-          <h1 class="visually-hidden">SUNFLOWER</h1>
-          <img src="https://cdn.discordapp.com/attachments/1224140724132515922/1233584931041443902/ICONO_SINFONDO.png?ex=662da0fe&is=662c4f7e&hm=8727f799cf9bd339d3061099db7d6e24d629b14f07299b71ebb4dad8d55bb3a7&"
-          class="navbar-brand store-image img-fluid" />
+      <div class="col-md-4 text-center">
+        <a href="https://www.instagram.com/sunflower._ccp" title="SUNFLOWER">
+          
+          <img src="https://cdn.discordapp.com/attachments/1224140724132515922/1233584931041443902/ICONO_SINFONDO.png?ex=662da0fe&is=662c4f7e&hm=8727f799cf9bd339d3061099db7d6e24d629b14f07299b71ebb4dad8d55bb3a7&" class="navbar-brand img-fluid mb-md-0 mb-3 mx-auto" alt="LLUNA PAPELERÍA" />
+          
+        </a>
       </div></div></div></div>
         <nav id="main-menu" class="navbar-expand-md d-none d-lg-block vertical_menu navbar-fixed"">
 </nav>
@@ -136,8 +139,6 @@
   })
   
 </script>
-
-
   <!-- Navigation Mobile -->
 <div class="mobilenav d-lg-none trsn">
   <div class="menu-header">
@@ -156,26 +157,18 @@
       Ingresar / Registrarse
     </span>
   </a>
-</div>
-
-        
+</div>    
       </li>
-      <li>
-        
+      <li>      
       </li>
-
-      
-
-      
-      
     </ul>
   </div>
 </div>
 <div class="nav-bg-opacity"></div>
-<link rel="stylesheet" type="text/css" href="https://assets.jumpseller.com/store/lluna-papeleria/themes/388104/component_banners.css?1713994927"/>
-<link rel="stylesheet" type="text/css" href="https://assets.jumpseller.com/store/lluna-papeleria/themes/388104/component_testimonials.min.css?1713994927"/>
-<link rel="stylesheet" type="text/css" href="https://assets.jumpseller.com/store/lluna-papeleria/themes/388104/component_slider.css?1713994927"/>
-<link rel="stylesheet" type="text/css" href="https://assets.jumpseller.com/store/lluna-papeleria/themes/388104/component_instagram.css?1713994927"/>
+<link rel="stylesheet" type="text/css" href="https://www.instagram.com/sunflower._ccp"/>
+<link rel="stylesheet" type="text/css" href="https://www.instagram.com/sunflower._ccp"/>
+<link rel="stylesheet" type="text/css" href="https://www.instagram.com/sunflower._ccp"/>
+<link rel="stylesheet" type="text/css" href="https://www.instagram.com/sunflower._ccp"/>
 <meta name="p:domain_verify" content="9a8b8facea7f475767dfbf2233cf830f"/>
 <div id='components'><div id='component-102112' class='theme-component show' ><div id="component_slider-102112" class="component_slider owl-carousel mb-5">
   
@@ -184,10 +177,8 @@
   .carousel-img-small {
     max-height: 500px; /* ajusta este valor según tus necesidades */
     max-width: 1270px;
-    max-auto:
   }
 </style>
-
 <div id="carouselExampleIndicators" class="carousel slide">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -197,16 +188,16 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="/img/collar1.jpg" class="d-block w-100 carousel-img-small mx-auto " >
+      <img src="/img/collar1.jpg" class="d-block w-100 carousel-img-small mx-auto" >
     </div>
     <div class="carousel-item">
-      <img src="/img/aros1.jpg" class="d-block w-100 carousel-img-small  mx-auto" >
+      <img src="/img/aros1.jpg" class="d-block w-100 carousel-img-small mx-auto" >
     </div>
     <div class="carousel-item">
-      <img src="/img/pulsera1.jpg" class="d-block w-100 carousel-img-small  mx-auto" >
+      <img src="/img/pulsera1.jpg" class="d-block w-100 carousel-img-small mx-auto" >
     </div>
     <div class="carousel-item">
-      <img src="/img/tobillera.jpg" class="d-block w-100 carousel-img-small  mx-auto" >
+      <img src="/img/tobillera.jpg" class="d-block w-100 carousel-img-small mx-auto" >
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -245,7 +236,7 @@
 </script>
 </div><div id='component-332666' class='theme-component show' ><div id="big-banner-332666" class="container mb-5">
   
-  <img src="https://cdn.discordapp.com/attachments/1224140724132515922/1233595454558699530/image.png?ex=662daacb&is=662c594b&hm=8663f9277551611ff50e0cc90824c11384b45324c7f4fb9281d081ea4e6bb67d&" class="w-100" alt="" title=""/>
+  <img src="https://cdn.discordapp.com/attachments/1224140724132515922/1234303229236350996/image.png?ex=66303df6&is=662eec76&hm=091f24b107db4b7b70e8a49b8ee8320020f68f72f0286de9b5a7a8797796dbda&" class="w-100" alt="" title=""/>
   
 </div></div><div id='component-332667' class='theme-component show' >
       </form>
@@ -397,11 +388,20 @@ jQuery('#product-form-12205662-332667 .quantity').each(function() {
   </div>
 </div>
 
-</div><div id='component-332668' class='theme-component show' ><div id="image-w-text-332668" class="container mb-5">
+</div>
+<style>
+  .img-small {
+    max-width: 200px; /* Cambia el tamaño según tu preferencia */
+    height: auto;
+    display: block; /* Asegura que la imagen sea un elemento de bloque */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+  }
+</style>
+<div id='component-332668' class='theme-component show' ><div id="image-w-text-332668" class="container mb-5">
   <div class="row align-items-center">
     <div class="col-md-6 order-md-1">
       
-      <img src="/img/collar2.jpg" alt="PLANIS ANUALES" class="w-100"/>
+      <img src="/img/collar2.jpg" class="w-100 img-small"/>
       
     </div>  
 
@@ -420,7 +420,7 @@ jQuery('#product-form-12205662-332667 .quantity').each(function() {
   <div class="row align-items-center">
     <div class="col-md-6 order-md-1">
       
-      <img src="/img/collar3.jpg" alt="PLANIS SEMESTRALES" class="w-100"/>
+      <img src="/img/collar3.jpg"  class="w-100 img-small"/>
       
     </div>    
     <div class="col-md-6 order-md-2">
@@ -436,7 +436,7 @@ jQuery('#product-form-12205662-332667 .quantity').each(function() {
   <div class="row align-items-center">
     <div class="col-md-6 order-md-1">
       
-      <img src="/img/aros2.jpg" alt="PLANIS SEMANALES" class="w-100"/>
+      <img src="/img/aros2.jpg" class="w-100 img-small"/>
       
     </div>    
     <div class="col-md-6 order-md-2">
@@ -453,7 +453,7 @@ jQuery('#product-form-12205662-332667 .quantity').each(function() {
   <div class="row align-items-center">
     <div class="col-md-6 order-md-1">
       
-      <img src="/img/aros3.jpg" alt="PLANIS MENSUALES" class="w-100"/>
+      <img src="/img/aros3.jpg" class="w-100 img-small"/>
       
     </div>    
     <div class="col-md-6 order-md-2">
@@ -470,7 +470,7 @@ jQuery('#product-form-12205662-332667 .quantity').each(function() {
   <div class="row align-items-center">
     <div class="col-md-6 order-md-1">
       
-      <img src="/img/tobillera2.jpg" alt="PLANIS DIARIOS" class="w-100"/>
+      <img src="/img/tobillera2.jpg" class="w-100 img-small"/>
       
     </div>    
     <div class="col-md-6 order-md-2">
@@ -487,7 +487,7 @@ jQuery('#product-form-12205662-332667 .quantity').each(function() {
   <div class="row align-items-center">
     <div class="col-md-6 order-md-1">
       
-      <img src="/img/tobillera3.jpg" alt="PAPELERÍA Y COMPLEMENTOS" class="w-100"/>
+      <img src="/img/tobillera3.jpg"class="w-100 img-small"/>
       
     </div>    
     <div class="col-md-6 order-md-2">
@@ -507,7 +507,7 @@ jQuery('#product-form-12205662-332667 .quantity').each(function() {
     </div>
     <div id="instagram-102190" class="component_instagram col-12"></div>
     
-    <a href="https://www.instagram.com/llunapapeleria" target="_blank" title="Síguenos @llunapapeleria" class="btn btn-primary mt-5 text-dark">
+    <a href="https://www.instagram.com/sunflower._ccp/" target="_blank" title="Síguenos @sunflower._ccp" class="btn btn-primary mt-5 text-dark">
       <i class="fab fa-instagram text-dark" aria-hidden="true"></i> SÍGUENOS
     </a>
   </div>
@@ -589,16 +589,10 @@ jQuery('#product-form-12205662-332667 .quantity').each(function() {
   <a href="/condiciones-entrega-despacho"  title="Condiciones Despachos">Condiciones Despachos</a>
 </li>
           <li>
-  <a href="/team-lluna-vip"  title="TEAM LLUNA VIP ✨">TEAM SUNFLOWER VIP ✨</a>
-</li>
-          <li>
   <a href="/politicas-de-cambios"  title="Políticas de Cambios y Devoluciones">Políticas de Cambios y Devoluciones</a>
 </li>
           <li>
-  <a href="/preguntas-frecuentes"  title="Preguntas Frecuentes">Preguntas Frecuentes</a>
-</li>
-          <li>
-  <a href="/clientas"  title="TEAM LLUNA ♡">TEAM SUNFLOWER ♡</a>
+  <a href="/clientas"  title="TEAM LLUNA ♡">TEAM SUNFLOWER 🌻</a>
 </li>
           <li>
   <a href="/contact"  title="Contacto">Contacto</a>
@@ -625,15 +619,13 @@ jQuery('#product-form-12205662-332667 .quantity').each(function() {
           </form>
         </div>
         
-        
-        
         <ul class="list-inline social-footer my-3">
           
           <li class="list-inline-item">
             <strong>Síguenos:</strong>
           </li>
           <li class="list-inline-item">
-            <a href="https://www.instagram.com/llunapapeleria" title="Ir a Instagram" target="_blank">
+            <a href="https://www.instagram.com/sunflower._ccp" title="Ir a Instagram" target="_blank">
               <i class="fab fa-instagram"></i>
             </a>
           </li>
@@ -657,7 +649,7 @@ jQuery('#product-form-12205662-332667 .quantity').each(function() {
         <div class="powered-by">&copy; 2024 SunFlower, joyeria de bisuteria. <br>Todos los derechos reservados. </div>
       </div>
       <div class="col-md-4 text-center">
-        <a href="https://www.llunapapeleria.cl" title="LLUNA PAPELERÍA">
+        <a href="https://www.instagram.com/sunflower._ccp" title="SUNFLOWER">
           
           <img src="https://cdn.discordapp.com/attachments/1224140724132515922/1233584931041443902/ICONO_SINFONDO.png?ex=662da0fe&is=662c4f7e&hm=8727f799cf9bd339d3061099db7d6e24d629b14f07299b71ebb4dad8d55bb3a7&" class="navbar-brand img-fluid mb-md-0 mb-3 mx-auto" alt="LLUNA PAPELERÍA" />
           
