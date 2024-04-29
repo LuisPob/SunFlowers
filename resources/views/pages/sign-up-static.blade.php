@@ -602,23 +602,8 @@ jQuery('#product-form-12205662-332667 .quantity').each(function() {
       <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
         
         <h5>¿ERES TEAM SUNFLOWER?😍 ¡REGISTRATE!</h5>
-        <div id="newsletter">
-          <form action="https://llunapapeleria.us18.list-manage.com/subscribe/post?u=205020cca084f0b152eb42b98&amp;id=37b224430b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-            <div id="mc_embed_signup_scroll">
-              <div class="form-group mb-0">
-                <!-- Begin MailChimp Signup Form -->
-                <input type="email" id="mce-EMAIL" class="email field form-control footer-subscribe__email" name="EMAIL" placeholder="Ingresa tu correo electrónico" required>
-                <button type="submit" id="mc-embedded-subscribe" class="btn btn-link p-0 footer-subscribe__button" name="subscribe"><i class="far fa-envelope"></i></button>
-                <!-- end .footer-subscribe__field -->
-
-                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_37d0843fc21a18eccb8d392eb_f7037d65c5" tabindex="-1" value=""></div>
-              </div>
-              <small>¡Registrate para que estemos en contacto y podamos compartir la mejor información, tips, sorpresas, descuentos, lanzamientos y más!</small>
-            </div>
-          </form>
-        </div>
-        
+        <small>¡Registrate para que estemos en contacto y podamos compartir la mejor información, tips, sorpresas, descuentos, lanzamientos y más!</small>
+                
         <ul class="list-inline social-footer my-3">
           
           <li class="list-inline-item">
