@@ -68,7 +68,7 @@
       </ul>
       <ul class="navbar-nav m-auto" style="display: flex; gap: 15px;">
   <li class="nav-item  active" id="navbarsContainer">
-    <a href="/" title="INICIO" class="level-1 trsn nav-link text-dark" style="font-size: 25px;">🌻 Inicio</a>
+    <a href="http://127.0.0.1:8000/sign-up-static" title="INICIO" class="level-1 trsn nav-link text-dark" style="font-size: 25px;">🌻 Inicio</a>
   </li>
   <li class="nav-item dropdown">
     <a href="/" title="CATEGORIAS" class="dropdown-toggle level-1 trsn nav-link text-dark" data-toggle="" style="font-size: 25px;">Categorias</a>
@@ -155,9 +155,7 @@
         <<div class="login">
   <a href="http://127.0.0.1:8000/login" id="login-link-2" class="trsn nav-link" title="Ingresar / RegistrarseLLUNA PAPELERÍA">
     <i class="fas fa-user"></i>
-    <span class="customer-name">
-      Ingresar / Registrarse
-    </span>
+   
   </a>
 </div>    
       </li>
