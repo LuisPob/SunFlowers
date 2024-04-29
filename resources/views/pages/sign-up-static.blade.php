@@ -153,7 +153,7 @@
   </div>  
       <li>
         <<div class="login">
-  <a href="http://127.0.0.1:8000/login" id="login-link-2" class="trsn nav-link" title="Ingresar / RegistrarseLLUNA PAPELERÍA">
+  <a href="http://127.0.0.1:8000/register" id="login-link-2" class="trsn nav-link" title="Ingresar / Registrarse LLUNA PAPELERÍA">
     <i class="fas fa-user"></i>
    
   </a>
