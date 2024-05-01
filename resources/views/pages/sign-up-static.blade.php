@@ -2,6 +2,7 @@
 
 @section('content')
 <style>
+  
     /* Estilos para fijar la barra de navegación */
     .navbar-fixed {
       position: fixed;
