@@ -57,7 +57,7 @@
                         <div
                             class="col-6 d-lg-flex d-none h-100 my-auto pe-0 position-absolute top-0 end-0 text-center justify-content-center flex-column">
                             <div class="position-relative bg-gradient-primary h-100 m-3 px-7 border-radius-lg d-flex flex-column justify-content-center overflow-hidden"
-                                style="background-image: url('https://cdn.discordapp.com/attachments/1224140724132515922/1233584931041443902/ICONO_SINFONDO.png?ex=662f9b3e&is=662e49be&hm=e230c0bc5cce830e0515b58ff6f43df7b83372bbaf58baad95a57551c1e14b99&');
+                                style="background-image: url('/img/ICONO_SINFONDO.png');
               background-size: cover;">
                                 <span class="mask bg-gradient-primary opacity-6"></span>
                                 <h4 class="mt-5 text-white font-weight-bolder position-relative">"¡Bienvenidos a SunFlower!"</h4>
