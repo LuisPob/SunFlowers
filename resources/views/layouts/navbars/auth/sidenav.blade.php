@@ -6,7 +6,7 @@
         <a class="navbar-brand m-0" href="{{ route('home') }}"
             target="_blank">
             <img src="./img/ICONO_SINFONDO.png" class="navbar-brand-img h-100" alt="main_logo">
-            <span class="ms-1 font-weight-bold">Configuración SunFlower</span>
+            <span class="ms-1 font-weight-bold">{{ config('app.name') }}</span>
         </a>
     </div>
     <hr class="horizontal dark mt-0">
