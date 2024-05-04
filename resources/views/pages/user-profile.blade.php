@@ -57,7 +57,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="card">
-                    <form role="form" method="POST" action={{ route('profile.update') }} enctype="multipart/form-data">
+                    <form role="form" method="POST" action="{{ route('profile.update') }}" enctype="multipart/form-data">
                         @csrf
                         <div class="card-header pb-0">
                             <div class="d-flex align-items-center">
@@ -83,7 +83,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="example-text-input" class="form-control-label">Primer nombre</label>
-                                        <input class="form-control" type="text" name="firstname"  value="{{ old('firstname', auth()->user()->firstname) }}">
+                                        <input class="form-control" type="text" name="firstname" value="{{ old('firstname', auth()->user()->firstname) }}">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -99,8 +99,7 @@
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <label for="example-text-input" class="form-control-label">Dirección</label>
-                                        <input class="form-control" type="text" name="address"
-                                            value="{{ old('address', auth()->user()->address) }}">
+                                        <input class="form-control" type="text" name="address" value="{{ old('address', auth()->user()->address) }}">
                                     </div>
                                 </div>
                                 <div class="col-md-4">
@@ -128,16 +127,45 @@
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <label for="example-text-input" class="form-control-label">Sobre mí</label>
-                                        <input class="form-control" type="text" name="about"
-                                            value="{{ old('about', auth()->user()->about) }}">
+                                        <input class="form-control" type="text" name="about" value="{{ old('about', auth()->user()->about) }}">
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </form>
+                    <div class="card-footer pb-3">
+                        <p class="mb-0">ELIMINAR CUENTA</p>
+                        <div class="d-flex align-items-center">
+                            <span>¿Desea eliminar su cuenta?</span>
+                            <button type="button" class="btn btn-outline-danger btn-sm ms-auto" data-bs-toggle="modal" data-bs-target="#deleteModal">Eliminar</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        @include('layouts.footers.auth.footer')
     </div>
+    @include('layouts.footers.auth.footer')
+</div>
+<!-- Modal -->
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="deleteModalLabel">Eliminar cuenta</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Esta a punto de realizar una acción irreversible. ¿Esta seguro de que deseas eliminar tu cuenta?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <form action="{{ route('account.delete') }}" method="POST">
+                    @csrf
+                    @method('DELETE')
+                    <button type="submit" class="btn btn-danger">Eliminar cuenta</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 @endsection
