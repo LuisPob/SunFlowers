@@ -411,7 +411,7 @@ jQuery('#product-form-12205662-332667 .quantity').each(function() {
       <p>Para esos días en los que deseas un toque de elegancia sutil,
         nuestros collares son la elección ideal que añadirá un brillo discreto a tu look.</p>
       
-      <a href="/" class="btn btn-primary text-dark">VER COLLARES ELEGANTES</a>
+      <a href="/" class="btn btn-primary text-dark">VER COLLARES ELEGANTES.</a>
       
     </div>
   </div>
@@ -429,7 +429,7 @@ jQuery('#product-form-12205662-332667 .quantity').each(function() {
       <p>Desde la oficina hasta una cena con amigos, nuestros collares
         te acompañarán con estilo y distinción en cada momento de tu día</p>
       
-      <a href="/" class="btn btn-primary text-dark">VER COLLARES CASUALES</a>
+      <a href="/" class="btn btn-primary text-dark">VER COLLARES CASUALES.</a>
       
     </div>
   </div>
@@ -550,38 +550,41 @@ jQuery('#product-form-12205662-332667 .quantity').each(function() {
   <!-- Footer -->
   
   <footer class="pt-5 pb-3">
-  <div class="container">
-    <div class="row text-md-left text-center justify-content-center">
+  <div class="container" style="text-align: justify;">
+    <div class="row text-md-left" style="text-align: justify;">
       
-      <div class="col-lg-3 col-md-6">
+      <div class="col-lg-3 col-md-6" style="text-align: justify;">
         <h5>🌻SOBRE SUNFLOWER</h5>
-        <div class="footer-description text-center text-md-left mb-lg-0 mb-3">
-          
-        📍 Talcahuano, Region del BioBio, Chile.
+        <small>📍 Talcahuano, Region del BioBio, Chile.
           En nuestro universo de bisutería, cada pieza es más que un simple accesorio;
           es una manifestación de arte y creatividad, diseñada para realzar tu belleza interior y exterior,
-          recordándote que la elegancia y el estilo pueden ser parte de tu día a día.
-
-        </div>
+          recordándote que la elegancia y el estilo pueden ser parte de tu día a día.</small>
+                
       </div>
       
-      <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
+      <div class="col-lg-3 col-md-6 mb-lg-0 mb-4" style="text-align: justify;">
         <h5>🦋CONTACTO</h5>
         <ul>
-          <li><a href="mailto:contacto@llunapapeleria.cl" target="_blank" title="florencia.sanzana.ortega@gmail.com">florencia.sanzana.ortega@gmail.com</a></li>
-          
           <li class="footer-top__menu-item">
-            <a href="tel:+56973069652" title="Llámanos">+56 9 5610 3084 </a>
+          <small><a href="https://wa.me/56956103084" target="_blank">WhatsApp</a></small>
           </li>
+          <li>
+          <small><a href="mailto:florencia.sanzana.ortega@gmail.com">Correo electrónico</a></small></li>
+          
+          
           
         </ul>
       </div>
-      <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
+      <div class="col-lg-3 col-md-6 mb-lg-0 mb-4" style="text-align: justify;">
         <h5>🌻INFORMACIÓN</h5>
         <ul class="navbar-nav mr-auto">
           
           <li>
+          <small>
   <a href="/tienda-fisica"  title="TIENDA FÍSICA">Tienda Online</a>
+</li> 
+<li>
+  <a href="/clientas"  title="TEAM LLUNA ♡">  Team sunflower </a>
 </li>   
           <li>
   <a href="/informacion-envios"  title="Plazos Despachos">Plazos Despachos</a>
@@ -592,12 +595,8 @@ jQuery('#product-form-12205662-332667 .quantity').each(function() {
           <li>
   <a href="/politicas-de-cambios"  title="Políticas de Cambios y Devoluciones">Políticas de Cambios y Devoluciones</a>
 </li>
-          <li>
-  <a href="/clientas"  title="TEAM LLUNA ♡">  TEAM SUNFLOWER </a>
-</li>
-          <li>
-  <a href="/contact"  title="Contacto">Contacto</a>
-</li>
+          
+          </small>
         </ul>
       </div>
       <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
@@ -608,7 +607,7 @@ jQuery('#product-form-12205662-332667 .quantity').each(function() {
         <ul class="list-inline social-footer my-3">
           
           <li class="list-inline-item">
-            <strong> 🌻Síguenos:</strong>
+            <strong> 🌻SÍGUENOS:</strong>
           </li>
           <li class="list-inline-item">
             <a href="https://www.instagram.com/sunflower._ccp" title="Ir a Instagram" target="_blank">
@@ -632,7 +631,7 @@ jQuery('#product-form-12205662-332667 .quantity').each(function() {
   <div class="container-fluid">
     <div class="row align-items-center">
       <div class="col-md-4 text-lg-left text-center mb-lg-0 mb-3">
-        <div class="powered-by">&copy; 2024 SunFlower, joyeria de bisuteria. <br>Todos los derechos reservados. </div>
+        <div class="powered-by">&copy; 2024 SUNFLOWER, JOYERIA DE BISUTERIA. <br>TODOS LOS DERECHOS RESERVADOS. </div>
       </div>
       <div class="col-md-4 text-center">
         <a href="https://www.instagram.com/sunflower._ccp" title="SUNFLOWER">
