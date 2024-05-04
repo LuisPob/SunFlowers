@@ -59,7 +59,7 @@ Route::get('/', [LandingController::class, 'index'])->name('lnading');
 	Route::post('/change-password', [ChangePassword::class, 'update'])->middleware('guest')->name('change.perform');
 	Route::get('/dashboard', [HomeController::class, 'index'])->name('home')->middleware('auth');
 	
-	Route::resource('tipo-productos', TipoProductoController::class);
+	Route::resource('/tipo-productos', TipoProductoController::class)->middleware('auth');
 	
 	
 	
