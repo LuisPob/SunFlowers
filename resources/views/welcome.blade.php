@@ -84,7 +84,7 @@
     <a href="/" title="INFORMACIÓN" class="dropdown-toggle level-1 trsn nav-link text-dark" data-toggle="" style="font-size: 25px;">Información</a>
   </li>
   <li class="nav-item">
-    <a href="/" title="TODOS LOS PRODUCTOS" class="level-1 trsn nav-link text-dark" style="font-size: 25px;">Todos los productos</a>
+    <a href="{{route('shop')}}" title="TODOS LOS PRODUCTOS" class="level-1 trsn nav-link text-dark" style="font-size: 25px;">Todos los productos</a>
   </li>
   <li class="nav-item">
     <a href="/" title="MAPA" class="level-1 trsn nav-link text-dark" style="font-size: 25px;">Mapa 🌻</a>

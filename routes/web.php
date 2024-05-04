@@ -35,9 +35,9 @@ use App\Http\Controllers\ProductoController;
 
 Auth::routes();
 
-Route::get('/', [CartController::class, 'shop'])->name('shop');
+Route::get('/products', [CartController::class, 'shop'])->name('shop');
 Route::get('/cart', [CartController::class, 'cart'])->name('cart.index');
-Route::post('/add', [CartController::class, 'add'])->name('cart.store');
+// Route::post('/add', [CartController::class, 'add'])->name('cart.store');
 Route::post('/update', [CartController::class, 'update'])->name('cart.update');
 Route::post('/remove', [CartController::class, 'remove'])->name('cart.remove');
 Route::post('/clear', [CartController::class, 'clear'])->name('cart.clear');
@@ -63,12 +63,12 @@ Route::get('/', [LandingController::class, 'index'])->name('lnading');
 	
 	
 	
-	Route::middleware(['auth:sanctum', 'verified'])->group(function(){
-		Route::resource('/productos', ProductoController::class);
-		Route::get('/dashboard', function(){
-			return view('dashboard');
-		})->name('dashboard');
-	});
+	// Route::middleware(['auth:sanctum', 'verified'])->group(function(){
+	// 	Route::resource('/productos', ProductoController::class);
+	// 	Route::get('/dashboard', function(){
+	// 		return view('dashboard');
+	// 	})->name('dashboard');
+	// });
 	
 
 
@@ -93,7 +93,7 @@ Route::group(['middleware' => ['auth', 'verified']], function () {
 });
 
 
-Route::get('/', [CartController::class, 'shop'])->name('shop');
+// Route::get('/products', [CartController::class, 'shop'])->name('shop');
 Route::get('/cart', [CartController::class, 'cart'])->name('cart.index');
 Route::post('/add', [CartController::class, 'add'])->name('cart.store');
 Route::post('/update', [CartController::class, 'update'])->name('cart.update');
