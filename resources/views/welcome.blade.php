@@ -52,10 +52,10 @@
 <body>
   <!-- Barra de navegación -->
   <nav class="navbar navbar-expand-lg navbar-fixed shadow-none my-3 navbar-transparent mt-0">
+  <a class="navbar-brand font-weight-bolder ms-lg-0 ms-3 " href="{{ route('home') }}"> 🦋 ¡SUNFLOWER! 🌻 </a>
     <div class="collapse navbar-collapse" id="navbarsContainer">
       <ul class="navbar-nav m-auto navbar-left">
         <!-- Grupo izquierdo de iconos -->
-        
         <li class="list-inline-item">
           <a href="https://www.instagram.com/sunflower._ccp/" class="trsn" title="Ir a Instagram" target="_blank">
             <i class="fab fa-instagram fa-fw"style="font-size: 35px;"></i>
@@ -69,7 +69,7 @@
       </ul>
       <ul class="navbar-nav m-auto" style="display: flex; gap: 15px;">
   <li class="nav-item  active" id="navbarsContainer">
-    <a href="http://127.0.0.1:8000/sign-up-static" title="INICIO" class="level-1 trsn nav-link text-dark" style="font-size: 25px;">🌻 Inicio</a>
+    <a href="http://127.0.0.1:8000/sign-up-static" title="INICIO" class="level-1 trsn nav-link text-dark" style="font-size: 25px;">Inicio</a>
   </li>
   <li class="nav-item dropdown">
     <a href="/" title="CATEGORIAS" class="dropdown-toggle level-1 trsn nav-link text-dark" data-toggle="" style="font-size: 25px;">Categorias</a>
@@ -87,7 +87,7 @@
     <a href="{{route('shop')}}" title="TODOS LOS PRODUCTOS" class="level-1 trsn nav-link text-dark" style="font-size: 25px;">Todos los productos</a>
   </li>
   <li class="nav-item">
-    <a href="/" title="MAPA" class="level-1 trsn nav-link text-dark" style="font-size: 25px;">Mapa 🌻</a>
+    <a href="/" title="MAPA" class="level-1 trsn nav-link text-dark" style="font-size: 25px;">Mapa</a>
   </li>
 </ul>
 
@@ -504,7 +504,7 @@ jQuery('#product-form-12205662-332667 .quantity').each(function() {
 <div class="container-fluid mb-5">
   <div class="row">
     <div class="col-12">
-      <h2 class="block-header text-center text-dark">@SUNFLOWER._CCP</h2>
+      <h2 class="block-header text-center text-dark">🌻 @SUNFLOWER._CCP 🦋</h2>
     </div>
     <div id="instagram-102190" class="component_instagram col-12"></div>
     
@@ -554,19 +554,19 @@ jQuery('#product-form-12205662-332667 .quantity').each(function() {
     <div class="row text-md-left text-center justify-content-center">
       
       <div class="col-lg-3 col-md-6">
-        <h5>Sobre SunFlower</h5>
+        <h5>🌻SOBRE SUNFLOWER</h5>
         <div class="footer-description text-center text-md-left mb-lg-0 mb-3">
           
         📍 Talcahuano, Region del BioBio, Chile.
           En nuestro universo de bisutería, cada pieza es más que un simple accesorio;
           es una manifestación de arte y creatividad, diseñada para realzar tu belleza interior y exterior,
-          recordándote que la elegancia y el estilo pueden ser parte de tu día a día.❤️
+          recordándote que la elegancia y el estilo pueden ser parte de tu día a día.
 
         </div>
       </div>
       
       <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
-        <h5>Contacto</h5>
+        <h5>🦋CONTACTO</h5>
         <ul>
           <li><a href="mailto:contacto@llunapapeleria.cl" target="_blank" title="florencia.sanzana.ortega@gmail.com">florencia.sanzana.ortega@gmail.com</a></li>
           
@@ -577,11 +577,11 @@ jQuery('#product-form-12205662-332667 .quantity').each(function() {
         </ul>
       </div>
       <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
-        <h5>Información</h5>
+        <h5>🌻INFORMACIÓN</h5>
         <ul class="navbar-nav mr-auto">
           
           <li>
-  <a href="/tienda-fisica"  title="TIENDA FÍSICA">TIENDA ONLINE</a>
+  <a href="/tienda-fisica"  title="TIENDA FÍSICA">Tienda Online</a>
 </li>   
           <li>
   <a href="/informacion-envios"  title="Plazos Despachos">Plazos Despachos</a>
@@ -593,7 +593,7 @@ jQuery('#product-form-12205662-332667 .quantity').each(function() {
   <a href="/politicas-de-cambios"  title="Políticas de Cambios y Devoluciones">Políticas de Cambios y Devoluciones</a>
 </li>
           <li>
-  <a href="/clientas"  title="TEAM LLUNA ♡">TEAM SUNFLOWER 🌻</a>
+  <a href="/clientas"  title="TEAM LLUNA ♡">  TEAM SUNFLOWER </a>
 </li>
           <li>
   <a href="/contact"  title="Contacto">Contacto</a>
@@ -602,13 +602,13 @@ jQuery('#product-form-12205662-332667 .quantity').each(function() {
       </div>
       <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
         
-        <h5>¿ERES TEAM SUNFLOWER?😍 ¡REGISTRATE!</h5>
+        <h5> 🦋 ¿ERES TEAM SUNFLOWER? ¡REGISTRATE!</h5>
         <small>¡Registrate para que estemos en contacto y podamos compartir la mejor información, tips, sorpresas, descuentos, lanzamientos y más!</small>
                 
         <ul class="list-inline social-footer my-3">
           
           <li class="list-inline-item">
-            <strong>Síguenos:</strong>
+            <strong> 🌻Síguenos:</strong>
           </li>
           <li class="list-inline-item">
             <a href="https://www.instagram.com/sunflower._ccp" title="Ir a Instagram" target="_blank">
