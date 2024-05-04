@@ -237,7 +237,7 @@
 </script>
 </div><div id='component-332666' class='theme-component show' ><div id="big-banner-332666" class="container mb-5">
   
-  <img src="https://cdn.discordapp.com/attachments/1224140724132515922/1234303229236350996/image.png?ex=66303df6&is=662eec76&hm=091f24b107db4b7b70e8a49b8ee8320020f68f72f0286de9b5a7a8797796dbda&" class="w-100" alt="" title=""/>
+  <img src="/img/decoracion.png" class="w-100" alt="" title=""/>
   
 </div></div><div id='component-332667' class='theme-component show' >
       </form>
