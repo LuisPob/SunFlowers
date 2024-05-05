@@ -2,14 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 
-use App\Http\Controllers\HomeController;
-use App\Http\Controllers\PageController;
-use App\Http\Controllers\RegisterController;
-use App\Http\Controllers\LoginController;
-use App\Http\Controllers\UserProfileController;
-use App\Http\Controllers\ResetPassword;
-use App\Http\Controllers\ChangePassword;            
-use App\Http\Controllers\VerificationController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,50 +13,64 @@ use App\Http\Controllers\VerificationController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-
 use Illuminate\Support\Facades\Auth;
 
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
 
 use App\Http\Controllers\CartController;          
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PageController;
+use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\UserProfileController;
+use App\Http\Controllers\ResetPassword;
+use App\Http\Controllers\ChangePassword;            
+use App\Http\Controllers\VerificationController;
+use App\Http\Controllers\LandingController;
+use App\Http\Controllers\TipoProductoController;
+use App\Http\Controllers\ProductoController;
+
+
+
 
 Auth::routes();
 
-Route::get('/', [CartController::class, 'shop'])->name('shop');
+Route::get('/products', [CartController::class, 'shop'])->name('shop');
 Route::get('/cart', [CartController::class, 'cart'])->name('cart.index');
-Route::post('/add', [CartController::class, 'add'])->name('cart.store');
+// Route::post('/add', [CartController::class, 'add'])->name('cart.store');
 Route::post('/update', [CartController::class, 'update'])->name('cart.update');
 Route::post('/remove', [CartController::class, 'remove'])->name('cart.remove');
 Route::post('/clear', [CartController::class, 'clear'])->name('cart.clear');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-use App\Http\Controllers\TipoProductoController;
-Route::resource('tipo-productos', TipoProductoController::class);
-
-use App\Http\Controllers\ProductoController;
-Route::middleware(['auth:sanctum', 'verified'])->group(function(){
-    Route::resource('/productos', ProductoController::class);
-    Route::get('/dashboard', function(){
-        return view('dashboard');
-    })->name('dashboard');
-});
 
 
-Route::get('/', function () {return redirect('/dashboard');})->middleware('auth');
-Route::get('/register', [RegisterController::class, 'create'])->middleware('guest')->name('register');
-Route::post('/register', [RegisterController::class, 'store'])->middleware('guest')->name('register.perform');
-Route::get('/login', [LoginController::class, 'show'])->middleware('guest')->name('login');
-Route::post('/login', [LoginController::class, 'login'])->middleware('guest')->name('login.perform');
-Route::get('/reset-password', [ResetPassword::class, 'show'])->middleware('guest')->name('reset-password');
-Route::post('/reset-password', [ResetPassword::class, 'send'])->middleware('guest')->name('reset.perform');
-Route::get('/change-password', [ChangePassword::class, 'show'])->middleware('guest')->name('change-password');
-Route::post('/change-password', [ChangePassword::class, 'update'])->middleware('guest')->name('change.perform');
-Route::get('/dashboard', [HomeController::class, 'index'])->name('home')->middleware('auth');
+
+Route::get('/', [LandingController::class, 'index'])->name('lnading');
+// Route::get('/', function () {return redirect('/dashboard');})->middleware('auth');
+	Route::get('/register', [RegisterController::class, 'create'])->middleware('guest')->name('register');
+	Route::post('/register', [RegisterController::class, 'store'])->middleware('guest')->name('register.perform');
+	Route::get('/login', [LoginController::class, 'show'])->middleware('guest')->name('login');
+	Route::post('/login', [LoginController::class, 'login'])->middleware('guest')->name('login.perform');
+	Route::get('/reset-password', [ResetPassword::class, 'show'])->middleware('guest')->name('reset-password');
+	Route::post('/reset-password', [ResetPassword::class, 'send'])->middleware('guest')->name('reset.perform');
+	Route::get('/change-password', [ChangePassword::class, 'show'])->middleware('guest')->name('change-password');
+	Route::post('/change-password', [ChangePassword::class, 'update'])->middleware('guest')->name('change.perform');
+	Route::get('/dashboard', [HomeController::class, 'index'])->name('home')->middleware('auth');
+	
+	Route::resource('/tipo-productos', TipoProductoController::class)->middleware('auth');
+	
+	
+	
+	// Route::middleware(['auth:sanctum', 'verified'])->group(function(){
+	// 	Route::resource('/productos', ProductoController::class);
+	// 	Route::get('/dashboard', function(){
+	// 		return view('dashboard');
+	// 	})->name('dashboard');
+	// });
+	
+
 
 Route::group(['middleware' => 'auth'], function() {
 	Route::get('/email/verify', [VerificationController::class, 'show'])->name('verification.notice');
@@ -87,7 +93,7 @@ Route::group(['middleware' => ['auth', 'verified']], function () {
 });
 
 
-Route::get('/', [CartController::class, 'shop'])->name('shop');
+// Route::get('/products', [CartController::class, 'shop'])->name('shop');
 Route::get('/cart', [CartController::class, 'cart'])->name('cart.index');
 Route::post('/add', [CartController::class, 'add'])->name('cart.store');
 Route::post('/update', [CartController::class, 'update'])->name('cart.update');

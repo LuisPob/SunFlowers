@@ -99,17 +99,6 @@ class ProductsTableSeeder extends Seeder
             'image_path' => 'numero7.jpg'
         ]);
 
-         Product::create([
-            'name' => 'Pulcera De Flores',
-            'slug' => 'Pulcera De Flores',
-            'details' => 'Pulcera De Flores',
-            'price' => 3500,
-            'shipping_cost' => 0,
-            'description' => 'Pulcera De Flores',
-            'category_id' => 5,
-            'brand_id' => 4,
-            'image_path' => 'numero6.jpg'
-        ]);
 
     }
 }

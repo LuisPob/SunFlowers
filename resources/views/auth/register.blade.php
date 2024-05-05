@@ -4,14 +4,14 @@
     @include('layouts.navbars.guest.navbar')
     <main class="main-content  mt-0">
         <div class="page-header align-items-start min-vh-50 pt-5 pb-11 m-3 border-radius-lg"
-            style="background-image: url('https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/signup-cover.jpg'); background-position: top;">
+            style="background-image: url('https://cdn.discordapp.com/attachments/1224140724132515922/1234209995059626026/prado_register1.jpg?ex=662fe721&is=662e95a1&hm=9d46e2ad4921dbe1efbf9e37d525cc0cb40af547460a98606cd08608af62bc28&'); background-position: top;">
             <span class="mask bg-gradient-dark opacity-6"></span>
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-5 text-center mx-auto">
-                        <h1 class="text-white mb-2 mt-5">Welcome!</h1>
-                        <p class="text-lead text-white">Use these awesome forms to login or create new account in your
-                            project for free.</p>
+                        <h1 class="text-white mb-2 mt-5"> 🌻 ¡BIENBENIDO A SUNFLOWER! 🌻</h1>
+                        <p class="text-lead text-white">¡Me alegro que desees ser parte del TEAM SunFlower!,
+                                                        Registrate con lo que más te acomode! </p>
                     </div>
                 </div>
             </div>
@@ -21,7 +21,7 @@
                 <div class="col-xl-4 col-lg-5 col-md-7 mx-auto">
                     <div class="card z-index-0">
                         <div class="card-header text-center pt-4">
-                            <h5>Register with</h5>
+                            <h5>Registrarse con</h5>
                         </div>
                         <div class="row px-xl-5 px-sm-4 px-3">
                             <div class="col-3 ms-auto px-1">
@@ -77,7 +77,7 @@
                             <div class="mt-2 position-relative text-center">
                                 <p
                                     class="text-sm font-weight-bold mb-2 text-secondary text-border d-inline z-index-2 bg-white px-3">
-                                    or
+                                    ó
                                 </p>
                             </div>
                         </div>
@@ -85,7 +85,7 @@
                             <form method="POST" action="{{ route('register.perform') }}">
                                 @csrf
                                 <div class="flex flex-col mb-3">
-                                    <input type="text" name="username" class="form-control" placeholder="Username" aria-label="Name" value="{{ old('username') }}" >
+                                    <input type="text" name="username" class="form-control" placeholder="Usuario" aria-label="Name" value="{{ old('username') }}" >
                                     @error('username') <p class='text-danger text-xs pt-1'> {{ $message }} </p> @enderror
                                 </div>
                                 <div class="flex flex-col mb-3">
@@ -93,22 +93,22 @@
                                     @error('email') <p class='text-danger text-xs pt-1'> {{ $message }} </p> @enderror
                                 </div>
                                 <div class="flex flex-col mb-3">
-                                    <input type="password" name="password" class="form-control" placeholder="Password" aria-label="Password">
+                                    <input type="password" name="password" class="form-control" placeholder="Contraseña" aria-label="Password">
                                     @error('password') <p class='text-danger text-xs pt-1'> {{ $message }} </p> @enderror
                                 </div>
                                 <div class="form-check form-check-info text-start">
                                     <input class="form-check-input" type="checkbox" name="terms" id="flexCheckDefault" >
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                        I agree the <a href="javascript:;" class="text-dark font-weight-bolder">Terms and
-                                            Conditions</a>
+                                    <label class="form-check-label" for="flexCheckDefault">             
+                                            Acepto los <a href="javascript:;" class="text-dark font-weight-bolder">Términos y Condiciones</a>
                                     </label>
                                     @error('terms') <p class='text-danger text-xs'> {{ $message }} </p> @enderror
                                 </div>
                                 <div class="text-center">
-                                    <button type="submit" class="btn bg-gradient-dark w-100 my-4 mb-2">Sign up</button>
+                                    <button type="submit" class="btn bg-gradient-dark w-100 my-4 mb-2">Iniciar Sesión</button>
                                 </div>
-                                <p class="text-sm mt-3 mb-0">Already have an account? <a href="{{ route('login') }}"
-                                        class="text-dark font-weight-bolder">Sign in</a></p>
+                                <p class="text-sm mt-3 mb-0">
+                                                ¿Ya eres parte del TEAM SunFlower? <a href="{{ route('login') }}"
+                                        class="text-dark font-weight-bolder">Iniciar Sesión</a></p>
                             </form>
                         </div>
                     </div>
