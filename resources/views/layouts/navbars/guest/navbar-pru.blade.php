@@ -60,7 +60,7 @@
                                     Todos los productos
                                 </a>
                             </li>
-                            
+
                             <li class="nav-item">
                                 <a class="nav-link me-2" href="{{ route('login') }}">
                                     <!-- <i class="fas fa-key opacity-6 text-dark me-1"></i> -->
@@ -74,18 +74,18 @@
                                     <i class="fa fa-search opacity-6 text-dark me-1" aria-hidden="true" style="font-size: 30px;" title="Buscar"></i> <!-- Iniciar sesión -->
                                 </a>
                             </li>
-                            <li class="nav-item dropdown">
-                                
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle me-2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            
+                            <li class="nav-item dropdown pe-2 d-flex align-items-center">
+                                <a href="javascript:;" class="nav-link dropdown-toggle p-0" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class="fa fa-shopping-cart opacity-6 text-dark me-1"></i> {{ \Cart::getTotalQuantity()}}
                                 </a>
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown" style="width: 450px; padding: 0px; border-color: #9DA0A2">
-                                    <ul class="list-group" style="margin: 20px;">
-                                        @include('partials.cart-drop')
-                                    </ul>
-
-                                </div>
+                                <ul class="dropdown-menu dropdown-menu-end  px-2 py-3 me-sm-n4 " aria-labelledby="dropdownMenuButton">
+                                    <li class="mb-2"  data-bs-spy="scroll">
+                                        @include('partials.cart-drop') 
+                                    </li>
+                                </ul>
                             </li>
+                            
                         </ul>
 
                     </div>
