@@ -15,6 +15,32 @@
     font-weight: bold;
     
   }
+  .fa-instagram:hover {
+    color: green; /* Cambia el color a verde al pasar el cursor */
+}
+  #tienda-online:hover {
+    color: green; /* Cambia el color a verde al pasar el cursor */
+}
+
+/* Estilo para el enlace Team sunflower */
+#team-sunflower:hover {
+    color: green; /* Cambia el color a verde al pasar el cursor */
+}
+
+/* Estilo para el enlace Plazos Despachos */
+#plazos-despachos:hover {
+    color: green; /* Cambia el color a verde al pasar el cursor */
+}
+
+/* Estilo para el enlace Condiciones Despachos */
+#condiciones-despachos:hover {
+    color: green; /* Cambia el color a verde al pasar el cursor */
+}
+
+/* Estilo para el enlace Políticas de Cambios y Devoluciones */
+#politicas-cambios:hover {
+    color: green; /* Cambia el color a verde al pasar el cursor */
+}
   .instagram-handle {
     color: black;
     /* Aumenta el grosor del texto */
@@ -598,19 +624,19 @@
           
           <li>
           <small>
-  <a href="/tienda-fisica"  title="TIENDA FÍSICA">Tienda Online</a>
+          <a href="/tienda-online" id="tienda-online" title="TIENDA ONLINE">Tienda Online</a>
 </li> 
 <li>
-  <a href="/clientas"  title="TEAM LLUNA ♡">  Team sunflower </a>
+<a href="/clientas" id="team-sunflower" title="TEAM sunflower ♡">Team sunflower</a>
 </li>   
           <li>
-  <a href="/informacion-envios"  title="Plazos Despachos">Plazos Despachos</a>
+          <a href="/informacion-envios" id="plazos-despachos" title="Plazos Despachos">Plazos Despachos</a>
 </li>
           <li>
-  <a href="/condiciones-entrega-despacho"  title="Condiciones Despachos">Condiciones Despachos</a>
+          <a href="/condiciones-entrega-despacho" id="condiciones-despachos" title="Condiciones Despachos">Condiciones Despachos</a>
 </li>
           <li>
-  <a href="/politicas-de-cambios"  title="Políticas de Cambios y Devoluciones">Políticas de Cambios y Devoluciones</a>
+          <a href="/politicas-de-cambios" id="politicas-cambios" title="Políticas de Cambios y Devoluciones">Políticas de Cambios y Devoluciones</a>
 </li>
           
           </small>
@@ -678,10 +704,6 @@
 
 
 
-      <script type="text/javascript" src="https://assets.jumpseller.com/store/lluna-papeleria/themes/388104/main.js?1713994927"></script>
-
-
-      <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
       <script type="text/javascript">
         var shoppingCartMessage = 'Ir al Carro de Compras';
         var singleProductMessage = 'ha sido añadido al carro de compra.'
@@ -756,11 +778,6 @@
           });
         }
       </script>
-
-
-
-      <script type="application/javascript" async src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=VCcGZF"></script>
-      <script async type="text/javascript" src="//static.klaviyo.com/onsite/js/klaviyo.js?company_id=VCcGZF"></script>
     </div>
   </footer>
   @endsection
