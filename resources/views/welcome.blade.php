@@ -369,7 +369,7 @@
               <p>Para esos días en los que deseas un toque de elegancia sutil,
                 nuestros collares son la elección ideal que añadirá un brillo discreto a tu look.</p>
 
-              <a href="/" class="btn btn-primary text-dark">VER COLLARES ELEGANTES</a>
+              <a href="/" class="btn btn-primary text-dark">VER COLLARES ELEGANTES.</a>
 
             </div>
           </div>
@@ -388,7 +388,7 @@
               <p>Desde la oficina hasta una cena con amigos, nuestros collares
                 te acompañarán con estilo y distinción en cada momento de tu día</p>
 
-              <a href="/" class="btn btn-primary text-dark">VER COLLARES CASUALES</a>
+              <a href="/" class="btn btn-primary text-dark">VER COLLARES CASUALES.</a>
 
             </div>
           </div>
@@ -477,7 +477,7 @@
         <div class="container-fluid mb-5">
           <div class="row">
             <div class="col-12">
-              <h2 class="block-header text-center text-dark">@SUNFLOWER._CCP</h2>
+              <h2 class="block-header text-center text-dark">🌻 @SUNFLOWER._CCP 🦋</h2>
             </div>
             <div id="instagram-102190" class="component_instagram col-12"></div>
 
@@ -525,102 +525,101 @@
       <!-- Footer -->
 
       <footer class="pt-5 pb-3">
-        <div class="container">
-          <div class="row text-md-left text-center justify-content-center">
+      <div class="container" style="text-align: justify;">
+    <div class="row text-md-left" style="text-align: justify;">
+      
+      <div class="col-lg-3 col-md-6" style="text-align: justify;">
+        <h5>🌻SOBRE SUNFLOWER</h5>
+        <small>📍 Talcahuano, Region del BioBio, Chile.
+          En nuestro universo de bisutería, cada pieza es más que un simple accesorio;
+          es una manifestación de arte y creatividad, diseñada para realzar tu belleza interior y exterior,
+          recordándote que la elegancia y el estilo pueden ser parte de tu día a día.</small>
+                
+      </div>
+      
+      <div class="col-lg-3 col-md-6 mb-lg-0 mb-4" style="text-align: justify;">
+        <h5>🦋CONTACTO</h5>
+        <ul>
+          <li class="footer-top__menu-item">
+          <small><a href="https://wa.me/56956103084" target="_blank">WhatsApp</a></small>
+          </li>
+          <li>
+          <small><a href="mailto:florencia.sanzana.ortega@gmail.com">Correo electrónico</a></small></li>
+          
+          
+          
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-lg-0 mb-4" style="text-align: justify;">
+        <h5>🌻INFORMACIÓN</h5>
+        <ul class="navbar-nav mr-auto">
+          
+          <li>
+          <small>
+  <a href="/tienda-fisica"  title="TIENDA FÍSICA">Tienda Online</a>
+</li> 
+<li>
+  <a href="/clientas"  title="TEAM LLUNA ♡">  Team sunflower </a>
+</li>   
+          <li>
+  <a href="/informacion-envios"  title="Plazos Despachos">Plazos Despachos</a>
+</li>
+          <li>
+  <a href="/condiciones-entrega-despacho"  title="Condiciones Despachos">Condiciones Despachos</a>
+</li>
+          <li>
+  <a href="/politicas-de-cambios"  title="Políticas de Cambios y Devoluciones">Políticas de Cambios y Devoluciones</a>
+</li>
+          
+          </small>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
+        
+        <h5> 🦋 ¿ERES TEAM SUNFLOWER? ¡REGISTRATE!</h5>
+        <small>¡Registrate para que estemos en contacto y podamos compartir la mejor información, tips, sorpresas, descuentos, lanzamientos y más!</small>
+                
+        <ul class="list-inline social-footer my-3">
+          
+          <li class="list-inline-item">
+            <strong> 🌻SÍGUENOS:</strong>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.instagram.com/sunflower._ccp" title="Ir a Instagram" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
 
-            <div class="col-lg-3 col-md-6">
-              <h5>Sobre SunFlower</h5>
-              <div class="footer-description text-center text-md-left mb-lg-0 mb-3">
+          <li class="list-inline-item d-md-none">
+            <a href="https://api.whatsapp.com/send?phone=56973069652&text=Hola LLUNA PAPELERÍA!" title="WhatsApp" target="_blank">
+              <i class="fab fa-whatsapp fa-fw"></i>
+            </a>
+          </li>
 
-                📍 Talcahuano, Region del BioBio, Chile.
-                En nuestro universo de bisutería, cada pieza es más que un simple accesorio;
-                es una manifestación de arte y creatividad, diseñada para realzar tu belleza interior y exterior,
-                recordándote que la elegancia y el estilo pueden ser parte de tu día a día.❤️
+        </ul>
+        
+      </div>
 
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
-              <h5>Contacto</h5>
-              <ul>
-                <li><a href="mailto:contacto@llunapapeleria.cl" target="_blank" title="florencia.sanzana.ortega@gmail.com">florencia.sanzana.ortega@gmail.com</a></li>
-
-                <li class="footer-top__menu-item">
-                  <a href="tel:+56973069652" title="Llámanos">+56 9 5610 3084 </a>
-                </li>
-
-              </ul>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
-              <h5>Información</h5>
-              <ul class="navbar-nav mr-auto">
-
-                <li>
-                  <a href="/tienda-fisica" title="TIENDA FÍSICA">TIENDA ONLINE</a>
-                </li>
-                <li>
-                  <a href="/informacion-envios" title="Plazos Despachos">Plazos Despachos</a>
-                </li>
-                <li>
-                  <a href="/condiciones-entrega-despacho" title="Condiciones Despachos">Condiciones Despachos</a>
-                </li>
-                <li>
-                  <a href="/politicas-de-cambios" title="Políticas de Cambios y Devoluciones">Políticas de Cambios y Devoluciones</a>
-                </li>
-                <li>
-                  <a href="/clientas" title="TEAM LLUNA ♡">TEAM SUNFLOWER 🌻</a>
-                </li>
-                <li>
-                  <a href="/contact" title="Contacto">Contacto</a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
-
-              <h5>¿ERES TEAM SUNFLOWER?😍 ¡REGISTRATE!</h5>
-              <small>¡Registrate para que estemos en contacto y podamos compartir la mejor información, tips, sorpresas, descuentos, lanzamientos y más!</small>
-
-              <ul class="list-inline social-footer my-3">
-
-                <li class="list-inline-item">
-                  <strong>Síguenos:</strong>
-                </li>
-                <li class="list-inline-item">
-                  <a href="https://www.instagram.com/sunflower._ccp" title="Ir a Instagram" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                  </a>
-                </li>
-
-                <li class="list-inline-item d-md-none">
-                  <a href="https://api.whatsapp.com/send?phone=56973069652&text=Hola LLUNA PAPELERÍA!" title="WhatsApp" target="_blank">
-                    <i class="fab fa-whatsapp fa-fw"></i>
-                  </a>
-                </li>
-
-              </ul>
-
-            </div>
-
-          </div>
-        </div>
-        <hr class="mb-3">
-        <div class="container-fluid">
-          <div class="row align-items-center">
-            <div class="col-md-4 text-lg-left text-center mb-lg-0 mb-3">
-              <div class="powered-by">&copy; 2024 SunFlower, joyeria de bisuteria. <br>Todos los derechos reservados. </div>
-            </div>
-            <div class="col-md-4 text-center">
-              <a href="https://www.instagram.com/sunflower._ccp" title="SUNFLOWER">
-
-                <img src="img/ICONO_SINFONDO.png" class="navbar-brand img-fluid mb-md-0 mb-3 mx-auto" alt="LLUNA PAPELERÍA" />
-
-              </a>
-            </div>
-            <div class="col-md-4">
-              <ul class="payment text-lg-right text-center">
-
-            </div>
-          </div>
+    </div>
+  </div>
+  <hr class="mb-3">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col-md-4 text-lg-left text-center mb-lg-0 mb-3">
+        <div class="powered-by">&copy; 2024 SUNFLOWER, JOYERIA DE BISUTERIA. <br>TODOS LOS DERECHOS RESERVADOS. </div>
+      </div>
+      <div class="col-md-4 text-center">
+        <a href="https://www.instagram.com/sunflower._ccp" title="SUNFLOWER">
+          
+          <img src="img/ICONO_SINFONDO.png" class="navbar-brand img-fluid mb-md-0 mb-3 mx-auto" alt="LLUNA PAPELERÍA" />
+          
+        </a>
+      </div>
+      <div class="col-md-4">
+        <ul class="payment text-lg-right text-center">
+  
+</div>
+    </div>
   </main>
   <!-- -------- START FOOTER 3 w/ COMPANY DESCRIPTION WITH LINKS & SOCIAL ICONS & COPYRIGHT ------- -->
   <footer class="footer py-5">
