@@ -23,7 +23,9 @@ class PermissionsSeeder extends Seeder
         $role->givePermissionTo($permission); // dale al rol administrador el permiso de ver informacion rapida
 
         $user = User::where('email', 'admin@argon.com')->first();
+        $user2 = User::where('email', 'cliente@argon.com')->first();
         // $user->assignRole( 'administrador', 'cliente' );
         $user->assignRole( 'administrador' );
+        $user2->assignRole( 'cliente' );
     }
 }

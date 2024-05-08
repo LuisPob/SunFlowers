@@ -16,7 +16,7 @@ class CartController extends Controller
     public function cart()  {
         $cartCollection = \Cart::getContent();
         //dd($cartCollection);
-        return view('cart')->withTitle('SunFlowers | CART')->with(['cartCollection' => $cartCollection]);;
+        return view('cart')->withTitle('SunFlowers | CART')->with(['cartCollection' => $cartCollection]);
     }
     public function remove(Request $request){
         \Cart::remove($request->id);

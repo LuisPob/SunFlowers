@@ -20,6 +20,8 @@
                         @csrf
                         <button type="submit" class="btn btn-link p-0 m-0 align-baseline">{{ __('haz click aquí para solicitar otro') }}</button>.
                     </form>
+                    <!-- boton para cerrar sesion  -->
+                    <a href="{{ route('shop') }}" class="btn btn-light-danger">Continuar en la tienda</a>
                 </div>
             </div>
         </div>

@@ -32,10 +32,11 @@
     @guest
         @include('partials.navbar')
         @yield('content')
-    @endguest
-
+        @endguest
+        
     @auth
         
+        @include('partials.navbar')
         <main class="main-content border-radius-lg">
             @yield('content')
         </main>
