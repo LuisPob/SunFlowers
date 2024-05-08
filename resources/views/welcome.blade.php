@@ -15,6 +15,22 @@
     font-weight: bold;
     
   }
+  .btn-custom-color {
+    background-color: #a5eea0; /* Cambiar el fondo del botón a #a5eea0 */
+    border-color: #a5eea0; /* Cambiar el color del borde del botón a #a5eea0 */
+    color: black; /* Color del texto */
+}
+
+.btn-custom-color:hover {
+    background-color: #85d98d; /* Cambiar el fondo del botón al pasar el cursor */
+    border-color: #85d98d; /* Cambiar el color del borde del botón al pasar el cursor */
+    color: black; /* Color del texto al pasar el cursor */
+}
+
+
+  .footer-top__menu-item:hover small a {
+    color: green; /* Cambia el color a verde al pasar el cursor */
+}
   .fa-instagram:hover {
     color: green; /* Cambia el color a verde al pasar el cursor */
 }
@@ -437,7 +453,7 @@
               <p>Para esos días en los que deseas un toque de elegancia sutil,
                 nuestros collares son la elección ideal que añadirá un brillo discreto a tu look.</p>
 
-              <a href="/" class="btn btn-primary text-dark">VER COLLARES ELEGANTES.</a>
+              <a href="/" class="btn btn-custom-color text-white">VER COLLARES ELEGANTES.</a>
 
             </div>
           </div>
@@ -456,7 +472,7 @@
               <p>Desde la oficina hasta una cena con amigos, nuestros collares
                 te acompañarán con estilo y distinción en cada momento de tu día</p>
 
-              <a href="/" class="btn btn-primary text-dark">VER COLLARES CASUALES.</a>
+              <a href="/" class="btn btn-custom-color text-white">VER COLLARES CASUALES.</a>
 
             </div>
           </div>
@@ -476,7 +492,7 @@
                 la elegancia en cada par de nuestros aros delicados,
                 diseñados para añadir un toque de encanto a tu estilo diario.</p>
 
-              <a href="/" class="btn btn-primary text-dark">VER AROS DELICADOS.</a>
+              <a href="/" class="btn btn-custom-color text-white">VER AROS DELICADOS.</a>
 
             </div>
           </div>
@@ -496,7 +512,7 @@
                 donde vayas con nuestros aros verdes,
                 inspirados en la alegría y la luminosidad de los campos de girasoles.</p>
 
-              <a href="/" class="btn btn-primary text-dark">VER AROS PRIMAVERALES.</a>
+              <a href="/" class="btn btn-custom-color text-white">VER AROS PRIMAVERALES.</a>
 
             </div>
           </div>
@@ -516,7 +532,7 @@
                 propio con nuestra tobillera morada,
                 diseñada para inspirar confianza y autoexpresión en cada paso que das.</p>
 
-              <a href="/" class="btn btn-primary text-dark">VER TOBILLERAS MORADAS.</a>
+              <a href="/" class="btn btn-custom-color text-white">VER TOBILLERAS MORADAS.</a>
 
             </div>
           </div>
@@ -535,7 +551,7 @@
               <p>Lleva la frescura y la vitalidad de un prado verde a cada paso con nuestra pulsera verde,
                 una pieza imprescindible para aquellos que buscan una conexión más profunda con la naturaleza.</p>
 
-              <a href="/" class="btn btn-primary text-dark">VER PULSERAS.</a>
+              <a href="/" class="btn btn-custom-color text-white">VER PULSERAS.</a>
 
             </div>
           </div>
@@ -549,10 +565,9 @@
             </div>
             <div id="instagram-102190" class="component_instagram col-12"></div>
 
-            <a href="https://www.instagram.com/sunflower._ccp/" target="_blank" title="Síguenos @sunflower._ccp" class="btn btn-primary mt-5 text-dark">
-              <i class="fab fa-instagram text-dark" aria-hidden="true"></i> SÍGUENOS
-            </a>
-          </div>
+<a href="https://www.instagram.com/sunflower._ccp/" target="_blank" title="Síguenos @sunflower._ccp" class="btn btn-primary mt-5 text-white">
+    <i class="fab fa-instagram text-black"  aria-hidden="true"></i> SÍGUENOS
+</a>
         </div>
 
         <!-- Instagram code -->
@@ -611,11 +626,8 @@
           <li class="footer-top__menu-item">
           <small><a href="https://wa.me/56956103084" target="_blank">WhatsApp</a></small>
           </li>
-          <li>
-          <small><a href="mailto:florencia.sanzana.ortega@gmail.com">Correo electrónico</a></small></li>
-          
-          
-          
+          <li class="footer-top__menu-item"> 
+          <small><a href="mailto:florencia.sanzana.ortega@gmail.com" target="_blank">Correo electrónico</a></small></li>
         </ul>
       </div>
       <div class="col-lg-3 col-md-6 mb-lg-0 mb-4" style="text-align: justify;">
@@ -627,7 +639,7 @@
           <a href="/tienda-online" id="tienda-online" title="TIENDA ONLINE">Tienda Online</a>
 </li> 
 <li>
-<a href="/clientas" id="team-sunflower" title="TEAM sunflower ♡">Team sunflower</a>
+<a href="/clientas" id="team-sunflower" title="TEAM sunflower ♡">Team Sunflower</a>
 </li>   
           <li>
           <a href="/informacion-envios" id="plazos-despachos" title="Plazos Despachos">Plazos Despachos</a>
