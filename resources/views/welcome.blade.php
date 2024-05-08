@@ -4,7 +4,7 @@
 <style>
   body {
     /* Establece la imagen de fondo */
-    background-image: url('/img/welcomeee.jpg');
+    background-image: url('/img/fondowelcome.jpg');
     /* Ajusta la posición de la imagen si es necesario */
     background-position: center;
     /* Ajusta el tamaño de la imagen de fondo */
@@ -85,7 +85,22 @@
     font-size: 18px;
     /* Tamaño del texto */
   }
+ 
+  
+  /* Estilo para la flecha derecha del carrusel (verde) */
+ 
+  .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23008000' viewBox='0 0 8 8'%3e%3cpath d='M4 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e");
+  }
+
+  /* Estilo para la flecha derecha del carrusel (negra) */
+  .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23008000' viewBox='0 0 8 8'%3e%3cpath d='M4 0l4 4-4 4-1.5-1.5 2.5-2.5-2.5-2.5 1.5-1.5z'/%3e%3c/svg%3e");
+  }
 </style>
+
+
+
 </head>
 
 <body>
@@ -162,39 +177,36 @@
               }
             </style>
             <div id="carouselExampleIndicators" class="carousel slide">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-              </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="/img/collar1.jpg" class="d-block w-100 carousel-img-small mx-auto">
-                </div>
-                <div class="carousel-item">
-                  <img src="/img/aros1.jpg" class="d-block w-100 carousel-img-small mx-auto">
-                </div>
-                <div class="carousel-item">
-                  <img src="/img/pulsera1.jpg" class="d-block w-100 carousel-img-small mx-auto">
-                </div>
-                <div class="carousel-item">
-                  <img src="/img/tobillera.jpg" class="d-block w-100 carousel-img-small mx-auto">
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-            <div class="item" style="background-image:url('https://assets.jumpseller.com/store/lluna-papeleria/themes/388104/options/42941205/20230908_123742-01.jpeg?1694798595')">
-              <a href="https://www.llunapapeleria.cl/alba-planificador-anual">
-                <div class="layer" style="background-color: #000000; opacity: 0;"></div>
-            </div>
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="/img/collar1.jpg" class="d-block w-100 carousel-img-small mx-auto">
+        </div>
+        <div class="carousel-item">
+            <img src="/img/aros1.jpg" class="d-block w-100 carousel-img-small mx-auto">
+        </div>
+        <div class="carousel-item">
+            <img src="/img/pulsera1.jpg" class="d-block w-100 carousel-img-small mx-auto">
+        </div>
+        <div class="carousel-item">
+            <img src="/img/tobillera.jpg" class="d-block w-100 carousel-img-small mx-auto">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+            
             </a>
           </div>
           </a>
