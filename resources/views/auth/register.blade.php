@@ -4,7 +4,7 @@
     @include('layouts.navbars.guest.navbar')
     <main class="main-content  mt-0">
         <div class="page-header align-items-start min-vh-50 pt-5 pb-11 m-3 border-radius-lg"
-            style="background-image: url('https://cdn.discordapp.com/attachments/1224140724132515922/1234209995059626026/prado_register1.jpg?ex=662fe721&is=662e95a1&hm=9d46e2ad4921dbe1efbf9e37d525cc0cb40af547460a98606cd08608af62bc28&'); background-position: top;">
+            style="background-image: url(/img/prado_register1.jpg); background-position: top;">
             <span class="mask bg-gradient-dark opacity-6"></span>
             <div class="container">
                 <div class="row justify-content-center">
