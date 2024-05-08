@@ -2,6 +2,36 @@
 
 @section('content')
 <style>
+  body {
+    /* Establece la imagen de fondo */
+    background-image: url('/img/welcomeee.jpg');
+    /* Ajusta la posición de la imagen si es necesario */
+    background-position: center;
+    /* Ajusta el tamaño de la imagen de fondo */
+    background-size: cover;
+    /* Fija la imagen de fondo para que no se mueva al hacer scroll */
+    background-attachment: fixed;
+    color: black;
+    font-weight: bold;
+    
+  }
+  .instagram-handle {
+    color: black;
+    /* Aumenta el grosor del texto */
+    font-weight: bold;
+  }
+  h4 {
+    color: black;
+    font-weight: bold;
+  }
+  h5 {
+    color: black;
+    font-weight: bold;
+  }
+  a {
+    color: black;
+    font-weight: bold;
+  }
   /* Estilos para fijar la barra de navegación */
   .navbar-fixed {
     position: fixed;
@@ -476,8 +506,8 @@
       <div id='component-102190' class='theme-component show'>
         <div class="container-fluid mb-5">
           <div class="row">
-            <div class="col-12">
-              <h2 class="block-header text-center text-dark">🌻 @SUNFLOWER._CCP 🦋</h2>
+            <div class="col-12" >
+              <h2 class="block-header text-center " style="color: black;" >🌻 @SUNFLOWER._CCP 🦋</h2>
             </div>
             <div id="instagram-102190" class="component_instagram col-12"></div>
 
