@@ -22,7 +22,7 @@
                         </span>
                     </button>
                     <div class="collapse navbar-collapse" id="navigation">
-                        <ul class="navbar-nav mx-auto">
+                        <ul class="navbar-nav mx-auto align-items-center">
 
                             <li class="nav-item">
                                 <a class="nav-link me-2" href="/">

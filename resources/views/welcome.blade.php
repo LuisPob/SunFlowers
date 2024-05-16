@@ -201,23 +201,6 @@
   $(function () {
     $('[data-toggle=" tooltip"]').tooltip()
   }) </script>
-      <!-- Navigation Mobile -->
-      <!-- <div class="mobilenav d-lg-none trsn">
-        <div class="menu-header">
-          <div class="item item-1 trsn">
-            <i class="fas fa-search"></i>
-            <form id="search_mini_form_mobile" class="navbar-form form-inline trsn" method="get" action="/search">
-              <input type="text" value="" name="q" class="form-text" onFocus="javascript:this.value=''" placeholder="Buscar productos" />
-            </form>
-          </div>
-        </div>
-        <li>
-          <<div class="login">
-            <a href="http://127.0.0.1:8000/register" id="login-link-2" class="trsn nav-link" title="Ingresar / Registrarse LLUNA PAPELERÍA">
-              <i class="fas fa-user"></i>
-
-            </a>
-      </div> -->
       </li>
 
       </ul>
