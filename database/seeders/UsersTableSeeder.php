@@ -16,13 +16,22 @@ class UsersTableSeeder extends Seeder
     {
         DB::table('users')->insert([
             'username' => 'admin',
-            'role_id' => 1,
             'firstname' => 'Admin',
             'lastname' => 'Admin',
             'email' => 'admin@argon.com',
             'phone' => 987564221,
             'password' => bcrypt('secret'),
             'address' => 'golondrinas 144, Lima, Peru',
+            'email_verified_at' => now()
+        ]);
+        DB::table('users')->insert([
+            'username' => 'cliente',
+            'firstname' => 'Cliente',
+            'lastname' => 'Cliente',
+            'email' => 'cliente@argon.com',
+            'phone' => 987564123,
+            'password' => bcrypt('secret'),
+            'address' => 'golondrinas 200, Lima, Peru',
             'email_verified_at' => now()
         ]);
         

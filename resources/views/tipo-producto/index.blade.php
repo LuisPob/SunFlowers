@@ -18,7 +18,7 @@
 
                              <div class="float-right">
                                 <a href="{{ route('tipo-productos.create') }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
-                                  {{ __('Create New') }}
+                                  <span style="color: black;">{{ __('Create New') }}</span> 
                                 </a>
                               </div>
                         </div>
