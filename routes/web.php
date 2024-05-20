@@ -27,6 +27,7 @@ use App\Http\Controllers\ResetPassword;
 use App\Http\Controllers\ChangePassword;            
 use App\Http\Controllers\VerificationController;
 use App\Http\Controllers\LandingController;
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\TipoProductoController;
 use App\Http\Controllers\ProductoController;
 
@@ -35,7 +36,7 @@ use App\Http\Controllers\ProductoController;
 
 Auth::routes();
 
-Route::get('/products', [CartController::class, 'shop'])->name('shop');
+Route::get('/shop', [CartController::class, 'shop'])->name('shop');
 Route::get('/cart', [CartController::class, 'cart'])->name('cart.index');
 // Route::post('/add', [CartController::class, 'add'])->name('cart.store');
 Route::post('/update', [CartController::class, 'update'])->name('cart.update');
@@ -60,6 +61,7 @@ Route::get('/', [LandingController::class, 'index'])->name('lnading');
 	Route::get('/dashboard', [HomeController::class, 'index'])->name('home')->middleware('auth');
 	
 	Route::resource('/tipo-productos', TipoProductoController::class)->middleware('auth');
+	Route::resource('/products', ProductController::class)->middleware('auth');
 	
 	
 	
