@@ -696,7 +696,11 @@
       </div>
       <div class="col-md-4">
         <ul class="payment text-lg-right text-center">
-  
+        <div class="container row shadow-lg">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1597.4341595365818!2d-73.0564543144277!3d-36.797707489595325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9669b5d061cae83d%3A0x8f2da2e9988cc125!2sUniversidad%20Cat%C3%B3lica%20de%20la%20Sant%C3%ADsima%20Concepci%C3%B3n!5e0!3m2!1ses!2scl!4v1705005085808!5m2!1ses!2scl" 
+                                width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div> 
 </div>
     </div>
   </main>
