@@ -2,6 +2,10 @@
 
 @section('content')
 <style>
+  .powered-by {
+    color: grey;
+    font-weight: 300;
+}
   body {
     /* Establece la imagen de fondo */
     background-image: url('/img/fondowelcome.jpg');
@@ -433,15 +437,15 @@
         <div class="container-fluid mb-5">
           <div class="row">
             <div class="col-12">
-              <h2 class="block-header text-center " style="color: black;">🌻 @SUNFLOWER._CCP 🦋</h2>
+              <h2 class="block-header text-center " style="color: black;">🌻@SUNFLOWER._CCP🦋</h2>
             </div>
-            <div id="instagram-102190" class="component_instagram col-12"></div>
+            <div id="instagram-102190" class="component_instagram col-12" style="background-color: yellow; color: black;"></div>
 
-            <a href="https://www.instagram.com/sunflower._ccp/" target="_blank" title="Síguenos @sunflower._ccp"
-              class="btn btn-primary mt-5 text-white">
-              <i class="fab fa-instagram text-black" aria-hidden="true"></i> SÍGUENOS
-            </a>
-          </div>
+<a href="https://www.instagram.com/sunflower._ccp/" target="_blank" title="Síguenos @sunflower._ccp"
+  class="btn btn-primary mt-5" style="background-color: #FBF451; color: black;">
+  <i class="fab fa-instagram" aria-hidden="true"></i> SÍGUENOS
+</a>
+
 
           <!-- Instagram code -->
           <script>
@@ -486,47 +490,47 @@
 
             <div class="col-lg-3 col-md-6">
                 <h5>🌻SOBRE SUNFLOWER</h5>
-                <small>📍 Talcahuano, Region del BioBio, Chile. En nuestro universo de bisutería, cada pieza es más que un simple accesorio; es una manifestación de arte y creatividad, diseñada para realzar tu belleza interior y exterior, recordándote que la elegancia y el estilo pueden ser parte de tu día a día.</small>
+                <small style="font-weight: 600;">📍 Talcahuano, Region del BioBio, Chile. En nuestro universo de bisutería, cada pieza es más que un simple accesorio; es una manifestación de arte y creatividad, diseñada para realzar tu belleza interior y exterior, recordándote que la elegancia y el estilo pueden ser parte de tu día a día.</small>
             </div>
 
             <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
-                <h5>🦋CONTACTO</h5>
-                <ul>
-                    <li class="footer-top__menu-item">
-                        <small><a href="https://wa.me/56956103084" target="_blank">WhatsApp</a></small>
-                    </li>
-                    <li class="footer-top__menu-item">
-                        <small><a href="mailto:florencia.sanzana.ortega@gmail.com" target="_blank">Correo electrónico</a></small>
-                    </li>
-                </ul>
-            </div>
+    <h5>🦋CONTACTO</h5>
+    <ul>
+        <li class="footer-top__menu-item">
+            <small><a href="https://wa.me/56956103084" target="_blank" style="font-weight: 600;">WhatsApp</a></small>
+        </li>
+        <li class="footer-top__menu-item">
+            <small><a href="mailto:florencia.sanzana.ortega@gmail.com" target="_blank" style="font-weight: 600;">Correo Electrónico</a></small>
+        </li>
+    </ul>
+</div>
 
             <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
                 <h5>🌻INFORMACIÓN</h5>
-                <ul class="navbar-nav mr-auto">
+                <ul class="navbar-nav mr-auto" style="font-weight: 600;">
                     <li>
-                        <small><a href="/tienda-online" id="tienda-online" title="TIENDA ONLINE">Tienda Online</a></small>
+                        <small><a href="/tienda-online" id="tienda-online" title="TIENDA ONLINE" style="font-weight: 600;">Tienda Online</a></small>
                     </li>
                     <li>
-                        <a href="/clientas" id="team-sunflower" title="TEAM sunflower ♡">Team Sunflower</a>
+                    <small ><a href="/clientas" id="team-sunflower" title="TEAM sunflower ♡" style="font-weight: 600;">Team Sunflower</a></small>
                     </li>
                     <li>
-                        <a href="/informacion-envios" id="plazos-despachos" title="Plazos Despachos">Plazos Despachos</a>
+                    <small> <a href="/informacion-envios" id="plazos-despachos" title="Plazos Despachos"style="font-weight: 600;">Plazos Despachos</a></small>
                     </li>
                     <li>
-                        <a href="/condiciones-entrega-despacho" id="condiciones-despachos" title="Condiciones Despachos">Condiciones Despachos</a>
+                    <small> <a href="/condiciones-entrega-despacho" id="condiciones-despachos" title="Condiciones Despachos"style="font-weight: 600;">Condiciones Despachos</a></small>
                     </li>
                     <li>
-                        <a href="/politicas-de-cambios" id="politicas-cambios" title="Políticas de Cambios y Devoluciones">Políticas de Cambios y Devoluciones</a>
+                    <small> <a href="/politicas-de-cambios" id="politicas-cambios" title="Políticas de Cambios y Devoluciones"style="font-weight: 600;">Políticas de Cambios y Devoluciones</a></small>
                     </li>
                 </ul>
             </div>
 
             <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
-                <h5> 🦋 ¿ERES TEAM SUNFLOWER? ¡REGISTRATE!</h5>
-                <small>¡Registrate para que estemos en contacto y podamos compartir la mejor información, tips, sorpresas, descuentos, lanzamientos y más!</small>
+                <h5> 🦋¿ERES TEAM SUNFLOWER? ¡REGISTRATE!</h5>
+                <small style="font-weight: 600;">¡Registrate para que estemos en contacto y podamos compartir la mejor información, tips, sorpresas, descuentos, lanzamientos y más!</small>
                 <ul class="list-inline social-footer my-3">
-                    <li class="list-inline-item"><strong> 🌻SÍGUENOS:</strong></li>
+                    <li class="list-inline-item"> <small style="font-weight: 600;">🌻SÍGUENOS:</li></small>
                     <li class="list-inline-item">
                         <a href="https://www.instagram.com/sunflower._ccp" title="Ir a Instagram" target="_blank">
                             <i class="fab fa-instagram"></i>
