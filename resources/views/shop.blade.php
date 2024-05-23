@@ -129,7 +129,7 @@
         padding-right: 15px;
     }
     body {
-        background: url("/images/carrito.jpg");
+        background: url("/img/fondowelcome.jpg");
         background-repeat: no-repeat; /* Evita la repetición de la imagen */
         background-size: cover; /* Ajusta la imagen de fondo para cubrir todo el contenedor */
         background-position: left center, right center; /* Posiciona los girasoles a la izquierda y a la derecha */
