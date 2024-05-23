@@ -17,5 +17,8 @@ class DatabaseSeeder extends Seeder
         $this->call([ChileanDivisionSeeder::class]);
         $this->call(ProductsTableSeeder::class);
         $this->call([PermissionsSeeder::class]);
+        $this->call([
+            EventSeeder::class
+        ]);
     }
 }
