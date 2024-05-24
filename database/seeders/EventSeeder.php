@@ -5,6 +5,8 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
+use App\Models\Event;
+
 class EventSeeder extends Seeder
 {
     /**
@@ -17,8 +19,8 @@ class EventSeeder extends Seeder
         $events = [
             [
                 'event' => 'Cita #1',
-                'start_date' => '2022-12-16 08:00',
-                'end_date' => '2022-12-16 11:00',
+                'start_date' => now(),
+                'end_date' => now(),
             ],
             [
                 'event' => 'Cita #2',

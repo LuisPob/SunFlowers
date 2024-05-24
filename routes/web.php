@@ -44,8 +44,8 @@ Route::post('/clear', [CartController::class, 'clear'])->name('cart.clear');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-
-
+// CALENDARIO
+Route::get('/calendario', [App\Http\Controllers\calendarController::class, 'index'])->name('calendario');
 
 Route::get('/', [LandingController::class, 'index'])->name('lnading');
 // Route::get('/', function () {return redirect('/dashboard');})->middleware('auth');
