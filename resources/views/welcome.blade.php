@@ -439,6 +439,143 @@
             <div class="col-12">
               <h2 class="block-header text-center " style="color: black;">🌻@SUNFLOWER._CCP🦋</h2>
             </div>
+<br>
+<br>
+<br>
+
+<style>
+  .flower-rating .flower {
+    font-size: 24px;
+    cursor: pointer;
+    color: #ccc;
+  }
+  .flower-rating .flower.rated {
+    color: #f39c12;
+  }
+  .review {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  .review .flower {
+    color: #f39c12;
+  }
+</style>
+
+<body>
+  <div class="container mb-5 col-5" id="reviews-section">
+    <h4 class="text-center">🌻Deja tu experiencia🌻</h4>
+    <form id="review-form">
+      <div class="form-group">
+        <label for="name">Nombre:</label>
+        <input type="text" class="form-control" id="name" required>
+      </div>
+      <div class="form-group">
+        <label for="rating">Calificación:</label>
+        <div id="rating" class="flower-rating">
+          <span class="flower" data-value="1">&#10048;</span>
+          <span class="flower" data-value="2">&#10048;</span>
+          <span class="flower" data-value="3">&#10048;</span>
+          <span class="flower" data-value="4">&#10048;</span>
+          <span class="flower" data-value="5">&#10048;</span>
+        </div>
+      </div>
+      <div class="form-group">
+      
+        <label for="review-text">Reseña:</label>
+        <textarea class="form-control" id="review-text" rows="3" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-custom-color">Enviar</button>
+    </form>
+  </div>
+  <h4 class="text-center">🦋Testimonios🦋</h4>
+  <div class="container mb-5 col-4" id="reviews-container" style="max-height: 200px; overflow-y: scroll;">
+
+    <div id="reviews-list"></div>
+  </div>
+
+  <script>
+    document.querySelectorAll('.flower-rating .flower').forEach(function(flower) {
+      flower.addEventListener('click', setRating);
+    });
+
+    function setRating(ev) {
+      let span = ev.currentTarget;
+      let flowers = document.querySelectorAll('.flower-rating .flower');
+      let num = parseInt(span.getAttribute('data-value'));
+
+      flowers.forEach(function(flower) {
+        if (parseInt(flower.getAttribute('data-value')) <= num) {
+          flower.classList.add('rated');
+        } else {
+          flower.classList.remove('rated');
+        }
+      });
+
+      document.querySelector('.flower-rating').setAttribute('data-rating', num);
+    }
+
+    document.getElementById('review-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      let name = document.getElementById('name').value;
+      let rating = document.querySelector('.flower-rating').getAttribute('data-rating');
+      let review = document.getElementById('review-text').value;
+
+      // Crear flores para la calificación
+      let flowerHtml = '';
+      for (let i = 1; i <= 5; i++) {
+        if (i <= rating) {
+          flowerHtml += '<span class="flower">&#10048;</span>';
+        } else {
+          flowerHtml += '<span class="flower" style="color: #ccc;">&#10048;</span>';
+        }
+      }
+
+      // Crear un objeto de reseña
+      let reviewObject = {
+        name: name,
+        rating: rating,
+        review: review,
+        flowerHtml: flowerHtml
+      };
+
+      // Guardar la reseña en localStorage
+      let reviews = JSON.parse(localStorage.getItem('reviews')) || [];
+      reviews.push(reviewObject);
+      localStorage.setItem('reviews', JSON.stringify(reviews));
+
+      // Agregar la reseña al contenedor de reseñas
+      addReviewToList(reviewObject);
+
+      // Limpiar el formulario
+      document.getElementById('review-form').reset();
+      let flowers = document.querySelectorAll('.flower-rating .flower');
+      flowers.forEach(function(flower) {
+        flower.classList.remove('rated');
+      });
+      document.querySelector('.flower-rating').removeAttribute('data-rating');
+
+      // Hacer scroll hacia abajo para mostrar la nueva reseña
+      document.getElementById('reviews-container').scrollTop = document.getElementById('reviews-container').scrollHeight;
+    });
+
+    // Función para agregar una reseña a la lista
+    function addReviewToList(reviewObject) {
+      let reviewElement = document.createElement('div');
+      reviewElement.classList.add('review');
+      reviewElement.innerHTML = `<p><strong>Nombre:</strong> ${reviewObject.name}</p><p><strong>Calificación:</strong> ${reviewObject.flowerHtml}</p><p><strong>Reseña:</strong> ${reviewObject.review}</p>`;
+      document.getElementById('reviews-list').appendChild(reviewElement);
+    }
+
+    // Recuperar y mostrar reseñas guardadas al cargar la página
+    window.onload = function() {
+      let reviews = JSON.parse(localStorage.getItem('reviews')) || [];
+      reviews.forEach(function(review) {
+        addReviewToList(review);
+      });
+    };
+  </script>
+</body>
             <div id="instagram-102190" class="component_instagram col-12" style="background-color: yellow; color: black;"></div>
 
 <a href="https://www.instagram.com/sunflower._ccp/" target="_blank" title="Síguenos @sunflower._ccp"
