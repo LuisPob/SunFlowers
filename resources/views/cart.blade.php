@@ -2,8 +2,6 @@
 
 @section('content')
 <br>
-<!DOCTYPE html>
-<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,34 +13,39 @@
             margin: 0;
         }
 
-        body{
-            background-image: url('/img/fondowelcome.jpg');
+        body, .container {
+            background-image: url('/img/rosawelcome.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             display: flex;
             flex-direction: column;
-           
         }
 
         .container {
-            background-color: rgba(255, 255, 255, 0.8); /* Añadir algo de transparencia para mejorar la legibilidad */
             padding: 20px;
             border-radius: 10px;
             margin-top: 80px;
-            flex: 1; /* Permitir que el contenedor crezca y ocupe todo el espacio disponible */
+            flex: 1;
             display: flex;
             flex-direction: column;
-            justify-content: center; /* Centrar verticalmente el contenido del contenedor */
+            justify-content: center;
         }
 
         .row {
             flex: 1;
-            width: 100%; /* Asegurar que la fila ocupe todo el ancho */
+            width: 100%;
         }
 
         .card {
-            flex: 0 0 auto; /* Evitar que la tarjeta se expanda para llenar el espacio disponible */
+            flex: 0 0 auto;
+        }
+
+        .products-container {
+            max-height: 400px;
+            overflow-y: auto;
+            padding-right: 15px; /* to avoid scrollbar overlap */
+            margin-right: -15px; /* to compensate for padding */
         }
     </style>
 </head>
@@ -84,49 +87,48 @@
                 <h4>{{ \Cart::getTotalQuantity() }} Producto(s) en el carrito</h4><br>
                 @else
                 <h4>No hay productos en el carro</h4><br>
-                <a href="{{ route('shop') }}" class="btn btn-dark"  style="background-color: #A67b5b;">Continuar en la tienda</a>
+                <a href="{{ route('shop') }}" class="btn btn-dark" style="background-color: #A67b5b;">Continuar en la tienda</a>
                 @endif
 
-                @foreach($cartCollection as $item)
-                <div class="row">
-                    <div class="col-lg-3">
-                        <img src="/images/{{ $item->attributes->image }}" class="img-thumbnail" width="200" height="200">
-                    </div>
-                    <div class="col-lg-5">
-                        <p>
-                            <b><a href="/shop/{{ $item->attributes->slug }}">{{ $item->name }}</a></b><br>
-                            <b>Precio: </b>${{ $item->price }}<br>
-                            <b>Sub total: </b>${{ \Cart::get($item->id)->getPriceSum() }}<br>
-                        </p>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="d-flex flex-row">
-                            <form action="{{ route('cart.update') }}" method="POST">
-                                {{ csrf_field() }}
-                                <div class="form-group d-flex flex-row">
+                <div class="products-container">
+                    @foreach($cartCollection as $item)
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <img src="/images/{{ $item->attributes->image }}" class="img-thumbnail" width="200" height="200">
+                        </div>
+                        <div class="col-lg-5">
+                            <p>
+                                <b><a href="/shop/{{ $item->attributes->slug }}">{{ $item->name }}</a></b><br>
+                                <b>Precio: </b>${{ $item->price }}<br>
+                                <b>Sub total: </b>${{ \Cart::get($item->id)->getPriceSum() }}<br>
+                            </p>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="d-flex flex-row">
+                                <form action="{{ route('cart.update') }}" method="POST">
+                                    {{ csrf_field() }}
+                                    <div class="form-group d-flex flex-row">
+                                        <input type="hidden" value="{{ $item->id }}" id="id" name="id">
+                                        <input type="number" class="form-control form-control-sm" value="{{ $item->quantity }}" id="quantity" name="quantity" style="width: 70px; margin-right: 10px;">
+                                        <button class="btn btn-secondary btn-sm" style="margin-right: 10px; color: black; background-color: #fbf451;"><i class="fa fa-edit"></i></button>
+                                    </div>
+                                </form>
+                                <form action="{{ route('cart.remove') }}" method="POST">
+                                    {{ csrf_field() }}
                                     <input type="hidden" value="{{ $item->id }}" id="id" name="id">
-                                    <input type="number" class="form-control form-control-sm" value="{{ $item->quantity }}" id="quantity" name="quantity" style="width: 70px; margin-right: 10px;">
-                                    <button class="btn btn-secondary btn-sm" style="margin-right: 10px; color: black; background-color: #fbf451;"><i class="fa fa-edit"></i></button>
-
-                                </div>
-                            </form>
-                            <form action="{{ route('cart.remove') }}" method="POST">
-    {{ csrf_field() }}
-    <input type="hidden" value="{{ $item->id }}" id="id" name="id">
-    <button class="btn btn-sm" style="background-color: red; border-color: red; color: black; margin-right: 10px;"><i class="fa fa-trash"></i></button>
-</form>
-
+                                    <button class="btn btn-sm" style="background-color: red; border-color: red; color: black; margin-right: 10px;"><i class="fa fa-trash"></i></button>
+                                </form>
+                            </div>
                         </div>
                     </div>
+                    <hr>
+                    @endforeach
                 </div>
-                <hr>
-                @endforeach
                 @if(count($cartCollection) > 0)
-                <form action="{{ route('cart.clear') }}" method="POST">
-    {{ csrf_field() }}
-    <button class="btn btn-md" style="background-color: red; border-color: red; color: black;">Borrar Carrito</button>
-</form>
-
+                <form action="{{ route('cart.clear') }}" method="POST" class="mt-3">
+                    {{ csrf_field() }}
+                    <button class="btn btn-md" style="background-color: red; border-color: red; color: black;">Borrar Carrito</button>
+                </form>
                 @endif
             </div>
             @if(count($cartCollection) > 0)
@@ -137,9 +139,7 @@
                     </ul>
                 </div>
                 <br><a href="{{ route('shop') }}" class="btn btn-dark" style="background-color: #A67b5b; color: black;">Continuar en la tienda</a>
-
-                <a href="/checkout" class="btn btn-success" style="background-color: #a5eea0; color: black;" >Proceder al Checkout</a>
-
+                <a href="/checkout" class="btn btn-success" style="background-color: #a5eea0; color: black;">Proceder al Checkout</a>
             </div>
             @endif
         </div>
@@ -147,5 +147,6 @@
     </div>
 </body>
 </html>
+
 
 @endsection
