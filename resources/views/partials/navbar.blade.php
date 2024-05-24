@@ -21,8 +21,8 @@
                             <span class="navbar-toggler-bar bar3"></span>
                         </span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navigation">
-                        <ul class="navbar-nav mx-auto">
+                    <div class="collapse navbar-collapse align-items-center" id="navigation">
+                        <ul class="navbar-nav mx-auto align-items-center">
 
                             <li class="nav-item">
                                 <a class="nav-link me-2" href="/">
