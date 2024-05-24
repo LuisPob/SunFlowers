@@ -437,7 +437,7 @@
         <div class="container-fluid mb-5">
           <div class="row">
             <div class="col-12">
-              <h2 class="block-header text-center " style="color: black;">🌻@SUNFLOWER._CCP🦋</h2>
+              <h2 class="block-header text-center " style="color: black;">🌻¡QUEREMOS SABER TU OPINIÓN DE @SUNFLOWER._CCP!🦋</h2>
             </div>
 <br>
 <br>
@@ -445,12 +445,12 @@
 
 <style>
   .flower-rating .flower {
-    font-size: 24px;
+    font-size: 30px;
     cursor: pointer;
     color: #ccc;
   }
   .flower-rating .flower.rated {
-    color: #f39c12;
+    color: #1269f3;
   }
   .review {
     border-bottom: 1px solid #ccc;
@@ -458,20 +458,21 @@
     margin-bottom: 10px;
   }
   .review .flower {
-    color: #f39c12;
+    font-size: 25px;
+    color: #1269f3;
   }
+  
 </style>
 
 <body>
   <div class="container mb-5 col-5" id="reviews-section">
-    <h4 class="text-center">🌻Deja tu experiencia🌻</h4>
     <form id="review-form">
       <div class="form-group">
-        <label for="name">Nombre:</label>
+        <label for="name">NOMBRE.</label>
         <input type="text" class="form-control" id="name" required>
       </div>
       <div class="form-group">
-        <label for="rating">Calificación:</label>
+        <label for="rating">CALIFICACIÓN.</label>
         <div id="rating" class="flower-rating">
           <span class="flower" data-value="1">&#10048;</span>
           <span class="flower" data-value="2">&#10048;</span>
@@ -482,13 +483,13 @@
       </div>
       <div class="form-group">
       
-        <label for="review-text">Reseña:</label>
+        <label for="review-text">¡NOS INTERESA TU OPINIÓN!, CUENTANOS QUE TE PARECIÓ.</label>
         <textarea class="form-control" id="review-text" rows="3" required></textarea>
       </div>
-      <button type="submit" class="btn btn-custom-color">Enviar</button>
+      <button type="submit" class="btn btn-custom-color">ENVIAR.</button>
     </form>
   </div>
-  <h4 class="text-center">🦋Testimonios🦋</h4>
+  <h4 class="text-center">🦋TESTIMONIOS🦋</h4>
   <div class="container mb-5 col-4" id="reviews-container" style="max-height: 200px; overflow-y: scroll;">
 
     <div id="reviews-list"></div>
