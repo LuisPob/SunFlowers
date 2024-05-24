@@ -442,7 +442,6 @@
 <br>
 <br>
 <br>
-
 <style>
   .flower-rating .flower {
     font-size: 30px;
@@ -461,7 +460,11 @@
     font-size: 25px;
     color: #1269f3;
   }
-  
+  .btn-delete {
+    color: red;
+    cursor: pointer;
+    font-size: 12px;
+  }
 </style>
 
 <body>
@@ -482,7 +485,6 @@
         </div>
       </div>
       <div class="form-group">
-      
         <label for="review-text">¡NOS INTERESA TU OPINIÓN!, CUENTANOS QUE TE PARECIÓ.</label>
         <textarea class="form-control" id="review-text" rows="3" required></textarea>
       </div>
@@ -491,7 +493,6 @@
   </div>
   <h4 class="text-center">🦋TESTIMONIOS🦋</h4>
   <div class="container mb-5 col-4" id="reviews-container" style="max-height: 200px; overflow-y: scroll;">
-
     <div id="reviews-list"></div>
   </div>
 
@@ -534,6 +535,7 @@
 
       // Crear un objeto de reseña
       let reviewObject = {
+        id: Date.now(),
         name: name,
         rating: rating,
         review: review,
@@ -564,8 +566,26 @@
     function addReviewToList(reviewObject) {
       let reviewElement = document.createElement('div');
       reviewElement.classList.add('review');
-      reviewElement.innerHTML = `<p><strong>Nombre:</strong> ${reviewObject.name}</p><p><strong>Calificación:</strong> ${reviewObject.flowerHtml}</p><p><strong>Reseña:</strong> ${reviewObject.review}</p>`;
+      reviewElement.setAttribute('data-id', reviewObject.id);
+      reviewElement.innerHTML = `<p><strong>Nombre:</strong> ${reviewObject.name}</p><p><strong>Calificación:</strong> ${reviewObject.flowerHtml}</p><p><strong>Reseña:</strong> ${reviewObject.review}</p><span class="btn-delete">Eliminar</span>`;
+      
+      reviewElement.querySelector('.btn-delete').addEventListener('click', function() {
+        deleteReview(reviewObject.id);
+      });
+
       document.getElementById('reviews-list').appendChild(reviewElement);
+    }
+
+    // Función para eliminar una reseña
+    function deleteReview(id) {
+      let reviews = JSON.parse(localStorage.getItem('reviews')) || [];
+      reviews = reviews.filter(review => review.id !== id);
+      localStorage.setItem('reviews', JSON.stringify(reviews));
+      
+      let reviewElement = document.querySelector(`.review[data-id='${id}']`);
+      if (reviewElement) {
+        reviewElement.remove();
+      }
     }
 
     // Recuperar y mostrar reseñas guardadas al cargar la página
@@ -577,6 +597,7 @@
     };
   </script>
 </body>
+
             <div id="instagram-102190" class="component_instagram col-12" style="background-color: yellow; color: black;"></div>
 
 <a href="https://www.instagram.com/sunflower._ccp/" target="_blank" title="Síguenos @sunflower._ccp"
