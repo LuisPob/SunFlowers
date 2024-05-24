@@ -1,12 +1,7 @@
 @extends('layouts.appStore')
 
 @section('content')
-<br>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SUNFLOWER</title>
-    <link rel="stylesheet" href="path/to/your/css/file.css">
     <style>
         html, body {
             height: 100%;
@@ -132,7 +127,7 @@
                 @endif
             </div>
             @if(count($cartCollection) > 0)
-            <div class="col-lg-5">
+            <div class="col-lg-4" style="margin-left: 106px;">
                 <div class="card">
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item"><b>Total: </b>${{ \Cart::getTotal() }}</li>
@@ -147,6 +142,5 @@
     </div>
 </body>
 </html>
-
 
 @endsection
