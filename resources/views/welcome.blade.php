@@ -2,6 +2,10 @@
 
 @section('content')
 <style>
+  .powered-by {
+    color: grey;
+    font-weight: 300;
+}
   body {
     /* Establece la imagen de fondo */
     background-image: url('/img/fondowelcome.jpg');
@@ -13,6 +17,7 @@
     background-attachment: fixed;
     color: black;
     font-weight: bold;
+    backdrop-filter: blur(5px);
 
   }
 
@@ -198,24 +203,8 @@
 </nav>
 <script>
   $(function () {
-    $('[data-toggle=" tooltip"]').tooltip() }) </script>
-      <!-- Navigation Mobile -->
-      <!-- <div class="mobilenav d-lg-none trsn">
-        <div class="menu-header">
-          <div class="item item-1 trsn">
-            <i class="fas fa-search"></i>
-            <form id="search_mini_form_mobile" class="navbar-form form-inline trsn" method="get" action="/search">
-              <input type="text" value="" name="q" class="form-text" onFocus="javascript:this.value=''" placeholder="Buscar productos" />
-            </form>
-          </div>
-        </div>
-        <li>
-          <<div class="login">
-            <a href="http://127.0.0.1:8000/register" id="login-link-2" class="trsn nav-link" title="Ingresar / Registrarse LLUNA PAPELERÍA">
-              <i class="fas fa-user"></i>
-
-            </a>
-      </div> -->
+    $('[data-toggle=" tooltip"]').tooltip()
+  }) </script>
       </li>
 
       </ul>
@@ -309,147 +298,8 @@
       </div>
       </div>
       </div>
-
-      <script>
-        jQuery('#product-form-24216600-332667 .quantity').each(function() {
-          var spinner = jQuery(this),
-            input = spinner.find('input[type="number"]'),
-            btnUp = spinner.find('.quantity-up'),
-            btnDown = spinner.find('.quantity-down'),
-            min = input.attr('min'),
-            max = input.attr('max');
-
-          btnUp.click(function() {
-            var oldValue = parseFloat(input.val());
-            if (oldValue >= max) {
-              var newVal = oldValue;
-            } else {
-              var newVal = oldValue + 1;
-            }
-            spinner.find("input").val(newVal);
-            spinner.find("input").trigger("change");
-          });
-
-          btnDown.click(function() {
-            var oldValue = parseFloat(input.val());
-            if (oldValue <= min) {
-              var newVal = oldValue;
-            } else {
-              var newVal = oldValue - 1;
-            }
-            if (newVal > 0) {
-              spinner.find("input").val(newVal);
-              spinner.find("input").trigger("change");
-            };
-          });
-        });
-      </script>
-
-      <script>
-        jQuery('#product-form-23993247-332667 .quantity').each(function() {
-          var spinner = jQuery(this),
-            input = spinner.find('input[type="number"]'),
-            btnUp = spinner.find('.quantity-up'),
-            btnDown = spinner.find('.quantity-down'),
-            min = input.attr('min'),
-            max = input.attr('max');
-
-          btnUp.click(function() {
-            var oldValue = parseFloat(input.val());
-            if (oldValue >= max) {
-              var newVal = oldValue;
-            } else {
-              var newVal = oldValue + 1;
-            }
-            spinner.find("input").val(newVal);
-            spinner.find("input").trigger("change");
-          });
-
-          btnDown.click(function() {
-            var oldValue = parseFloat(input.val());
-            if (oldValue <= min) {
-              var newVal = oldValue;
-            } else {
-              var newVal = oldValue - 1;
-            }
-            if (newVal > 0) {
-              spinner.find("input").val(newVal);
-              spinner.find("input").trigger("change");
-            };
-          });
-        });
-      </script>
-
       </div>
       </div>
-      <script>
-        jQuery('#product-form-14616472-332667 .quantity').each(function() {
-          var spinner = jQuery(this),
-            input = spinner.find('input[type="number"]'),
-            btnUp = spinner.find('.quantity-up'),
-            btnDown = spinner.find('.quantity-down'),
-            min = input.attr('min'),
-            max = input.attr('max');
-
-          btnUp.click(function() {
-            var oldValue = parseFloat(input.val());
-            if (oldValue >= max) {
-              var newVal = oldValue;
-            } else {
-              var newVal = oldValue + 1;
-            }
-            spinner.find("input").val(newVal);
-            spinner.find("input").trigger("change");
-          });
-
-          btnDown.click(function() {
-            var oldValue = parseFloat(input.val());
-            if (oldValue <= min) {
-              var newVal = oldValue;
-            } else {
-              var newVal = oldValue - 1;
-            }
-            if (newVal > 0) {
-              spinner.find("input").val(newVal);
-              spinner.find("input").trigger("change");
-            };
-          });
-        });
-      </script>
-      <script>
-        jQuery('#product-form-12205662-332667 .quantity').each(function() {
-          var spinner = jQuery(this),
-            input = spinner.find('input[type="number"]'),
-            btnUp = spinner.find('.quantity-up'),
-            btnDown = spinner.find('.quantity-down'),
-            min = input.attr('min'),
-            max = input.attr('max');
-
-          btnUp.click(function() {
-            var oldValue = parseFloat(input.val());
-            if (oldValue >= max) {
-              var newVal = oldValue;
-            } else {
-              var newVal = oldValue + 1;
-            }
-            spinner.find("input").val(newVal);
-            spinner.find("input").trigger("change");
-          });
-
-          btnDown.click(function() {
-            var oldValue = parseFloat(input.val());
-            if (oldValue <= min) {
-              var newVal = oldValue;
-            } else {
-              var newVal = oldValue - 1;
-            }
-            if (newVal > 0) {
-              spinner.find("input").val(newVal);
-              spinner.find("input").trigger("change");
-            };
-          });
-        });
-      </script>
       </div>
       </div>
       </div>
@@ -588,14 +438,174 @@
         <div class="container-fluid mb-5">
           <div class="row">
             <div class="col-12">
-              <h2 class="block-header text-center " style="color: black;">🌻 @SUNFLOWER._CCP 🦋</h2>
+              <h2 class="block-header text-center " style="color: black;">🌻¡QUEREMOS SABER TU OPINIÓN DE @SUNFLOWER._CCP!🦋</h2>
             </div>
-            <div id="instagram-102190" class="component_instagram col-12"></div>
+<br>
+<br>
+<br>
+<style>
+  .flower-rating .flower {
+    font-size: 30px;
+    cursor: pointer;
+    color: #ccc;
+  }
+  .flower-rating .flower.rated {
+    color: #1269f3;
+  }
+  .review {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  .review .flower {
+    font-size: 25px;
+    color: #1269f3;
+  }
+  .btn-delete {
+    color: red;
+    cursor: pointer;
+    font-size: 12px;
+  }
+</style>
 
-            <a href="https://www.instagram.com/sunflower._ccp/" target="_blank" title="Síguenos @sunflower._ccp" class="btn btn-primary mt-5 text-white">
-              <i class="fab fa-instagram text-black" aria-hidden="true"></i> SÍGUENOS
-            </a>
-          </div>
+<body>
+  <div class="container mb-5 col-5" id="reviews-section">
+    <form id="review-form">
+      <div class="form-group">
+        <label for="name">NOMBRE.</label>
+        <input type="text" class="form-control" id="name" required>
+      </div>
+      <div class="form-group">
+        <label for="rating">CALIFICACIÓN.</label>
+        <div id="rating" class="flower-rating">
+          <span class="flower" data-value="1">&#10048;</span>
+          <span class="flower" data-value="2">&#10048;</span>
+          <span class="flower" data-value="3">&#10048;</span>
+          <span class="flower" data-value="4">&#10048;</span>
+          <span class="flower" data-value="5">&#10048;</span>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="review-text">¡NOS INTERESA TU OPINIÓN!, CUENTANOS QUE TE PARECIÓ.</label>
+        <textarea class="form-control" id="review-text" rows="3" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-custom-color">ENVIAR.</button>
+    </form>
+  </div>
+  <h4 class="text-center">🦋TESTIMONIOS🦋</h4>
+  <div class="container mb-5 col-4" id="reviews-container" style="max-height: 200px; overflow-y: scroll;">
+    <div id="reviews-list"></div>
+  </div>
+
+  <script>
+    document.querySelectorAll('.flower-rating .flower').forEach(function(flower) {
+      flower.addEventListener('click', setRating);
+    });
+
+    function setRating(ev) {
+      let span = ev.currentTarget;
+      let flowers = document.querySelectorAll('.flower-rating .flower');
+      let num = parseInt(span.getAttribute('data-value'));
+
+      flowers.forEach(function(flower) {
+        if (parseInt(flower.getAttribute('data-value')) <= num) {
+          flower.classList.add('rated');
+        } else {
+          flower.classList.remove('rated');
+        }
+      });
+
+      document.querySelector('.flower-rating').setAttribute('data-rating', num);
+    }
+
+    document.getElementById('review-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      let name = document.getElementById('name').value;
+      let rating = document.querySelector('.flower-rating').getAttribute('data-rating');
+      let review = document.getElementById('review-text').value;
+
+      // Crear flores para la calificación
+      let flowerHtml = '';
+      for (let i = 1; i <= 5; i++) {
+        if (i <= rating) {
+          flowerHtml += '<span class="flower">&#10048;</span>';
+        } else {
+          flowerHtml += '<span class="flower" style="color: #ccc;">&#10048;</span>';
+        }
+      }
+
+      // Crear un objeto de reseña
+      let reviewObject = {
+        id: Date.now(),
+        name: name,
+        rating: rating,
+        review: review,
+        flowerHtml: flowerHtml
+      };
+
+      // Guardar la reseña en localStorage
+      let reviews = JSON.parse(localStorage.getItem('reviews')) || [];
+      reviews.push(reviewObject);
+      localStorage.setItem('reviews', JSON.stringify(reviews));
+
+      // Agregar la reseña al contenedor de reseñas
+      addReviewToList(reviewObject);
+
+      // Limpiar el formulario
+      document.getElementById('review-form').reset();
+      let flowers = document.querySelectorAll('.flower-rating .flower');
+      flowers.forEach(function(flower) {
+        flower.classList.remove('rated');
+      });
+      document.querySelector('.flower-rating').removeAttribute('data-rating');
+
+      // Hacer scroll hacia abajo para mostrar la nueva reseña
+      document.getElementById('reviews-container').scrollTop = document.getElementById('reviews-container').scrollHeight;
+    });
+
+    // Función para agregar una reseña a la lista
+    function addReviewToList(reviewObject) {
+      let reviewElement = document.createElement('div');
+      reviewElement.classList.add('review');
+      reviewElement.setAttribute('data-id', reviewObject.id);
+      reviewElement.innerHTML = `<p><strong>Nombre:</strong> ${reviewObject.name}</p><p><strong>Calificación:</strong> ${reviewObject.flowerHtml}</p><p><strong>Reseña:</strong> ${reviewObject.review}</p><span class="btn-delete">Eliminar</span>`;
+      
+      reviewElement.querySelector('.btn-delete').addEventListener('click', function() {
+        deleteReview(reviewObject.id);
+      });
+
+      document.getElementById('reviews-list').appendChild(reviewElement);
+    }
+
+    // Función para eliminar una reseña
+    function deleteReview(id) {
+      let reviews = JSON.parse(localStorage.getItem('reviews')) || [];
+      reviews = reviews.filter(review => review.id !== id);
+      localStorage.setItem('reviews', JSON.stringify(reviews));
+      
+      let reviewElement = document.querySelector(`.review[data-id='${id}']`);
+      if (reviewElement) {
+        reviewElement.remove();
+      }
+    }
+
+    // Recuperar y mostrar reseñas guardadas al cargar la página
+    window.onload = function() {
+      let reviews = JSON.parse(localStorage.getItem('reviews')) || [];
+      reviews.forEach(function(review) {
+        addReviewToList(review);
+      });
+    };
+  </script>
+</body>
+
+            <div id="instagram-102190" class="component_instagram col-12" style="background-color: yellow; color: black;"></div>
+
+<a href="https://www.instagram.com/sunflower._ccp/" target="_blank" title="Síguenos @sunflower._ccp"
+  class="btn btn-primary mt-5" style="background-color: #FBF451; color: black;">
+  <i class="fab fa-instagram" aria-hidden="true"></i> SÍGUENOS
+</a>
+
 
           <!-- Instagram code -->
           <script>
@@ -604,7 +614,7 @@
               data: {
                 count: 6
               },
-              success: function(json) {
+              success: function (json) {
                 document.getElementById("instagram-102190").innerHTML = '';
                 for (var i in json.posts) {
                   if (i >= 6) {
@@ -634,190 +644,89 @@
 
         <!-- Footer -->
 
-        <footer class="pt-5 pb-3">
-          <div class="container" style="text-align: justify;">
-            <div class="row text-md-left" style="text-align: justify;">
+        <footer class="pt-5 pb-3" style="background-color: rgba(255, 255, 255, 0.5);">
+    <div class="container" style="text-align: justify;">
+        <div class="row text-md-left">
 
-              <div class="col-lg-3 col-md-6" style="text-align: justify;">
+            <div class="col-lg-3 col-md-6">
                 <h5>🌻SOBRE SUNFLOWER</h5>
-                <small>📍 Talcahuano, Region del BioBio, Chile.
-                  En nuestro universo de bisutería, cada pieza es más que un simple accesorio;
-                  es una manifestación de arte y creatividad, diseñada para realzar tu belleza interior y exterior,
-                  recordándote que la elegancia y el estilo pueden ser parte de tu día a día.</small>
+                <small style="font-weight: 600;">📍 Talcahuano, Region del BioBio, Chile. En nuestro universo de bisutería, cada pieza es más que un simple accesorio; es una manifestación de arte y creatividad, diseñada para realzar tu belleza interior y exterior, recordándote que la elegancia y el estilo pueden ser parte de tu día a día.</small>
+            </div>
 
-              </div>
+            <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
+    <h5>🦋CONTACTO</h5>
+    <ul>
+        <li class="footer-top__menu-item">
+            <small><a href="https://wa.me/56956103084" target="_blank" style="font-weight: 600;">WhatsApp</a></small>
+        </li>
+        <li class="footer-top__menu-item">
+            <small><a href="mailto:florencia.sanzana.ortega@gmail.com" target="_blank" style="font-weight: 600;">Correo Electrónico</a></small>
+        </li>
+    </ul>
+</div>
 
-              <div class="col-lg-3 col-md-6 mb-lg-0 mb-4" style="text-align: justify;">
-                <h5>🦋CONTACTO</h5>
-                <ul>
-                  <li class="footer-top__menu-item">
-                    <small><a href="https://wa.me/56956103084" target="_blank">WhatsApp</a></small>
-                  </li>
-                  <li class="footer-top__menu-item">
-                    <small><a href="mailto:florencia.sanzana.ortega@gmail.com" target="_blank">Correo electrónico</a></small>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-lg-3 col-md-6 mb-lg-0 mb-4" style="text-align: justify;">
+            <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
                 <h5>🌻INFORMACIÓN</h5>
-                <ul class="navbar-nav mr-auto">
-
-                  <li>
-                    <small>
-                      <a href="/tienda-online" id="tienda-online" title="TIENDA ONLINE">Tienda Online</a>
-                  </li>
-                  <li>
-                    <a href="/clientas" id="team-sunflower" title="TEAM sunflower ♡">Team Sunflower</a>
-                  </li>
-                  <li>
-                    <a href="/informacion-envios" id="plazos-despachos" title="Plazos Despachos">Plazos Despachos</a>
-                  </li>
-                  <li>
-                    <a href="/condiciones-entrega-despacho" id="condiciones-despachos" title="Condiciones Despachos">Condiciones Despachos</a>
-                  </li>
-                  <li>
-                    <a href="/politicas-de-cambios" id="politicas-cambios" title="Políticas de Cambios y Devoluciones">Políticas de Cambios y Devoluciones</a>
-                  </li>
-
-                  </small>
+                <ul class="navbar-nav mr-auto" style="font-weight: 600;">
+                    <li>
+                        <small><a href="/tienda-online" id="tienda-online" title="TIENDA ONLINE" style="font-weight: 600;">Tienda Online</a></small>
+                    </li>
+                    <li>
+                    <small ><a href="/clientas" id="team-sunflower" title="TEAM sunflower ♡" style="font-weight: 600;">Team Sunflower</a></small>
+                    </li>
+                    <li>
+                    <small> <a href="/informacion-envios" id="plazos-despachos" title="Plazos Despachos"style="font-weight: 600;">Plazos Despachos</a></small>
+                    </li>
+                    <li>
+                    <small> <a href="/condiciones-entrega-despacho" id="condiciones-despachos" title="Condiciones Despachos"style="font-weight: 600;">Condiciones Despachos</a></small>
+                    </li>
+                    <li>
+                    <small> <a href="/politicas-de-cambios" id="politicas-cambios" title="Políticas de Cambios y Devoluciones"style="font-weight: 600;">Políticas de Cambios y Devoluciones</a></small>
+                    </li>
                 </ul>
-              </div>
-              <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
+            </div>
 
-                <h5> 🦋 ¿ERES TEAM SUNFLOWER? ¡REGISTRATE!</h5>
-                <small>¡Registrate para que estemos en contacto y podamos compartir la mejor información, tips, sorpresas, descuentos, lanzamientos y más!</small>
-
+            <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
+                <h5> 🦋¿ERES TEAM SUNFLOWER? ¡REGISTRATE!</h5>
+                <small style="font-weight: 600;">¡Registrate para que estemos en contacto y podamos compartir la mejor información, tips, sorpresas, descuentos, lanzamientos y más!</small>
                 <ul class="list-inline social-footer my-3">
-
-                  <li class="list-inline-item">
-                    <strong> 🌻SÍGUENOS:</strong>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="https://www.instagram.com/sunflower._ccp" title="Ir a Instagram" target="_blank">
-                      <i class="fab fa-instagram"></i>
-                    </a>
-                  </li>
-
-                  <li class="list-inline-item d-md-none">
-                    <a href="https://api.whatsapp.com/send?phone=56973069652&text=Hola LLUNA PAPELERÍA!" title="WhatsApp" target="_blank">
-                      <i class="fab fa-whatsapp fa-fw"></i>
-                    </a>
-                  </li>
-
+                    <li class="list-inline-item"> <small style="font-weight: 600;">🌻SÍGUENOS:</li></small>
+                    <li class="list-inline-item">
+                        <a href="https://www.instagram.com/sunflower._ccp" title="Ir a Instagram" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item d-md-none">
+                        <a href="https://api.whatsapp.com/send?phone=56973069652&text=Hola LLUNA PAPELERÍA!" title="WhatsApp" target="_blank">
+                            <i class="fab fa-whatsapp fa-fw"></i>
+                        </a>
+                    </li>
                 </ul>
-
-              </div>
-
             </div>
-          </div>
-          <hr class="mb-3">
-          <div class="container-fluid">
-            <div class="row align-items-center">
-              <div class="col-md-4 text-lg-left text-center mb-lg-0 mb-3">
-                <div class="powered-by">&copy; 2024 SUNFLOWER, JOYERIA DE BISUTERIA. <br>TODOS LOS DERECHOS RESERVADOS. </div>
-              </div>
-              <div class="col-md-4 text-center">
+
+        </div>
+    </div>
+    <hr class="mb-3">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-md-4 text-lg-left text-center mb-lg-0 mb-3">
+                <div class="powered-by">&copy; 2024 SUNFLOWER, JOYERIA DE BISUTERIA. <br>TODOS LOS DERECHOS RESERVADOS.</div>
+            </div>
+            <div class="col-md-4 text-center">
                 <a href="https://www.instagram.com/sunflower._ccp" title="SUNFLOWER">
-
-                  <img src="img/ICONO_SINFONDO.png" class="navbar-brand img-fluid mb-md-0 mb-3 mx-auto" alt="LLUNA PAPELERÍA" />
-
+                    <img src="img/ICONO_SINFONDO.png" class="navbar-brand img-fluid mb-md-0 mb-3 mx-auto" alt="LLUNA PAPELERÍA" />
                 </a>
-              </div>
-              <div class="col-md-4">
-                <ul class="payment text-lg-right text-center">
-
-              </div>
             </div>
+            <div class="col-md-4">
+                <ul class="payment text-lg-right text-center">
+                    <!-- Aquí pueden ir tus iconos de pago -->
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
   </main>
   <!-- -------- START FOOTER 3 w/ COMPANY DESCRIPTION WITH LINKS & SOCIAL ICONS & COPYRIGHT ------- -->
-  <footer class="footer py-5">
-    <div class="container">
 
-      <!-- /.container -->
-
-      <!-- Bootstrap Core -->
-      <script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.4.7/js/tether.min.js"></script>
-      <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-      <script src="//cdn.jsdelivr.net/bootstrap.filestyle/1.1.0/js/bootstrap-filestyle.min.js"></script>
-      <script src="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-
-
-
-      <script type="text/javascript">
-        var shoppingCartMessage = 'Ir al Carro de Compras';
-        var singleProductMessage = 'ha sido añadido al carro de compra.'
-        var multiProductMessage = 'han sido añadidos al carro de compra.'
-
-        function getProductOptions() {
-          var options = {};
-          $(".prod-options").each(function() {
-            var option = $(this);
-            options[option.attr('id')] = option.val();
-          })
-          return options;
-        }
-      </script>
-      <script>
-        function addToCart(id, productName, qty, options) {
-          Jumpseller.addProductToCart(id, qty, options, {
-            callback: function(data, status) {
-              toastr.options = {
-                closeButton: true,
-                debug: false,
-                newestOnTop: false,
-                progressBar: true,
-                positionClass: 'toast-top-right',
-                preventDuplicates: false,
-                onclick: null,
-                showDuration: '500',
-                hideDuration: '1000',
-                timeOut: '5000',
-                extendedTimeOut: '1000',
-                showEasing: 'swing',
-                hideEasing: 'linear',
-                showMethod: 'fadeIn',
-                hideMethod: 'fadeOut',
-              };
-
-              if (data.status == 404) {
-                toastr.error(data.responseJSON.message);
-              } else {
-                if (parseInt(qty) == 1) {
-                  toastr.success(
-                    qty +
-                    ' ' +
-                    productName +
-                    ' ' +
-                    singleProductMessage +
-                    ' <a href="' +
-                    $('#cart-link').attr('href') +
-                    '"> ' +
-                    shoppingCartMessage +
-                    '</a>'
-                  );
-                } else {
-                  toastr.success(
-                    qty +
-                    ' ' +
-                    productName +
-                    ' ' +
-                    multiProductMessage +
-                    ' <a href="' +
-                    $('#cart-link').attr('href') +
-                    '"> ' +
-                    shoppingCartMessage +
-                    '</a>'
-                  );
-                }
-
-                // update cart in page
-                $('.cart-size').text(parseInt($('.cart-size').text()) + parseInt(qty));
-              }
-            },
-          });
-        }
-      </script>
-    </div>
-  </footer>
   @endsection
