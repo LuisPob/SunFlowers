@@ -99,7 +99,7 @@ Route::post('/add', [CartController::class, 'add'])->name('cart.store');
 Route::post('/update', [CartController::class, 'update'])->name('cart.update');
 Route::post('/remove', [CartController::class, 'remove'])->name('cart.remove');
 Route::post('/clear', [CartController::class, 'clear'])->name('cart.clear');
-Route::resource('map-markers', MapMarkerController::class);
+Route::get('report',[ReportControler::class,'vrepusr'])->name('rep.user');
 
 //Route::resource('tipo-modulos', TipoModuloController::class);
 //Route::resource('data', DataController::class);
