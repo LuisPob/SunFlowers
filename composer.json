@@ -10,6 +10,7 @@
         "darryldecode/cart": "^4.2",
         "fruitcake/laravel-cors": "^2.0.5",
         "guzzlehttp/guzzle": "^7.2",
+        "h4cc/wkhtmltopdf-amd64": "0.12.x",
         "laravel-frontend-presets/argon": "2.0",
         "laravel/framework": "^9.0",
         "laravel/sanctum": "^2.14",
