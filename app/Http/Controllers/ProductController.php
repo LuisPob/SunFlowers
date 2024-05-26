@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Product;
+use App\Models\TipoProducto;
 use Illuminate\Http\Request;
 
 /**
@@ -32,7 +33,8 @@ class ProductController extends Controller
     public function create()
     {
         $product = new Product();
-        return view('product.create', compact('product'));
+        $categories = TipoProducto::pluck('name', 'id');
+        return view('product.create', compact('product', 'categories'));
     }
 
     /**
@@ -43,9 +45,17 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        request()->validate(Product::$rules);
+        // dd($request->all());
+        $validatedData = request()->validate(Product::$rules);
 
-        $product = Product::create($request->all());
+        if ($request->hasFile('image_path')) {
+            $path = $request->file('image_path')->store('images', ['disk' => 'public']); 
+            // $path = $request->file('image_path')->store('public/images');
+            $validatedData['image_path'] = basename($path);
+        }
+        // dd($validatedData);
+
+        $product = Product::create($validatedData);
 
         return redirect()->route('products.index')
             ->with('success', 'Product created successfully.');
@@ -59,9 +69,10 @@ class ProductController extends Controller
      */
     public function show($id)
     {
-        $product = Product::find($id);
-
-        return view('product.show', compact('product'));
+        $product = Product::with('category')->find($id);
+        $category = TipoProducto::where('id', $product->category_id)->pluck('name');
+    
+        return view('product.show', compact('product', 'category'));
     }
 
     /**
@@ -73,8 +84,9 @@ class ProductController extends Controller
     public function edit($id)
     {
         $product = Product::find($id);
+        $categories = TipoProducto::pluck('name', 'id');
 
-        return view('product.edit', compact('product'));
+        return view('product.edit', compact('product', 'categories'));
     }
 
     /**

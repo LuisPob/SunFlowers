@@ -10,7 +10,6 @@ use Illuminate\Database\Eloquent\Model;
  * @property $id
  * @property $name
  * @property $slug
- * @property $details
  * @property $price
  * @property $shipping_cost
  * @property $description
@@ -19,6 +18,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property $image_path
  * @property $created_at
  * @property $updated_at
+ * @property $quantity
  *
  * @package App
  * @mixin \Illuminate\Database\Eloquent\Builder
@@ -31,10 +31,11 @@ class Product extends Model
 		'slug' => 'required',
 		'price' => 'required',
 		'shipping_cost' => 'required',
-		'description' => 'required',
+		'description' => 'nullable',
 		'category_id' => 'required',
-		'brand_id' => 'required',
-		'image_path' => 'required',
+		'brand_id' => 'nullable',
+		'quantity' => 'required',
+		'image_path' => 'nullable|image|mimes:png,jpg|max:30280',
     ];
 
     protected $perPage = 20;
@@ -44,8 +45,11 @@ class Product extends Model
      *
      * @var array
      */
-    protected $fillable = ['name','slug','details','price','shipping_cost','description','category_id','brand_id','image_path'];
+    protected $fillable = ['name','slug','price','shipping_cost','description','category_id','brand_id','image_path','quantity'];
 
-
+    public function category()
+    {
+        return $this->belongsTo(TipoProducto::class, 'category_id');
+    }
 
 }

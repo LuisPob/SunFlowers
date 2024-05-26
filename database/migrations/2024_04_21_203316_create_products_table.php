@@ -17,15 +17,17 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('slug');
-            $table->string('details')->nullable();
             $table->double('price');
             $table->double('shipping_cost');
             $table->text('description');
-            $table->integer('category_id');
+            $table->unsignedBigInteger('category_id');
+            $table->integer('quantity');
             $table->unsignedInteger('brand_id')->unsigned();
             $table->string('image_path');
             $table->timestamps();
 
+
+            $table->foreign('category_id')->references('id')->on('tipo_productos')->onDelete('cascade');
         });
     }
 

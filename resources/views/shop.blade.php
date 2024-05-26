@@ -16,7 +16,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="card" style="margin-bottom: 20px; height: auto;">
                         <div class="card-body">
-                            <img src="/images/{{ $pro->image_path }}" class="img-fluid border-radius-lg mx-auto px-0 py-1" style="display: block;  object-fit: cover;" alt="{{ $pro->image_path }}">
+                            <img src="{{ asset('storage/images/' . $pro->image_path) }}" class="img-fluid border-radius-lg mx-auto px-0 py-1" style="display: block;  object-fit: cover;" alt="{{ $pro->image_path }}">
                             <a href="">
                                 <h6 class="card-title">{{ $pro->name }}</h6>
                             </a>
