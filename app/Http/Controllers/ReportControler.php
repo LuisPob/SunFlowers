@@ -9,14 +9,14 @@ class ReportControler extends Controller
 {
     public function reporteus(){
         $users = User::all();
-        $pdf = SnappyPdf::loadView('pdf.reporte_usuarios',compact('users'));
-        return $pdf->inline('reporte_usuarios.pdf');
+        $pdf = SnappyPdf::loadView('pdf.repus',compact('users'));
+        return $pdf->download('reporte_usuarios.pdf');
     }
     
     public function reporteventa(){
         $venta = shop::all();
-        $pdf = SnappyPdf::loadView('pdf.reporte_usuarios',compact('venta'));
-        return $pdf->inline('reporte_usuarios.pdf');
+        $pdf = SnappyPdf::loadView('pdf.repvent',compact('venta'));
+        return $pdf->download('reporte_usuarios.pdf');
     }
    
 }
