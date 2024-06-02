@@ -17,25 +17,21 @@ class EventSeeder extends Seeder
     public function run()
     {
         $events = [
+            
             [
-                'event' => 'Cita #1',
-                'start_date' => now(),
-                'end_date' => now(),
+                'event' => 'Días de entrega',
+                'start_date' => '2024-06-08 10:00',
+                'end_date' => '2024-06-08 15:00',
             ],
             [
-                'event' => 'Cita #2',
-                'start_date' => '2022-12-17 10:00',
-                'end_date' => '2022-12-17 11:00',
+                'event' => 'Días de entrega',
+                'start_date' => '2024-06-15 08:00',
+                'end_date' => '2024-06-15 15:00',
             ],
             [
-                'event' => 'Cita #3',
-                'start_date' => '2022-12-19 08:00',
-                'end_date' => '2022-12-19 11:00',
-            ],
-            [
-                'event' => 'Cita #4',
-                'start_date' => '2022-12-20 09:00',
-                'end_date' => '2022-12-20 11:00',
+                'event' => 'Días de entrega',
+                'start_date' => '2024-06-22 09:00',
+                'end_date' => '2024-06-22 15:00',
             ],
         ];
 
