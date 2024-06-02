@@ -27,7 +27,7 @@ class TransbankController extends Controller
         
         $nueva_compra = new Compra();
         $nueva_compra->session_id = "123456";
-        $nueva_compra->total = $request->total_amount;
+        $nueva_compra->total = 10000;
         $nueva_compra->save();
         $url_to_pay = self::star_web_pay_plus_transaction($nueva_compra);
         return $url_to_pay;

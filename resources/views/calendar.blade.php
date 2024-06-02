@@ -1,10 +1,11 @@
 @extends('layouts.app', ['class' => ''])
 
 @section('content')
-<!-- Encabezado de la página -->
+@include('layouts.navbars.guest.navbar-pru')
+
 <section class="py-5 text-center">
     <div class="container">
-        <div class="row">
+        <div class="row mt-5">
             <div class="col-lg-12 mx-auto">
 
                 <h1 class="display-4">Días de entrega presenciales </h1>
@@ -45,24 +46,7 @@
 <script src='fullcalendar/core/index.global.js'></script>
 <script src='fullcalendar/core/locales/es.global.js'></script>
 
-<script>
-    const Toast = Swal.mixin({
-        toast: true,
-        position: "top-end",
-        showConfirmButton: false,
-        timer: 3000,
-        timerProgressBar: true,
-        didOpen: (toast) => {
-            toast.onmouseenter = Swal.stopTimer;
-            toast.onmouseleave = Swal.resumeTimer;
-        }
-    });
 
-    Toast.fire({
-        icon: "success",
-        title: "Carga exitosa"
-    });
-</script>
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
