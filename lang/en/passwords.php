@@ -14,10 +14,10 @@ return [
     */
 
     
-'reset' => 'Your password has been reset!',
-'sent' => 'We have emailed your password reset link!',
+'reset' => 'Su Contraseña Fue Reiniciada',
+'sent' => 'Le Enviamos El Link Para Reiniciar Su Contraseña A Su Correp',
 'throttled' => 'Please wait before retrying.',
-'token' => 'This password reset token is invalid.',
-'user' => "We can't find a user with that email address.",
+'token' => 'El Token De Reinicio No es Valido.',
+'user' => "No Pudimos Encontrar Algun Usuario Con Ese Correo.",
 
 ];
