@@ -99,7 +99,7 @@ Route::post('/add', [CartController::class, 'add'])->name('cart.store');
 Route::post('/update', [CartController::class, 'update'])->name('cart.update');
 Route::post('/remove', [CartController::class, 'remove'])->name('cart.remove');
 Route::post('/clear', [CartController::class, 'clear'])->name('cart.clear');
-Route::get('reporte_usuario',[ReportControler::class,'reporteus'])->name('reporte-usuario');
+Route::get('reporte_usuario',[ReportControler::class,'reporteus'])->name('reporte-usuarios');
 Route::get('reporte_carro',[ReportControler::class,'reporteventa'])->name('reporte-carro');
 
 //Route::resource('tipo-modulos', TipoModuloController::class);
