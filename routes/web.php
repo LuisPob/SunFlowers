@@ -29,12 +29,13 @@ use App\Http\Controllers\VerificationController;
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\TipoProductoController;
 use App\Http\Controllers\ProductoController;
+use App\Http\Controllers\TransbankController;
 
 
 
 
 Auth::routes();
-
+//Route::post('/iniciar_compra', [TransbankController::class, 'iniciar_compra']);
 Route::get('/products', [CartController::class, 'shop'])->name('shop');
 Route::get('/cart', [CartController::class, 'cart'])->name('cart.index');
 // Route::post('/add', [CartController::class, 'add'])->name('cart.store');

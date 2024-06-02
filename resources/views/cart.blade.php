@@ -90,7 +90,7 @@
                 </ul>
             </div>
             <br><a href="{{ route('shop') }}" class="btn btn-dark">Continue en la tienda</a>
-            <a href="/checkout" class="btn btn-success">Proceder al Checkout</a>
+            <a href="/api/iniciar_compra" class="btn btn-success">Proceder al pago</a>
         </div>
         @endif
     </div>
