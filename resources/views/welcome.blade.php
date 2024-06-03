@@ -452,7 +452,7 @@
               <p>Para esos días en los que deseas un toque de elegancia sutil,
                 nuestros collares son la elección ideal que añadirá un brillo discreto a tu look.</p>
 
-              <a href="/" class="btn btn-custom-color text-white">VER COLLARES ELEGANTES.</a>
+              <a href="/products" class="btn btn-custom-color text-white">VER COLLARES ELEGANTES.</a>
 
             </div>
           </div>
@@ -471,7 +471,7 @@
               <p>Desde la oficina hasta una cena con amigos, nuestros collares
                 te acompañarán con estilo y distinción en cada momento de tu día</p>
 
-              <a href="/" class="btn btn-custom-color text-white">VER COLLARES CASUALES.</a>
+              <a href="/products" class="btn btn-custom-color text-white">VER COLLARES CASUALES.</a>
 
             </div>
           </div>
@@ -491,7 +491,7 @@
                 la elegancia en cada par de nuestros aros delicados,
                 diseñados para añadir un toque de encanto a tu estilo diario.</p>
 
-              <a href="/" class="btn btn-custom-color text-white">VER AROS DELICADOS.</a>
+              <a href="/products" class="btn btn-custom-color text-white">VER AROS DELICADOS.</a>
 
             </div>
           </div>
@@ -511,7 +511,7 @@
                 donde vayas con nuestros aros verdes,
                 inspirados en la alegría y la luminosidad de los campos de girasoles.</p>
 
-              <a href="/" class="btn btn-custom-color text-white">VER AROS PRIMAVERALES.</a>
+              <a href="/products" class="btn btn-custom-color text-white">VER AROS PRIMAVERALES.</a>
 
             </div>
           </div>
@@ -531,7 +531,7 @@
                 propio con nuestra tobillera morada,
                 diseñada para inspirar confianza y autoexpresión en cada paso que das.</p>
 
-              <a href="/" class="btn btn-custom-color text-white">VER TOBILLERAS MORADAS.</a>
+              <a href="/products" class="btn btn-custom-color text-white">VER TOBILLERAS MORADAS.</a>
 
             </div>
           </div>
@@ -550,7 +550,7 @@
               <p>Lleva la frescura y la vitalidad de un prado verde a cada paso con nuestra pulsera verde,
                 una pieza imprescindible para aquellos que buscan una conexión más profunda con la naturaleza.</p>
 
-              <a href="/" class="btn btn-custom-color text-white">VER PULSERAS.</a>
+              <a href="/products" class="btn btn-custom-color text-white">VER PULSERAS.</a>
 
             </div>
           </div>
