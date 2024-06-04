@@ -430,7 +430,7 @@
               <p>Para esos días en los que deseas un toque de elegancia sutil,
                 nuestros collares son la elección ideal que añadirá un brillo discreto a tu look.</p>
 
-              <a href="/products" class="btn btn-custom-color text-white">VER COLLARES ELEGANTES.</a>
+              <a href="/shop" class="btn btn-custom-color text-white">VER COLLARES ELEGANTES.</a>
 
             </div>
           </div>
@@ -449,7 +449,7 @@
               <p>Desde la oficina hasta una cena con amigos, nuestros collares
                 te acompañarán con estilo y distinción en cada momento de tu día</p>
 
-              <a href="/products" class="btn btn-custom-color text-white">VER COLLARES CASUALES.</a>
+              <a href="/shop" class="btn btn-custom-color text-white">VER COLLARES CASUALES.</a>
 
             </div>
           </div>
@@ -469,7 +469,7 @@
                 la elegancia en cada par de nuestros aros delicados,
                 diseñados para añadir un toque de encanto a tu estilo diario.</p>
 
-              <a href="/products" class="btn btn-custom-color text-white">VER AROS DELICADOS.</a>
+              <a href="/shop" class="btn btn-custom-color text-white">VER AROS DELICADOS.</a>
 
             </div>
           </div>
@@ -489,7 +489,7 @@
                 donde vayas con nuestros aros verdes,
                 inspirados en la alegría y la luminosidad de los campos de girasoles.</p>
 
-              <a href="/products" class="btn btn-custom-color text-white">VER AROS PRIMAVERALES.</a>
+              <a href="/shop" class="btn btn-custom-color text-white">VER AROS PRIMAVERALES.</a>
 
             </div>
           </div>
@@ -509,7 +509,7 @@
                 propio con nuestra tobillera morada,
                 diseñada para inspirar confianza y autoexpresión en cada paso que das.</p>
 
-              <a href="/products" class="btn btn-custom-color text-white">VER TOBILLERAS MORADAS.</a>
+              <a href="/shop" class="btn btn-custom-color text-white">VER TOBILLERAS MORADAS.</a>
 
             </div>
           </div>
@@ -528,7 +528,7 @@
               <p>Lleva la frescura y la vitalidad de un prado verde a cada paso con nuestra pulsera verde,
                 una pieza imprescindible para aquellos que buscan una conexión más profunda con la naturaleza.</p>
 
-              <a href="/products" class="btn btn-custom-color text-white">VER PULSERAS.</a>
+              <a href="/shop" class="btn btn-custom-color text-white">VER PULSERAS.</a>
 
             </div>
           </div>
@@ -605,28 +605,7 @@
           </div>
         </div>
         <hr class="mb-3">
-        <div class="container-fluid">
-          <div class="row align-items-center">
-            <div class="col-md-4 text-lg-left text-center mb-lg-0 mb-3">
-              <div class="powered-by">&copy; 2024 SUNFLOWER, JOYERIA DE BISUTERIA. <br>TODOS LOS DERECHOS RESERVADOS. </div>
-            </div>
-            <div class="col-md-4 text-center">
-              <a href="https://www.instagram.com/sunflower._ccp" title="SUNFLOWER">
-
-                <img src="img/ICONO_SINFONDO.png" class="navbar-brand img-fluid mb-md-0 mb-3 mx-auto" alt="LLUNA PAPELERÍA" />
-
-              </a>
-            </div>
-            <div class="col-md-4">
-              <ul class="payment text-lg-right text-center">
-                <div class="container row shadow-lg">
-                  <div class="col">
-                    <div class="container row shadow-lg">
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4516.677177622737!2d-73.04292336781978!3d-36.82395767764204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9669b5f607f8d407%3A0xc752b4d932fe12a1!2sMall%20del%20Centro%20Concepci%C3%B3n!5e0!3m2!1ses-419!2scl!4v1717351996643!5m2!1ses-419!2scl" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                  </div>
-                </div>
-            </div>
+        
   </main>
   <!-- -------- START FOOTER 3 w/ COMPANY DESCRIPTION WITH LINKS & SOCIAL ICONS & COPYRIGHT ------- -->
   <footer class="footer py-5">
@@ -734,13 +713,6 @@
 
 
 </body>
-
-<div id="instagram-102190" class="component_instagram col-12" style="background-color: yellow; color: black;"></div>
-
-<a href="https://www.instagram.com/sunflower._ccp/" target="_blank" title="Síguenos @sunflower._ccp" class="btn btn-primary mt-5" style="background-color: #FBF451; color: black;">
-  <i class="fab fa-instagram" aria-hidden="true"></i> SÍGUENOS
-</a>
-
 
 <!-- Instagram code -->
 <script>
@@ -854,7 +826,13 @@
       </div>
       <div class="col-md-4">
         <ul class="payment text-lg-right text-center">
-          <!-- Aquí pueden ir tus iconos de pago -->
+        <div class="container row shadow-lg">
+                  <div class="col">
+                    <div class="container row shadow-lg">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4516.677177622737!2d-73.04292336781978!3d-36.82395767764204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9669b5f607f8d407%3A0xc752b4d932fe12a1!2sMall%20del%20Centro%20Concepci%C3%B3n!5e0!3m2!1ses-419!2scl!4v1717351996643!5m2!1ses-419!2scl" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                  </div>
+                </div>
         </ul>
       </div>
     </div>

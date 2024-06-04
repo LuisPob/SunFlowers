@@ -4,7 +4,7 @@
     <a class="dropdown-item border-radius-md" href="javascript:;">
         <div class="d-flex py-1">
             <div class="my-auto ">
-                <img src="/images/{{ $item->attributes->image }}" class="avatar avatar-sm bg-gradient-dark  me-3 ">
+                <img src="{{ asset('storage/images/'.$item->attributes->image) }}" class="avatar avatar-sm bg-gradient-dark  me-3 ">
             </div>
             <div class="d-flex flex-column justify-content-center p-2">
                 <h6 class="text-sm font-weight-normal mb-1">
