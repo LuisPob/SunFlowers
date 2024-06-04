@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\CarouselImage;
 use App\Models\Company;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -24,7 +25,17 @@ class PageController extends Controller
 
         return abort(404);
     }
+    public function dashboard()
+    {
+        // return view('pages.dashboard');
+        $carouselImages = CarouselImage::all();
+        $company = Company::findOrFail(1);
+        
+      
 
+        return view('pages.dashboard', compact('company', 'carouselImages'));
+
+    }
     public function vr()
     {
         return view("pages.virtual-reality");

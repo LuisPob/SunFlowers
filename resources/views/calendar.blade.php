@@ -1,4 +1,4 @@
-@extends('layouts.app', ['class' => ''])
+@extends('layouts.app-simple', ['class' => ''])
 
 @section('content')
 @include('layouts.navbars.guest.navbar-pru')
