@@ -23,14 +23,18 @@ class TransbankController extends Controller
 
     public function iniciar_compra(Request $request)
     {
-        // dd($request->total_amount);
+        // dd($request->all());
+        // dd(session()->getId());
         
         $nueva_compra = new Compra();
-        $nueva_compra->session_id = "123456";
-        $nueva_compra->total = 10000;
+        // $nueva_compra->session_id = "123456";
+        $nueva_compra->session_id = session()->getId();
+        // $nueva_compra->total = 10000;
+        $nueva_compra->total = $request->input('total_amount');
         $nueva_compra->save();
         $url_to_pay = self::star_web_pay_plus_transaction($nueva_compra);
-        return $url_to_pay;
+        // return $url_to_pay;
+        return redirect($url_to_pay);
         
     }
 

@@ -4,12 +4,14 @@
 
 <head>
     <style>
-        html, body {
+        html,
+        body {
             height: 100;
             margin: 0;
         }
 
-        body, .container {
+        body,
+        .container {
             background-image: url('/img/rosawelcome.jpg');
             background-size: cover;
             background-position: center;
@@ -40,8 +42,10 @@
         .products-container {
             max-height: 400px;
             overflow-y: auto;
-            padding-right: 15px; /* to avoid scrollbar overlap */
-            margin-right: -15px; /* to compensate for padding */
+            padding-right: 15px;
+            /* to avoid scrollbar overlap */
+            margin-right: -15px;
+            /* to compensate for padding */
         }
     </style>
 </head>
@@ -136,13 +140,19 @@
                     </ul>
                 </div>
                 <br><a href="{{ route('shop') }}" class="btn btn-dark" style="background-color: #A67b5b; color: black;">Continuar en la tienda</a>
-                <a href="/checkout" class="btn btn-success" style="background-color: #a5eea0; color: black;">Proceder al Checkout</a>
+                <form action="{{ url('api/iniciar_compra') }}" method="POST">
+                    @csrf
+                    <input type="hidden" name="total_amount" value="{{ \Cart::getTotal() }}">
+                    <button type="submit" class="btn btn-success" style="background-color: #a5eea0; color: black;">Ir a pagar</button>
+                </form>
+                <!-- <a href="api/iniciar_compra" class="btn btn-success" style="background-color: #a5eea0; color: black;">Ir a pagar</a> -->
             </div>
             @endif
         </div>
         <br><br>
     </div>
 </body>
+
 </html>
 
 @endsection

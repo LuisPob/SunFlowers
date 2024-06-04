@@ -37,13 +37,17 @@
     </div>
 </li>
 <br>
-<div class="row" style="margin: 0px;">
-    <a class="btn btn-dark btn-sm btn-block" href="{{ route('cart.index') }}">
-        CARRITO <i class="fa fa-arrow-right"></i>
-    </a>
-    <a class="btn btn-dark btn-sm btn-block" href="api/iniciar_compra">
-        IR A PAGAR <i class="fa fa-arrow-right"></i>
-    </a>
+<form action="{{ url('api/iniciar_compra') }}" method="POST">
+    <div class="row" style="margin: 0px;">
+        <a class="btn btn-dark btn-sm btn-block" href="{{ route('cart.index') }}">
+            CARRITO <i class="fa fa-arrow-right"></i>
+        </a>
+        @csrf
+        <input type="hidden" name="total_amount" value="{{ \Cart::getTotal() }}">
+        <button type="submit" class="btn btn-dark btn-sm btn-block">
+            IR A PAGAR <i class="fa fa-arrow-right"></i>
+        </button>
+</form>
 </div>
 @else
 <li class="list-group-item">Tu carrito esta vacío</li>
