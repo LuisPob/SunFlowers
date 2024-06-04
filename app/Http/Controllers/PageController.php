@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Company;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
@@ -14,8 +16,10 @@ class PageController extends Controller
      */
     public function index(string $page)
     {
+        $company = Company::findOrFail(1);
+        $users = User::all();
         if (view()->exists("pages.{$page}")) {
-            return view("pages.{$page}");
+            return view("pages.{$page}", compact('company', 'users'));
         }
 
         return abort(404);
@@ -34,6 +38,10 @@ class PageController extends Controller
     public function profile()
     {
         return view("pages.profile-static");
+    }
+    public function info()
+    {
+        return view("content-managment.general-info");
     }
 
     public function signin()

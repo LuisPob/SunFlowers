@@ -5,9 +5,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-icon.png">
-    <link rel="icon" type="image/png" href="/img/ICONO_SINFONDO.png">
+    <link rel="icon" type="image/png" href="{{asset('storage/'. $company->logo)}}">
     <title>
-    {{ config('app.name') }}
+    {{ $company->company_name }}
     </title>
     <!--     Fonts and icons     -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />

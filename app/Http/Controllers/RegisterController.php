@@ -3,13 +3,15 @@
 namespace App\Http\Controllers;
 
 // use App\Http\Requests\RegisterRequest;
+use App\Models\Company;
 use App\Models\User;
 use Illuminate\Auth\Events\Registered;
 class RegisterController extends Controller
 {
     public function create()
     {
-        return view('auth.register');
+        $company = Company::findOrFail(1);
+        return view('auth.register', compact('company'));
     }
 
     public function store()

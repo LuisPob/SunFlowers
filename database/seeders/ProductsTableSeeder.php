@@ -18,11 +18,10 @@ class ProductsTableSeeder extends Seeder
         Product::create([
             'name' => 'Collar Con Margaritas',
             'slug' => 'macbook-pro',
-            'details' => 'Hermoso Collar con Margaritas',
             'quantity' => 3,
             'price' => 3500,
             'shipping_cost' => 0,
-            'description' => 'Collar Con Margaritas',
+            'description' => 'Hermoso Collar con Margaritas',
             'category_id' => 1,
             'brand_id' => 1,
             'image_path' => 'numero1.png'
@@ -31,7 +30,6 @@ class ProductsTableSeeder extends Seeder
         Product::create([
             'name' => 'Aritos Margarita',
             'slug' => 'Aritos Margaritas',
-            'details' => 'Hermosos Aros Con Margaritas',
             'quantity' => 3,
             'price' => 2500,
             'shipping_cost' => 0,
@@ -44,7 +42,6 @@ class ProductsTableSeeder extends Seeder
         Product::create([
             'name' => 'Collar Con Estrella',
             'slug' => 'Collar Con Estrella',
-            'details' => 'Hermoso Collar Con Estrella',
             'quantity' => 3,
             'price' => 4000,
             'shipping_cost' => 0,
@@ -57,12 +54,11 @@ class ProductsTableSeeder extends Seeder
         Product::create([
             'name' => 'Pulsera De Margaritas',
             'slug' => 'Pulsera De Margaritas',
-            'details' => 'Pulsera De Margaritas',
             'quantity' => 3,
             'price' => 3500,
             'shipping_cost' => 0,
             'description' => 'Pulsera De Margaritas',
-            'category_id' => 3,
+            'category_id' => 1,
             'brand_id' => 3,
             'image_path' => 'numero4.jpg'
         ]);
@@ -70,12 +66,11 @@ class ProductsTableSeeder extends Seeder
         Product::create([
             'name' => 'Collar De Perlas ',
             'slug' => 'Collar De Perlas ',
-            'details' => 'Collar De Perlas Y Cuentas De Arcilla',
             'quantity' => 3,
             'price' => 5000,
             'shipping_cost' => 0,
-            'description' => 'Collar De Perlas ',
-            'category_id' => 4,
+            'description' => 'Collar De Perlas Y Cuentas De Arcilla',
+            'category_id' => 1,
             'brand_id' => 4,
             'image_path' => 'numero5.jpg'
         ]);
@@ -83,12 +78,11 @@ class ProductsTableSeeder extends Seeder
         Product::create([
             'name' => 'Pulcera De Flores',
             'slug' => 'Pulcera De Flores',
-            'details' => 'Pulcera De Flores',
             'quantity' => 3,
             'price' => 3500,
             'shipping_cost' => 0,
             'description' => 'Pulcera De Flores',
-            'category_id' => 5,
+            'category_id' => 1,
             'brand_id' => 4,
             'image_path' => 'numero6.jpg'
         ]);
@@ -96,12 +90,11 @@ class ProductsTableSeeder extends Seeder
         Product::create([
             'name' => 'Collar De Perlas',
             'slug' => 'Collar De Perlas',
-            'details' => 'Collar De Perlas',
             'quantity' => 3,
             'price' => 4500,
             'shipping_cost' => 0,
             'description' => 'Collar De Perlas',
-            'category_id' => 5,
+            'category_id' => 1,
             'brand_id' => 5,
             'image_path' => 'numero7.jpg'
         ]);

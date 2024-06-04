@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CarouselImageController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -24,15 +25,14 @@ use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\UserProfileController;
 use App\Http\Controllers\ResetPassword;
-use App\Http\Controllers\ChangePassword;            
+use App\Http\Controllers\ChangePassword;
+use App\Http\Controllers\GeneralInfoController;
 use App\Http\Controllers\VerificationController;
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\TipoProductoController;
 use App\Http\Controllers\ProductoController;
-
-
-
+use App\Http\Controllers\RoleController;
 
 Auth::routes();
 
@@ -62,6 +62,8 @@ Route::get('/', [LandingController::class, 'index'])->name('lnading');
 	
 	Route::resource('/tipo-productos', TipoProductoController::class)->middleware('auth');
 	Route::resource('/products', ProductController::class)->middleware('auth');
+	Route::resource('/roles', RoleController::class)->middleware('auth');
+	Route::resource('/carousel-image', CarouselImageController::class)->middleware('auth');
 	
 	
 	
@@ -86,7 +88,14 @@ Route::group(['middleware' => ['auth', 'verified']], function () {
 	Route::get('/rtl', [PageController::class, 'rtl'])->name('rtl');
 	Route::get('/profile', [UserProfileController::class, 'show'])->name('profile');
 	Route::post('/profile', [UserProfileController::class, 'update'])->name('profile.update');
-	Route::get('/profile-static', [PageController::class, 'profile'])->name('profile-static'); 
+	// Route::get('/profile-static', [PageController::class, 'profile'])->name('profile-static'); 
+	Route::get('/profile-static', [CarouselImageController::class, 'index'])->name('profile-static'); 
+	Route::post('/profile-static', [CarouselImageController::class, 'store'])->name('carousel.store'); 
+	Route::put('/profile-static', [CarouselImageController::class, 'update'])->name('carousel.update'); 
+	Route::delete('/profile-static', [CarouselImageController::class, 'destroy'])->name('carousel.destroy'); 
+	// Route::get('/general-info', [PageController::class, 'update'])->name('general-info'); 
+	Route::get('/general-info', [GeneralInfoController::class, 'show'])->name('general-info'); 
+	Route::post('/general-info', [GeneralInfoController::class, 'update'])->name('general-info.update'); 
 	Route::get('/sign-in-static', [PageController::class, 'signin'])->name('sign-in-static');
 	Route::get('/sign-up-static', [PageController::class, 'signup'])->name('sign-up-static'); 
 	Route::get('/{page}', [PageController::class, 'index'])->name('page');

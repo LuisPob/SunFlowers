@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Models\Company;
 use App\Notifications\DeleteAccount;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -16,7 +17,8 @@ class UserProfileController extends Controller
     use Notifiable;
     public function show()
     {
-        return view('pages.user-profile');
+        $company = Company::findOrFail(1);
+        return view('pages.user-profile', compact('company'));
     }
 
     public function update(Request $request)

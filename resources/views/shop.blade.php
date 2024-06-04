@@ -1,4 +1,4 @@
-@extends('layouts.appStore')
+@extends('layouts.appStore' , ['company' => $company])
 
 @section('content')
 <div class="container" style="margin-top: 80px">

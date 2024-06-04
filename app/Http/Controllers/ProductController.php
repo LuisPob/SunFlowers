@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Company;
 use App\Models\Product;
 use App\Models\TipoProducto;
 use Illuminate\Http\Request;
@@ -20,8 +21,9 @@ class ProductController extends Controller
     public function index()
     {
         $products = Product::paginate();
+        $company = Company::findOrFail(1);
 
-        return view('product.index', compact('products'))
+        return view('product.index', compact('products', 'company'))
             ->with('i', (request()->input('page', 1) - 1) * $products->perPage());
     }
 

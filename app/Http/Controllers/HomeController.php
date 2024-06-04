@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\CarouselImage;
+use App\Models\Company;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -23,6 +25,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('pages.dashboard');
+        // return view('pages.dashboard');
+        $carouselImages = CarouselImage::all();
+        $company = Company::findOrFail(1);
+        return view('pages.dashboard', compact('company', 'carouselImages'));
     }
 }

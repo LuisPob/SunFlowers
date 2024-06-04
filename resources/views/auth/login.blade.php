@@ -1,10 +1,10 @@
-@extends('layouts.app')
+@extends('layouts.app', ['company' => $company])
 
 @section('content')
     <div class="container position-sticky z-index-sticky top-0">
         <div class="row">
             <div class="col-12">
-                @include('layouts.navbars.guest.navbar')
+                @include('layouts.navbars.guest.navbar', ['company' => $company])
             </div>
         </div>
     </div>
@@ -57,10 +57,10 @@
                         <div
                             class="col-6 d-lg-flex d-none h-100 my-auto pe-0 position-absolute top-0 end-0 text-center justify-content-center flex-column">
                             <div class="position-relative bg-gradient-primary h-100 m-3 px-7 border-radius-lg d-flex flex-column justify-content-center overflow-hidden"
-                                style="background-image: url('/img/ICONO_SINFONDO.png');
+                                style="background-image: url('/storage/{{$company->logo}}');
               background-size: cover;">
                                 <span class="mask bg-gradient-primary opacity-6"></span>
-                                <h4 class="mt-5 text-white font-weight-bolder position-relative">"¡Bienvenidos a SunFlower!"</h4>
+                                <h4 class="mt-5 text-white font-weight-bolder position-relative">¡Bienvenidos a {{$company->company_name}}!</h4>
                                 <p class="text-white position-relative">Descubre la belleza en cada detalle. Explora nuestra
                                     colección de bisutería única y encuentra el toque perfecto para tu estilo.
                                     ¡Gracias por elegirnos para acompañarte en tu viaje de moda!</p>

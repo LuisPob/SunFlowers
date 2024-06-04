@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Company;
 use Illuminate\Notifications\Notifiable;
 use App\Models\User;
 use App\Notifications\ForgotPassword;
@@ -13,7 +14,8 @@ class ResetPassword extends Controller
 
     public function show()
     {
-        return view('auth.reset-password');
+        $company = Company::findOrFail(1);
+        return view('auth.reset-password', compact('company'));
     }
 
     public function routeNotificationForMail() {
