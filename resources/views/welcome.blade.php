@@ -266,7 +266,7 @@
             <div id="carouselExampleIndicators" class="carousel slide">
               <div class="carousel-indicators">
                 @foreach ($carouselImages as $index => $carouselImage)
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="{{ $index }}" class="{{ $index === 0 ? 'active' : '' }}" aria-current="{{ $index === 0 ? 'true' : '' }}" aria-label="Slide {{ $index + 1 }}"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="{{ $index }}" class="{{ $index === 0 ? 'active' : '' }}" aria-current="{{ $index === 0 ? 'true' : '' }}" aria-label="Slide {{ $index + 1 }}"></button>
                 @endforeach
 
               </div>
@@ -430,7 +430,7 @@
               <p>Para esos días en los que deseas un toque de elegancia sutil,
                 nuestros collares son la elección ideal que añadirá un brillo discreto a tu look.</p>
 
-              <a href="/" class="btn btn-custom-color text-white">VER COLLARES ELEGANTES.</a>
+              <a href="/products" class="btn btn-custom-color text-white">VER COLLARES ELEGANTES.</a>
 
             </div>
           </div>
@@ -449,7 +449,7 @@
               <p>Desde la oficina hasta una cena con amigos, nuestros collares
                 te acompañarán con estilo y distinción en cada momento de tu día</p>
 
-              <a href="/" class="btn btn-custom-color text-white">VER COLLARES CASUALES.</a>
+              <a href="/products" class="btn btn-custom-color text-white">VER COLLARES CASUALES.</a>
 
             </div>
           </div>
@@ -469,7 +469,7 @@
                 la elegancia en cada par de nuestros aros delicados,
                 diseñados para añadir un toque de encanto a tu estilo diario.</p>
 
-              <a href="/" class="btn btn-custom-color text-white">VER AROS DELICADOS.</a>
+              <a href="/products" class="btn btn-custom-color text-white">VER AROS DELICADOS.</a>
 
             </div>
           </div>
@@ -489,7 +489,7 @@
                 donde vayas con nuestros aros verdes,
                 inspirados en la alegría y la luminosidad de los campos de girasoles.</p>
 
-              <a href="/" class="btn btn-custom-color text-white">VER AROS PRIMAVERALES.</a>
+              <a href="/products" class="btn btn-custom-color text-white">VER AROS PRIMAVERALES.</a>
 
             </div>
           </div>
@@ -509,7 +509,7 @@
                 propio con nuestra tobillera morada,
                 diseñada para inspirar confianza y autoexpresión en cada paso que das.</p>
 
-              <a href="/" class="btn btn-custom-color text-white">VER TOBILLERAS MORADAS.</a>
+              <a href="/products" class="btn btn-custom-color text-white">VER TOBILLERAS MORADAS.</a>
 
             </div>
           </div>
@@ -528,7 +528,7 @@
               <p>Lleva la frescura y la vitalidad de un prado verde a cada paso con nuestra pulsera verde,
                 una pieza imprescindible para aquellos que buscan una conexión más profunda con la naturaleza.</p>
 
-              <a href="/" class="btn btn-custom-color text-white">VER PULSERAS.</a>
+              <a href="/products" class="btn btn-custom-color text-white">VER PULSERAS.</a>
 
             </div>
           </div>
@@ -601,237 +601,267 @@
                 <div id="reviews-list"></div>
               </div>
 
-              <script>
-                document.querySelectorAll('.flower-rating .flower').forEach(function(flower) {
-                  flower.addEventListener('click', setRating);
-                });
-
-                function setRating(ev) {
-                  let span = ev.currentTarget;
-                  let flowers = document.querySelectorAll('.flower-rating .flower');
-                  let num = parseInt(span.getAttribute('data-value'));
-
-                  flowers.forEach(function(flower) {
-                    if (parseInt(flower.getAttribute('data-value')) <= num) {
-                      flower.classList.add('rated');
-                    } else {
-                      flower.classList.remove('rated');
-                    }
-                  });
-
-                  document.querySelector('.flower-rating').setAttribute('data-rating', num);
-                }
-
-                document.getElementById('review-form').addEventListener('submit', function(event) {
-                  event.preventDefault();
-                  let name = document.getElementById('name').value;
-                  let rating = document.querySelector('.flower-rating').getAttribute('data-rating');
-                  let review = document.getElementById('review-text').value;
-
-                  // Crear flores para la calificación
-                  let flowerHtml = '';
-                  for (let i = 1; i <= 5; i++) {
-                    if (i <= rating) {
-                      flowerHtml += '<span class="flower">&#10048;</span>';
-                    } else {
-                      flowerHtml += '<span class="flower" style="color: #ccc;">&#10048;</span>';
-                    }
-                  }
-
-                  // Crear un objeto de reseña
-                  let reviewObject = {
-                    id: Date.now(),
-                    name: name,
-                    rating: rating,
-                    review: review,
-                    flowerHtml: flowerHtml
-                  };
-
-                  // Guardar la reseña en localStorage
-                  let reviews = JSON.parse(localStorage.getItem('reviews')) || [];
-                  reviews.push(reviewObject);
-                  localStorage.setItem('reviews', JSON.stringify(reviews));
-
-                  // Agregar la reseña al contenedor de reseñas
-                  addReviewToList(reviewObject);
-
-                  // Limpiar el formulario
-                  document.getElementById('review-form').reset();
-                  let flowers = document.querySelectorAll('.flower-rating .flower');
-                  flowers.forEach(function(flower) {
-                    flower.classList.remove('rated');
-                  });
-                  document.querySelector('.flower-rating').removeAttribute('data-rating');
-
-                  // Hacer scroll hacia abajo para mostrar la nueva reseña
-                  document.getElementById('reviews-container').scrollTop = document.getElementById('reviews-container').scrollHeight;
-                });
-
-                // Función para agregar una reseña a la lista
-                function addReviewToList(reviewObject) {
-                  let reviewElement = document.createElement('div');
-                  reviewElement.classList.add('review');
-                  reviewElement.setAttribute('data-id', reviewObject.id);
-                  reviewElement.innerHTML = `<p><strong>Nombre:</strong> ${reviewObject.name}</p><p><strong>Calificación:</strong> ${reviewObject.flowerHtml}</p><p><strong>Reseña:</strong> ${reviewObject.review}</p><span class="btn-delete">Eliminar</span>`;
-
-                  reviewElement.querySelector('.btn-delete').addEventListener('click', function() {
-                    deleteReview(reviewObject.id);
-                  });
-
-                  document.getElementById('reviews-list').appendChild(reviewElement);
-                }
-
-                // Función para eliminar una reseña
-                function deleteReview(id) {
-                  let reviews = JSON.parse(localStorage.getItem('reviews')) || [];
-                  reviews = reviews.filter(review => review.id !== id);
-                  localStorage.setItem('reviews', JSON.stringify(reviews));
-
-                  let reviewElement = document.querySelector(`.review[data-id='${id}']`);
-                  if (reviewElement) {
-                    reviewElement.remove();
-                  }
-                }
-
-                // Recuperar y mostrar reseñas guardadas al cargar la página
-                window.onload = function() {
-                  let reviews = JSON.parse(localStorage.getItem('reviews')) || [];
-                  reviews.forEach(function(review) {
-                    addReviewToList(review);
-                  });
-                };
-              </script>
-
-
-            </body>
-
-            <div id="instagram-102190" class="component_instagram col-12" style="background-color: yellow; color: black;"></div>
-
-            <a href="https://www.instagram.com/sunflower._ccp/" target="_blank" title="Síguenos @sunflower._ccp" class="btn btn-primary mt-5" style="background-color: #FBF451; color: black;">
-              <i class="fab fa-instagram" aria-hidden="true"></i> SÍGUENOS
-            </a>
-
-
-            <!-- Instagram code -->
-            <script>
-              $.ajax({
-                url: "/instagram-app/media",
-                data: {
-                  count: 6
-                },
-                success: function(json) {
-                  document.getElementById("instagram-102190").innerHTML = '';
-                  for (var i in json.posts) {
-                    if (i >= 6) {
-                      continue
-                    };
-                    url = json.posts[i].thumbnail_url;
-                    shortcode = json.posts[i].shortcode;
-
-                    newElement = document.createElement('div');
-                    newElement.className = 'insta_img';
-                    newElement.style = 'background-image: url(' + url + ')';
-
-                    newElementLink = document.createElement('a');
-                    newElementLink.href = json.posts[i].permalink;
-                    newElementLink.target = "_blank";
-                    newElementLink.appendChild(newElement);
-
-
-                    var clientHeight = document.getElementById('instagram-102190').clientHeight;
-                    document.getElementById("instagram-102190").appendChild(newElementLink);
-                  }
-                }
-              });
-            </script>
 
           </div>
-
-          <!-- Footer -->
-
-          <footer class="pt-5 pb-3" style="background-color: rgba(255, 255, 255, 0.5);">
-            <div class="container" style="text-align: justify;">
-              <div class="row text-md-left">
-
-                <div class="col-lg-3 col-md-6">
-                  <h5>🌻SOBRE SUNFLOWER</h5>
-                  <small style="font-weight: 600;">📍 Talcahuano, Region del BioBio, Chile. En nuestro universo de bisutería, cada pieza es más que un simple accesorio; es una manifestación de arte y creatividad, diseñada para realzar tu belleza interior y exterior, recordándote que la elegancia y el estilo pueden ser parte de tu día a día.</small>
-                </div>
-
-                <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
-                  <h5>🦋CONTACTO</h5>
-                  <ul>
-                    <li class="footer-top__menu-item">
-                      <small><a href="https://wa.me/56956103084" target="_blank" style="font-weight: 600;">WhatsApp</a></small>
-                    </li>
-                    <li class="footer-top__menu-item">
-                      <small><a href="mailto:florencia.sanzana.ortega@gmail.com" target="_blank" style="font-weight: 600;">Correo Electrónico</a></small>
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
-                  <h5>🌻INFORMACIÓN</h5>
-                  <ul class="navbar-nav mr-auto" style="font-weight: 600;">
-                    <li>
-                      <small><a href="/tienda-online" id="tienda-online" title="TIENDA ONLINE" style="font-weight: 600;">Tienda Online</a></small>
-                    </li>
-                    <li>
-                      <small><a href="/clientas" id="team-sunflower" title="TEAM sunflower ♡" style="font-weight: 600;">Team Sunflower</a></small>
-                    </li>
-                    <li>
-                      <small> <a href="/informacion-envios" id="plazos-despachos" title="Plazos Despachos" style="font-weight: 600;">Plazos Despachos</a></small>
-                    </li>
-                    <li>
-                      <small> <a href="/condiciones-entrega-despacho" id="condiciones-despachos" title="Condiciones Despachos" style="font-weight: 600;">Condiciones Despachos</a></small>
-                    </li>
-                    <li>
-                      <small> <a href="/politicas-de-cambios" id="politicas-cambios" title="Políticas de Cambios y Devoluciones" style="font-weight: 600;">Políticas de Cambios y Devoluciones</a></small>
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
-                  <h5> 🦋¿ERES TEAM SUNFLOWER? ¡REGISTRATE!</h5>
-                  <small style="font-weight: 600;">¡Registrate para que estemos en contacto y podamos compartir la mejor información, tips, sorpresas, descuentos, lanzamientos y más!</small>
-                  <ul class="list-inline social-footer my-3">
-                    <li class="list-inline-item"> <small style="font-weight: 600;">🌻SÍGUENOS:</li></small>
-                    <li class="list-inline-item">
-                      <a href="https://www.instagram.com/sunflower._ccp" title="Ir a Instagram" target="_blank">
-                        <i class="fab fa-instagram"></i>
-                      </a>
-                    </li>
-                    <li class="list-inline-item d-md-none">
-                      <a href="https://api.whatsapp.com/send?phone=56973069652&text=Hola LLUNA PAPELERÍA!" title="WhatsApp" target="_blank">
-                        <i class="fab fa-whatsapp fa-fw"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-
-              </div>
+        </div>
+        <hr class="mb-3">
+        <div class="container-fluid">
+          <div class="row align-items-center">
+            <div class="col-md-4 text-lg-left text-center mb-lg-0 mb-3">
+              <div class="powered-by">&copy; 2024 SUNFLOWER, JOYERIA DE BISUTERIA. <br>TODOS LOS DERECHOS RESERVADOS. </div>
             </div>
-            <hr class="mb-3">
-            <div class="container-fluid">
-              <div class="row align-items-center">
-                <div class="col-md-4 text-lg-left text-center mb-lg-0 mb-3">
-                  <div class="powered-by">&copy; 2024 SUNFLOWER, JOYERIA DE BISUTERIA. <br>TODOS LOS DERECHOS RESERVADOS.</div>
-                </div>
-                <div class="col-md-4 text-center">
-                  <a href="https://www.instagram.com/sunflower._ccp" title="SUNFLOWER">
-                    <img src="{{asset('storage/'. $company->logo)}}" class="navbar-brand img-fluid mb-md-0 mb-3 mx-auto" alt="LLUNA PAPELERÍA" />
-                  </a>
-                </div>
-                <div class="col-md-4">
-                  <ul class="payment text-lg-right text-center">
-                    <!-- Aquí pueden ir tus iconos de pago -->
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </footer>
+            <div class="col-md-4 text-center">
+              <a href="https://www.instagram.com/sunflower._ccp" title="SUNFLOWER">
 
+                <img src="img/ICONO_SINFONDO.png" class="navbar-brand img-fluid mb-md-0 mb-3 mx-auto" alt="LLUNA PAPELERÍA" />
+
+              </a>
+            </div>
+            <div class="col-md-4">
+              <ul class="payment text-lg-right text-center">
+                <div class="container row shadow-lg">
+                  <div class="col">
+                    <div class="container row shadow-lg">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4516.677177622737!2d-73.04292336781978!3d-36.82395767764204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9669b5f607f8d407%3A0xc752b4d932fe12a1!2sMall%20del%20Centro%20Concepci%C3%B3n!5e0!3m2!1ses-419!2scl!4v1717351996643!5m2!1ses-419!2scl" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                  </div>
+                </div>
+            </div>
   </main>
   <!-- -------- START FOOTER 3 w/ COMPANY DESCRIPTION WITH LINKS & SOCIAL ICONS & COPYRIGHT ------- -->
+  <footer class="footer py-5">
+    <div class="container">
+      <script>
+        document.querySelectorAll('.flower-rating .flower').forEach(function(flower) {
+          flower.addEventListener('click', setRating);
+        });
 
-  @endsection
+        function setRating(ev) {
+          let span = ev.currentTarget;
+          let flowers = document.querySelectorAll('.flower-rating .flower');
+          let num = parseInt(span.getAttribute('data-value'));
+
+          flowers.forEach(function(flower) {
+            if (parseInt(flower.getAttribute('data-value')) <= num) {
+              flower.classList.add('rated');
+            } else {
+              flower.classList.remove('rated');
+            }
+          });
+
+          document.querySelector('.flower-rating').setAttribute('data-rating', num);
+        }
+
+        document.getElementById('review-form').addEventListener('submit', function(event) {
+          event.preventDefault();
+          let name = document.getElementById('name').value;
+          let rating = document.querySelector('.flower-rating').getAttribute('data-rating');
+          let review = document.getElementById('review-text').value;
+
+          // Crear flores para la calificación
+          let flowerHtml = '';
+          for (let i = 1; i <= 5; i++) {
+            if (i <= rating) {
+              flowerHtml += '<span class="flower">&#10048;</span>';
+            } else {
+              flowerHtml += '<span class="flower" style="color: #ccc;">&#10048;</span>';
+            }
+          }
+
+          // Crear un objeto de reseña
+          let reviewObject = {
+            id: Date.now(),
+            name: name,
+            rating: rating,
+            review: review,
+            flowerHtml: flowerHtml
+          };
+
+          // Guardar la reseña en localStorage
+          let reviews = JSON.parse(localStorage.getItem('reviews')) || [];
+          reviews.push(reviewObject);
+          localStorage.setItem('reviews', JSON.stringify(reviews));
+
+          // Agregar la reseña al contenedor de reseñas
+          addReviewToList(reviewObject);
+
+          // Limpiar el formulario
+          document.getElementById('review-form').reset();
+          let flowers = document.querySelectorAll('.flower-rating .flower');
+          flowers.forEach(function(flower) {
+            flower.classList.remove('rated');
+          });
+          document.querySelector('.flower-rating').removeAttribute('data-rating');
+
+          // Hacer scroll hacia abajo para mostrar la nueva reseña
+          document.getElementById('reviews-container').scrollTop = document.getElementById('reviews-container').scrollHeight;
+        });
+
+        // Función para agregar una reseña a la lista
+        function addReviewToList(reviewObject) {
+          let reviewElement = document.createElement('div');
+          reviewElement.classList.add('review');
+          reviewElement.setAttribute('data-id', reviewObject.id);
+          reviewElement.innerHTML = `<p><strong>Nombre:</strong> ${reviewObject.name}</p><p><strong>Calificación:</strong> ${reviewObject.flowerHtml}</p><p><strong>Reseña:</strong> ${reviewObject.review}</p><span class="btn-delete">Eliminar</span>`;
+
+          reviewElement.querySelector('.btn-delete').addEventListener('click', function() {
+            deleteReview(reviewObject.id);
+          });
+
+          document.getElementById('reviews-list').appendChild(reviewElement);
+        }
+
+        // Función para eliminar una reseña
+        function deleteReview(id) {
+          let reviews = JSON.parse(localStorage.getItem('reviews')) || [];
+          reviews = reviews.filter(review => review.id !== id);
+          localStorage.setItem('reviews', JSON.stringify(reviews));
+
+          let reviewElement = document.querySelector(`.review[data-id='${id}']`);
+          if (reviewElement) {
+            reviewElement.remove();
+          }
+        }
+
+        // Recuperar y mostrar reseñas guardadas al cargar la página
+        window.onload = function() {
+          let reviews = JSON.parse(localStorage.getItem('reviews')) || [];
+          reviews.forEach(function(review) {
+            addReviewToList(review);
+          });
+        };
+      </script>
+
+
+</body>
+
+<div id="instagram-102190" class="component_instagram col-12" style="background-color: yellow; color: black;"></div>
+
+<a href="https://www.instagram.com/sunflower._ccp/" target="_blank" title="Síguenos @sunflower._ccp" class="btn btn-primary mt-5" style="background-color: #FBF451; color: black;">
+  <i class="fab fa-instagram" aria-hidden="true"></i> SÍGUENOS
+</a>
+
+
+<!-- Instagram code -->
+<script>
+  $.ajax({
+    url: "/instagram-app/media",
+    data: {
+      count: 6
+    },
+    success: function(json) {
+      document.getElementById("instagram-102190").innerHTML = '';
+      for (var i in json.posts) {
+        if (i >= 6) {
+          continue
+        };
+        url = json.posts[i].thumbnail_url;
+        shortcode = json.posts[i].shortcode;
+
+        newElement = document.createElement('div');
+        newElement.className = 'insta_img';
+        newElement.style = 'background-image: url(' + url + ')';
+
+        newElementLink = document.createElement('a');
+        newElementLink.href = json.posts[i].permalink;
+        newElementLink.target = "_blank";
+        newElementLink.appendChild(newElement);
+
+
+        var clientHeight = document.getElementById('instagram-102190').clientHeight;
+        document.getElementById("instagram-102190").appendChild(newElementLink);
+      }
+    }
+  });
+</script>
+
+</div>
+
+<!-- Footer -->
+
+<footer class="pt-5 pb-3" style="background-color: rgba(255, 255, 255, 0.5);">
+  <div class="container" style="text-align: justify;">
+    <div class="row text-md-left">
+
+      <div class="col-lg-3 col-md-6">
+        <h5>🌻SOBRE SUNFLOWER</h5>
+        <small style="font-weight: 600;">📍 Talcahuano, Region del BioBio, Chile. En nuestro universo de bisutería, cada pieza es más que un simple accesorio; es una manifestación de arte y creatividad, diseñada para realzar tu belleza interior y exterior, recordándote que la elegancia y el estilo pueden ser parte de tu día a día.</small>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
+        <h5>🦋CONTACTO</h5>
+        <ul>
+          <li class="footer-top__menu-item">
+            <small><a href="https://wa.me/56956103084" target="_blank" style="font-weight: 600;">WhatsApp</a></small>
+          </li>
+          <li class="footer-top__menu-item">
+            <small><a href="mailto:florencia.sanzana.ortega@gmail.com" target="_blank" style="font-weight: 600;">Correo Electrónico</a></small>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
+        <h5>🌻INFORMACIÓN</h5>
+        <ul class="navbar-nav mr-auto" style="font-weight: 600;">
+          <li>
+            <small><a href="/tienda-online" id="tienda-online" title="TIENDA ONLINE" style="font-weight: 600;">Tienda Online</a></small>
+          </li>
+          <li>
+            <small><a href="/clientas" id="team-sunflower" title="TEAM sunflower ♡" style="font-weight: 600;">Team Sunflower</a></small>
+          </li>
+          <li>
+            <small> <a href="/informacion-envios" id="plazos-despachos" title="Plazos Despachos" style="font-weight: 600;">Plazos Despachos</a></small>
+          </li>
+          <li>
+            <small> <a href="/condiciones-entrega-despacho" id="condiciones-despachos" title="Condiciones Despachos" style="font-weight: 600;">Condiciones Despachos</a></small>
+          </li>
+          <li>
+            <small> <a href="/politicas-de-cambios" id="politicas-cambios" title="Políticas de Cambios y Devoluciones" style="font-weight: 600;">Políticas de Cambios y Devoluciones</a></small>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
+        <h5> 🦋¿ERES TEAM SUNFLOWER? ¡REGISTRATE!</h5>
+        <small style="font-weight: 600;">¡Registrate para que estemos en contacto y podamos compartir la mejor información, tips, sorpresas, descuentos, lanzamientos y más!</small>
+        <ul class="list-inline social-footer my-3">
+          <li class="list-inline-item"> <small style="font-weight: 600;">🌻SÍGUENOS:</li></small>
+          <li class="list-inline-item">
+            <a href="https://www.instagram.com/sunflower._ccp" title="Ir a Instagram" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li class="list-inline-item d-md-none">
+            <a href="https://api.whatsapp.com/send?phone=56973069652&text=Hola LLUNA PAPELERÍA!" title="WhatsApp" target="_blank">
+              <i class="fab fa-whatsapp fa-fw"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+  <hr class="mb-3">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col-md-4 text-lg-left text-center mb-lg-0 mb-3">
+        <div class="powered-by">&copy; 2024 SUNFLOWER, JOYERIA DE BISUTERIA. <br>TODOS LOS DERECHOS RESERVADOS.</div>
+      </div>
+      <div class="col-md-4 text-center">
+        <a href="https://www.instagram.com/sunflower._ccp" title="SUNFLOWER">
+          <img src="{{asset('storage/'. $company->logo)}}" class="navbar-brand img-fluid mb-md-0 mb-3 mx-auto" alt="LLUNA PAPELERÍA" />
+        </a>
+      </div>
+      <div class="col-md-4">
+        <ul class="payment text-lg-right text-center">
+          <!-- Aquí pueden ir tus iconos de pago -->
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</main>
+<!-- -------- START FOOTER 3 w/ COMPANY DESCRIPTION WITH LINKS & SOCIAL ICONS & COPYRIGHT ------- -->
+
+@endsection

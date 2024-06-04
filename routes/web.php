@@ -33,9 +33,16 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\TipoProductoController;
 use App\Http\Controllers\ProductoController;
 use App\Http\Controllers\RoleController;
+use App\Http\Controllers\TransbankController;
+
+
+
+
+
+
 
 Auth::routes();
-
+//Route::post('/iniciar_compra', [TransbankController::class, 'iniciar_compra']);
 Route::get('/shop', [CartController::class, 'shop'])->name('shop');
 Route::get('/cart', [CartController::class, 'cart'])->name('cart.index');
 // Route::post('/add', [CartController::class, 'add'])->name('cart.store');
@@ -45,8 +52,8 @@ Route::post('/clear', [CartController::class, 'clear'])->name('cart.clear');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-
-
+// CALENDARIO
+Route::get('/calendario', [App\Http\Controllers\calendarController::class, 'index'])->name('calendario');
 
 Route::get('/', [LandingController::class, 'index'])->name('lnading');
 // Route::get('/', function () {return redirect('/dashboard');})->middleware('auth');
