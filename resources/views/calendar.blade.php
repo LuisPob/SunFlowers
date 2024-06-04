@@ -3,6 +3,23 @@
 @section('content')
 @include('layouts.navbars.guest.navbar-pru')
 
+<style>
+    body {
+    
+    /* Establece la imagen de fondo */
+    background-image: url('/img/fondowelcome.jpg');
+    /* Ajusta la posición de la imagen si es necesario */
+    background-position: center;
+    /* Ajusta el tamaño de la imagen de fondo */
+    background-size: cover;
+    /* Fija la imagen de fondo para que no se mueva al hacer scroll */
+    background-attachment: fixed;
+    color: black;
+    font-weight: bold;
+    
+    
+  }
+</style>
 <section class="py-5 text-center">
     <div class="container">
         <div class="row mt-5">
