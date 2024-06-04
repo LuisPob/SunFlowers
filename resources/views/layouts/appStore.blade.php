@@ -36,7 +36,7 @@
         
     @auth
         
-        @include('partials.navbar')
+        @include('layouts.navbars.guest.navbar-pru')
         <main class="main-content border-radius-lg">
             @yield('content')
         </main>
