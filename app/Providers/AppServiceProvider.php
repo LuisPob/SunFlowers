@@ -25,7 +25,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $company = Company::find(1);
-        View::share('company', $company);
+        //$company = Company::find(1);
+        //View::share('company', $company);
     }
 }
