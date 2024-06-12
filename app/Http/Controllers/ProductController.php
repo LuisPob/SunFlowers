@@ -53,6 +53,7 @@ class ProductController extends Controller
         if ($request->hasFile('image_path')) {
             $path = $request->file('image_path')->store('images', ['disk' => 'public']); 
             // $path = $request->file('image_path')->store('public/images');
+            dd(basename($path));
             $validatedData['image_path'] = basename($path);
         }
         // dd($validatedData);
@@ -100,9 +101,12 @@ class ProductController extends Controller
      */
     public function update(Request $request, Product $product)
     {
-        request()->validate(Product::$rules);
-
-        $product->update($request->all());
+        $validatedData = request()->validate(Product::$rules);
+        if ($request->hasFile('image_path')) {
+            $path = $request->file('image_path')->store('images', ['disk' => 'public']); 
+            $validatedData['image_path'] = basename($path);
+        }
+        $product->update($validatedData);
 
         return redirect()->route('products.index')
             ->with('success', 'Product updated successfully');
