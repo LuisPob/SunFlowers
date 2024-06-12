@@ -20,12 +20,13 @@ class CompanyTableSeeder extends Seeder
             'company_name' => 'Sunflower',
             'color_primary' => '#fdd367',
             'color_secondary' => '#bcd797',
+            'color_tertiary' => '#A67B5B',
             'phone' => 956103084,
             'email' => 'sunflowerstore.c@gmail.com',
-            'logo' => 'ICONO_SINFONDO.png',
-            'region_id' => 8,
-            // 'province_id' => 8,
-            // 'commune_id' => 8,
+            'logo' => 'logos/ICONO_SINFONDO.png',
+            'region_id' => 11,
+            'province_id' => 38,
+            'commune_id' => 219,
         ]);
     }
 }

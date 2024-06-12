@@ -25,6 +25,35 @@
 </head>
 
 <body class="{{ $class ?? '' }}">
+    <style>
+        :root {
+            --color-primary: {{ $company->color_primary }};
+            --color-secondary: {{ $company->color_secondary }};
+            --bs-dark: {{ $company->color_tertiary }};
+            
+            .bg-primary{
+                background-color: var(--color-primary) !important;
+            }
+            --bs-warning: var(--color-primary);
+            .btn-primary{
+                background-color: var(--color-primary) !important;
+            }
+            .btn-secondary {
+                background-color: var(--color-secondary) !important;
+                border-color: var(--color-secondary) !important;
+            }
+            .text-dark {
+                color: var(--bs-dark) !important;
+            }
+
+            .navbar .nav-link {
+                color: var(--bs-dark) !important;
+            }
+            .navbar-vertical .navbar-nav .nav-link {
+                color: #67748e !important;
+            }
+        }
+    </style>
 
     @guest
         @yield('content')
@@ -64,6 +93,51 @@
         });
     </script>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('select[name="region_id"]').on('change', function() {
+                var regionId = $(this).val();
+                if (regionId) {
+                    $.ajax({
+                        url: '/provinces/' + regionId,
+                        type: 'GET',
+                        dataType: 'json',
+                        success: function(data) {
+                            $('select[name="province_id"]').empty();
+                            $('select[name="province_id"]').append('<option value="">Seleccione la provincia</option>');
+                            $.each(data, function(key, value) {
+                                $('select[name="province_id"]').append('<option value="' + key + '">' + value + '</option>');
+                            });
+                        }
+                    });
+                } else {
+                    $('select[name="province_id"]').empty();
+                }
+            });
+
+            $('select[name="province_id"]').on('change', function() {
+                var provinceId = $(this).val();
+                if (provinceId) {
+                    $.ajax({
+                        url: '/communes/' + provinceId,
+                        type: 'GET',
+                        dataType: 'json',
+                        success: function(data) {
+                            $('select[name="commune_id"]').empty();
+                            $('select[name="commune_id"]').append('<option value="">Seleccione la comuna</option>');
+                            $.each(data, function(key, value) {
+                                $('select[name="commune_id"]').append('<option value="' + key + '">' + value + '</option>');
+                            });
+                        }
+                    });
+                } else {
+                    $('select[name="commune_id"]').empty();
+                }
+            });
+        });
+    </script>
+    
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!--   Core JS Files   -->
     <script src="{{asset('assets/js/core/popper.min.js')}}"></script>

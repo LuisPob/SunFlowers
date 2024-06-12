@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Company;
+use App\Models\Permission;
 use App\Models\Role;
+use App\Models\RoleHasPermission;
 use Illuminate\Http\Request;
 
 /**
@@ -33,7 +35,11 @@ class RoleController extends Controller
     public function create()
     {
         $role = new Role();
-        return view('role.create', compact('role'));
+        $permissions = Permission::all();
+        $rolePermissions = RoleHasPermission::pluck('role_id', 'permission_id')->toArray();
+        // dd($rolePermissions);
+        
+        return view('role.create', compact('role', 'permissions', 'rolePermissions'));
     }
 
     /**
@@ -74,8 +80,11 @@ class RoleController extends Controller
     public function edit($id)
     {
         $role = Role::find($id);
+        $permissions = Permission::all();
+        $rolePermissions = RoleHasPermission::where('role_id', $id)->pluck('permission_id')->toArray();
+        // dd($rolePermissions);
 
-        return view('role.edit', compact('role'));
+        return view('role.edit', compact('role', 'permissions', 'rolePermissions'));
     }
 
     /**

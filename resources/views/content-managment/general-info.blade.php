@@ -53,7 +53,7 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    {!! html()->label('Región', 'region_id') !!}
+                                    {!! html()->label('Región', 'region') !!}
                                     {!! html()->select('region_id', $regions, old('region_id', $company->region_id))->class('form-control' . ($errors->has('region_id') ? ' is-invalid' : ''))->placeholder('Seleccione la región') !!}
                                     {!! $errors->first('region_id', '<div class="invalid-feedback">:message</div>') !!}
                                 </div>
@@ -62,16 +62,15 @@
                             <div class="col-md-4">
                                 <div class="form-group">
                                     {!! html()->label('Provincia', 'province_id') !!}
-                                    {!! html()->select('province_id', $provinces, old('province_id', $company->province_id))->class('form-control' . ($errors->has('province') ? ' is-invalid' : ''))->placeholder('Seleccione la provincia') !!}
+                                    {!! html()->select('province_id', [], old('province_id', $company->province_id))->class('form-control' . ($errors->has('province_id') ? ' is-invalid' : ''))->placeholder('Seleccione la provincia') !!}
                                     {!! $errors->first('province', '<div class="invalid-feedback">:message</div>') !!}
-
                                 </div>
                             </div>
 
                             <div class="col-md-4">
                                 <div class="form-group">
                                     {!! html()->label('Comuna', 'commune_id') !!}
-                                    {!! html()->select('commune_id', $communes, old('commune_id', $company->commune_id))->class('form-control' . ($errors->has('commune_id') ? ' is-invalid' : ''))->placeholder('Seleccione la comuna') !!}
+                                    {!! html()->select('commune_id', [], old('commune_id', $company->commune_id))->class('form-control' . ($errors->has('commune_id') ? ' is-invalid' : ''))->placeholder('Seleccione la comuna') !!}
                                     {!! $errors->first('commune_id', '<div class="invalid-feedback">:message</div>') !!}
 
                                 </div>
@@ -111,6 +110,13 @@
                                     {!! $errors->first('color_secondary', '<div class="invalid-feedback">:message</div>') !!}
                                 </div>
                             </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    {!! html()->label('Color Terciario', 'color_tertiary') !!}
+                                    {!! html()->input('color', 'color_tertiary', old('color_tertiary', $company->color_tertiary))->class('form-control' . ($errors->has('color_tertiary') ? ' is-invalid' : '')) !!}
+                                    {!! $errors->first('color_tertiary', '<div class="invalid-feedback">:message</div>') !!}
+                                </div>
+                            </div>
 
                         </div>
                     </div>
@@ -118,50 +124,6 @@
             </div>
         </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('select[name="region_id"]').on('change', function() {
-                var regionId = $(this).val();
-                if (regionId) {
-                    $.ajax({
-                        url: '/provinces/' + regionId,
-                        type: 'GET',
-                        dataType: 'json',
-                        success: function(data) {
-                            $('select[name="province_id"]').empty();
-                            $('select[name="province_id"]').append('<option value="">Seleccione la provincia</option>');
-                            $.each(data, function(key, value) {
-                                $('select[name="province_id"]').append('<option value="' + key + '">' + value + '</option>');
-                            });
-                        }
-                    });
-                } else {
-                    $('select[name="province_id"]').empty();
-                }
-            });
-
-            $('select[name="province_id"]').on('change', function() {
-                var provinceId = $(this).val();
-                if (provinceId) {
-                    $.ajax({
-                        url: '/communes/' + provinceId,
-                        type: 'GET',
-                        dataType: 'json',
-                        success: function(data) {
-                            $('select[name="commune_id"]').empty();
-                            $('select[name="commune_id"]').append('<option value="">Seleccione la comuna</option>');
-                            $.each(data, function(key, value) {
-                                $('select[name="commune_id"]').append('<option value="' + key + '">' + value + '</option>');
-                            });
-                        }
-                    });
-                } else {
-                    $('select[name="commune_id"]').empty();
-                }
-            });
-        });
-    </script>
 
     @include('layouts.footers.auth.footer')
     <!-- </div> -->

@@ -5,6 +5,7 @@
 @endsection
 
 @section('content')
+@include('layouts.navbars.auth.topnav', ['title' => 'Tipo Producto'])
     <div class="container-fluid mt-3">
         <div class="row">
             <div class="col-sm-12">

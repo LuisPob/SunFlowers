@@ -1,12 +1,11 @@
 @extends('layouts.app')
 
 @section('template_title')
-    Role
+    Permission
 @endsection
 
 @section('content')
-@include('layouts.navbars.auth.topnav', ['title' => 'Roles'])
-    <div class="container-fluid mt-3">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12">
                 <div class="card">
@@ -14,11 +13,11 @@
                         <div style="display: flex; justify-content: space-between; align-items: center;">
 
                             <span id="card_title">
-                                {{ __('Role') }}
+                                {{ __('Permission') }}
                             </span>
 
                              <div class="float-right">
-                                <a href="{{ route('roles.create') }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
+                                <a href="{{ route('permissions.create') }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
                                   {{ __('Create New') }}
                                 </a>
                               </div>
@@ -44,17 +43,17 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach ($roles as $role)
+                                    @foreach ($permissions as $permission)
                                         <tr>
                                             <td>{{ ++$i }}</td>
                                             
-											<td>{{ $role->name }}</td>
-											<td>{{ $role->guard_name }}</td>
+											<td>{{ $permission->name }}</td>
+											<td>{{ $permission->guard_name }}</td>
 
                                             <td>
-                                                <form action="{{ route('roles.destroy',$role->id) }}" method="POST">
-                                                    <a class="btn btn-sm btn-primary " href="{{ route('roles.show',$role->id) }}"><i class="fa fa-fw fa-eye"></i> Show</a>
-                                                    <a class="btn btn-sm btn-success" href="{{ route('roles.edit',$role->id) }}"><i class="fa fa-fw fa-edit"></i> Edit</a>
+                                                <form action="{{ route('permissions.destroy',$permission->id) }}" method="POST">
+                                                    <a class="btn btn-sm btn-primary " href="{{ route('permissions.show',$permission->id) }}"><i class="fa fa-fw fa-eye"></i> Show</a>
+                                                    <a class="btn btn-sm btn-success" href="{{ route('permissions.edit',$permission->id) }}"><i class="fa fa-fw fa-edit"></i> Edit</a>
                                                     @csrf
                                                     @method('DELETE')
                                                     <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i> Delete</button>
@@ -67,7 +66,7 @@
                         </div>
                     </div>
                 </div>
-                {!! $roles->links() !!}
+                {!! $permissions->links() !!}
             </div>
         </div>
     </div>

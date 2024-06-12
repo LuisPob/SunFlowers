@@ -605,7 +605,7 @@
           </div>
         </div>
         <hr class="mb-3">
-        
+
   </main>
   <!-- -------- START FOOTER 3 w/ COMPANY DESCRIPTION WITH LINKS & SOCIAL ICONS & COPYRIGHT ------- -->
   <footer class="footer py-5">
@@ -755,6 +755,28 @@
   <div class="container" style="text-align: justify;">
     <div class="row text-md-left">
 
+      @foreach ( $footerTitles as $footerTitle)
+      <div class="col-lg-3 col-md-6">
+        <h5>{{ $footerTitle->title }}</h5>
+        <ul>
+          @foreach ( $footerTitle->footerContents as $footerItem)
+          <li class="footer-top__menu-item">
+            <small><a href="{{ $footerItem->link }}" target="_blank" style="font-weight: 600;">{{ $footerItem->content }}</a></small>
+          </li>
+          @endforeach
+        </ul>
+      </div>
+      @endforeach
+
+      <!-- <ul>
+          <li class="footer-top__menu-item">
+            <small><a href="https://wa.me/56956103084" target="_blank" style="font-weight: 600;">WhatsApp</a></small>
+          </li>
+          <li class="footer-top__menu-item">
+            <small><a href="mailto:florencia.sanzana.ortega@gmail.com" target="_blank" style="font-weight: 600;">Correo Electrónico</a></small>
+          </li>
+        </ul> -->
+
       <div class="col-lg-3 col-md-6">
         <h5>🌻SOBRE SUNFLOWER</h5>
         <small style="font-weight: 600;">📍 Talcahuano, Region del BioBio, Chile. En nuestro universo de bisutería, cada pieza es más que un simple accesorio; es una manifestación de arte y creatividad, diseñada para realzar tu belleza interior y exterior, recordándote que la elegancia y el estilo pueden ser parte de tu día a día.</small>
@@ -804,7 +826,7 @@
             </a>
           </li>
           <li class="list-inline-item d-md-none">
-            <a href="https://api.whatsapp.com/send?phone=56973069652&text=Hola LLUNA PAPELERÍA!" title="WhatsApp" target="_blank">
+            <a href="https://api.whatsapp.com/send?phone=56973069652&text=Hola!" title="WhatsApp" target="_blank">
               <i class="fab fa-whatsapp fa-fw"></i>
             </a>
           </li>
@@ -821,18 +843,18 @@
       </div>
       <div class="col-md-4 text-center">
         <a href="https://www.instagram.com/sunflower._ccp" title="SUNFLOWER">
-          <img src="{{asset('storage/'. $company->logo)}}" class="navbar-brand img-fluid mb-md-0 mb-3 mx-auto" alt="LLUNA PAPELERÍA" />
+          <img src="{{asset('storage/'. $company->logo)}}" class="navbar-brand img-fluid mb-md-0 mb-3 mx-auto" alt="{{ $company->company_name }}" />
         </a>
       </div>
       <div class="col-md-4">
         <ul class="payment text-lg-right text-center">
-        <div class="container row shadow-lg">
-                  <div class="col">
-                    <div class="container row shadow-lg">
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4516.677177622737!2d-73.04292336781978!3d-36.82395767764204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9669b5f607f8d407%3A0xc752b4d932fe12a1!2sMall%20del%20Centro%20Concepci%C3%B3n!5e0!3m2!1ses-419!2scl!4v1717351996643!5m2!1ses-419!2scl" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                  </div>
-                </div>
+          <div class="container row shadow-lg">
+            <div class="col">
+              <div class="container row shadow-lg">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4516.677177622737!2d-73.04292336781978!3d-36.82395767764204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9669b5f607f8d407%3A0xc752b4d932fe12a1!2sMall%20del%20Centro%20Concepci%C3%B3n!5e0!3m2!1ses-419!2scl!4v1717351996643!5m2!1ses-419!2scl" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+          </div>
         </ul>
       </div>
     </div>

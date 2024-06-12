@@ -14,8 +14,8 @@ class GeneralInfoController extends Controller
     {
         // $regions = Region::all();
         $regions = Region::pluck('region_name', 'id');
-        $provinces = Province::all();
-        $communes = Commune::all();
+        $provinces = Province::pluck('province_name', 'id');
+        $communes = Commune::pluck('commune_name', 'id');
         // $company = Company::where('id', 1)->first();
         $company = Company::findOrFail(1);
         // dd($company);
@@ -43,6 +43,7 @@ class GeneralInfoController extends Controller
         $company->employees = $request->input('employees');
         $company->color_primary = $request->input('color_primary');
         $company->color_secondary = $request->input('color_secondary');
+        $company->color_tertiary = $request->input('color_tertiary');
         
         $company->save();
 

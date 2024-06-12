@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
 @section('template_title')
-    Role
+    Footer Title
 @endsection
 
 @section('content')
-@include('layouts.navbars.auth.topnav', ['title' => 'Roles'])
+@include('layouts.navbars.auth.topnav', ['title' => 'Títulos footer'])
     <div class="container-fluid mt-3">
         <div class="row">
             <div class="col-sm-12">
@@ -14,11 +14,11 @@
                         <div style="display: flex; justify-content: space-between; align-items: center;">
 
                             <span id="card_title">
-                                {{ __('Role') }}
+                                {{ __('Footer Title') }}
                             </span>
 
                              <div class="float-right">
-                                <a href="{{ route('roles.create') }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
+                                <a href="{{ route('footer-title.create') }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
                                   {{ __('Create New') }}
                                 </a>
                               </div>
@@ -37,24 +37,22 @@
                                     <tr>
                                         <th>No</th>
                                         
-										<th>Name</th>
-										<th>Guard Name</th>
+										<th>Title</th>
 
                                         <th></th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach ($roles as $role)
+                                    @foreach ($footerTitles as $footerTitle)
                                         <tr>
                                             <td>{{ ++$i }}</td>
                                             
-											<td>{{ $role->name }}</td>
-											<td>{{ $role->guard_name }}</td>
+											<td>{{ $footerTitle->title }}</td>
 
                                             <td>
-                                                <form action="{{ route('roles.destroy',$role->id) }}" method="POST">
-                                                    <a class="btn btn-sm btn-primary " href="{{ route('roles.show',$role->id) }}"><i class="fa fa-fw fa-eye"></i> Show</a>
-                                                    <a class="btn btn-sm btn-success" href="{{ route('roles.edit',$role->id) }}"><i class="fa fa-fw fa-edit"></i> Edit</a>
+                                                <form action="{{ route('footer-title.destroy',$footerTitle->id) }}" method="POST">
+                                                    <a class="btn btn-sm btn-primary " href="{{ route('footer-title.show',$footerTitle->id) }}"><i class="fa fa-fw fa-eye"></i> Show</a>
+                                                    <a class="btn btn-sm btn-success" href="{{ route('footer-title.edit',$footerTitle->id) }}"><i class="fa fa-fw fa-edit"></i> Edit</a>
                                                     @csrf
                                                     @method('DELETE')
                                                     <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i> Delete</button>
@@ -67,7 +65,7 @@
                         </div>
                     </div>
                 </div>
-                {!! $roles->links() !!}
+                {!! $footerTitles->links() !!}
             </div>
         </div>
     </div>

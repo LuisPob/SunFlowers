@@ -24,6 +24,7 @@ return new class extends Migration
             $table->string('email');
             $table->string('color_primary')->nullable();
             $table->string('color_secondary')->nullable();
+            $table->string('color_tertiary')->nullable();
             $table->integer('employees')->nullable();
             $table->string('logo')->nullable();
             $table->timestamps();
@@ -37,6 +38,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('company');
+        Schema::dropIfExists('companies');
     }
 };

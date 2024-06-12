@@ -1,6 +1,9 @@
 <?php
 
+use App\Http\Controllers\FooterContentController;
+use App\Http\Controllers\FooterTitleController;
 use App\Http\Controllers\CarouselImageController;
+use App\Http\Controllers\LocationController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -71,6 +74,8 @@ Route::get('/', [LandingController::class, 'index'])->name('lnading');
 	Route::resource('/products', ProductController::class)->middleware('auth');
 	Route::resource('/roles', RoleController::class)->middleware('auth');
 	Route::resource('/carousel-image', CarouselImageController::class)->middleware('auth');
+	Route::resource('/footer-title', FooterTitleController::class)->middleware('auth');
+	Route::resource('/footer-content', FooterContentController::class)->middleware('auth');
 	
 	
 	
@@ -120,3 +125,6 @@ Route::post('/clear', [CartController::class, 'clear'])->name('cart.clear');
 
 //Route::resource('tipo-modulos', TipoModuloController::class);
 //Route::resource('data', DataController::class);
+
+Route::get('/provinces/{regionId}', [LocationController::class, 'getProvinces']);
+Route::get('/communes/{provinceId}', [LocationController::class, 'getCommunes']);

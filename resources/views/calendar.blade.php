@@ -16,6 +16,7 @@
     background-attachment: fixed;
     color: black;
     font-weight: bold;
+    backdrop-filter: blur(5px);
     
     
   }

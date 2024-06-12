@@ -31,6 +31,7 @@ class Company extends Model
         'email' => 'required|email|max:255',
         'color_primary' => 'nullable|string|size:7',
         'color_secondary' => 'nullable|string|size:7',
+        'color_tertiary' => 'nullable|string|size:7',
         'employees' => 'nullable',
         'logo' => 'nullable|image|mimes:png,jpg|max:2048',
     ];
