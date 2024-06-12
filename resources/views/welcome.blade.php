@@ -346,7 +346,7 @@
         }
       </style>
       <div id='component-332668' class='theme-component show'>
-        <div class="container">
+        <!-- <div class="container">
           <h2 class="text-center mb-4">Categorías de Productos</h2>
           <div id="categoryCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -416,7 +416,7 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-        </div>
+        </div> -->
         <div id="image-w-text-332668" class="container mb-5">
           <div class="row align-items-center">
             <div class="col-md-6 order-md-1">
@@ -760,7 +760,7 @@
         <h5>{{ $footerTitle->title }}</h5>
         <ul>
           @foreach ( $footerTitle->footerContents as $footerItem)
-          <li class="footer-top__menu-item">
+          <li class="footer-top__menu-item" style="list-style: none;">
             <small><a href="{{ $footerItem->link }}" target="_blank" style="font-weight: 600;">{{ $footerItem->content }}</a></small>
           </li>
           @endforeach
@@ -776,62 +776,6 @@
             <small><a href="mailto:florencia.sanzana.ortega@gmail.com" target="_blank" style="font-weight: 600;">Correo Electrónico</a></small>
           </li>
         </ul> -->
-
-      <div class="col-lg-3 col-md-6">
-        <h5>🌻SOBRE SUNFLOWER</h5>
-        <small style="font-weight: 600;">📍 Talcahuano, Region del BioBio, Chile. En nuestro universo de bisutería, cada pieza es más que un simple accesorio; es una manifestación de arte y creatividad, diseñada para realzar tu belleza interior y exterior, recordándote que la elegancia y el estilo pueden ser parte de tu día a día.</small>
-      </div>
-
-      <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
-        <h5>🦋CONTACTO</h5>
-        <ul>
-          <li class="footer-top__menu-item">
-            <small><a href="https://wa.me/56956103084" target="_blank" style="font-weight: 600;">WhatsApp</a></small>
-          </li>
-          <li class="footer-top__menu-item">
-            <small><a href="mailto:florencia.sanzana.ortega@gmail.com" target="_blank" style="font-weight: 600;">Correo Electrónico</a></small>
-          </li>
-        </ul>
-      </div>
-
-      <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
-        <h5>🌻INFORMACIÓN</h5>
-        <ul class="navbar-nav mr-auto" style="font-weight: 600;">
-          <li>
-            <small><a href="/tienda-online" id="tienda-online" title="TIENDA ONLINE" style="font-weight: 600;">Tienda Online</a></small>
-          </li>
-          <li>
-            <small><a href="/clientas" id="team-sunflower" title="TEAM sunflower ♡" style="font-weight: 600;">Team Sunflower</a></small>
-          </li>
-          <li>
-            <small> <a href="/informacion-envios" id="plazos-despachos" title="Plazos Despachos" style="font-weight: 600;">Plazos Despachos</a></small>
-          </li>
-          <li>
-            <small> <a href="/condiciones-entrega-despacho" id="condiciones-despachos" title="Condiciones Despachos" style="font-weight: 600;">Condiciones Despachos</a></small>
-          </li>
-          <li>
-            <small> <a href="/politicas-de-cambios" id="politicas-cambios" title="Políticas de Cambios y Devoluciones" style="font-weight: 600;">Políticas de Cambios y Devoluciones</a></small>
-          </li>
-        </ul>
-      </div>
-
-      <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
-        <h5> 🦋¿ERES TEAM SUNFLOWER? ¡REGISTRATE!</h5>
-        <small style="font-weight: 600;">¡Registrate para que estemos en contacto y podamos compartir la mejor información, tips, sorpresas, descuentos, lanzamientos y más!</small>
-        <ul class="list-inline social-footer my-3">
-          <li class="list-inline-item"> <small style="font-weight: 600;">🌻SÍGUENOS:</li></small>
-          <li class="list-inline-item">
-            <a href="https://www.instagram.com/sunflower._ccp" title="Ir a Instagram" target="_blank">
-              <i class="fab fa-instagram"></i>
-            </a>
-          </li>
-          <li class="list-inline-item d-md-none">
-            <a href="https://api.whatsapp.com/send?phone=56973069652&text=Hola!" title="WhatsApp" target="_blank">
-              <i class="fab fa-whatsapp fa-fw"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
 
     </div>
   </div>

@@ -75,8 +75,9 @@ class FooterContentController extends Controller
     public function edit($id)
     {
         $footerContent = FooterContent::find($id);
+        $titles = FooterTitle::pluck('title', 'id');
 
-        return view('footer-content.edit', compact('footerContent'));
+        return view('footer-content.edit', compact('footerContent', 'titles'));
     }
 
     /**

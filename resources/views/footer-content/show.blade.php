@@ -14,7 +14,7 @@
                             <span class="card-title">Show Footer Content</span>
                         </div>
                         <div class="float-right">
-                            <a class="btn btn-primary" href="{{ route('footer-contents.index') }}"> Back</a>
+                            <a class="btn btn-primary" href="{{ route('footer-content.index') }}"> Back</a>
                         </div>
                     </div>
 

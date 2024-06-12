@@ -32,43 +32,43 @@ class FooterTitleSeed extends Seeder
             [
                 'footer_title_id' => $two,
                 'content' => 'Whatsapp',
-                'link' => '#',
+                'link' => 'https://wa.me/56956103084',
             ],
             [
                 'footer_title_id' => $two,
                 'content' => 'Correo',
-                'link' => '#',
+                'link' => 'mailto:florencia.sanzana.ortega@gmail.com',
             ],
         ]
         );
 
-        $tree = DB::table('footer_titles')->insertGetId([
+        $three = DB::table('footer_titles')->insertGetId([
             'title' => '🌻INFORMACIÓN',
         ]);
 
         DB::table('footer_contents')->insert([
             [
-                'footer_title_id' => $tree,
+                'footer_title_id' => $three,
                 'content' => 'Tienda Online',
                 'link' => '#',
             ],
             [
-                'footer_title_id' => $tree,
+                'footer_title_id' => $three,
                 'content' => 'Team Sunflower',
                 'link' => '#',
             ],
             [
-                'footer_title_id' => $tree,
+                'footer_title_id' => $three,
                 'content' => 'Plazos Despachos',
                 'link' => '#',
             ],
             [
-                'footer_title_id' => $tree,
+                'footer_title_id' => $three,
                 'content' => 'Condiciones Despachos',
                 'link' => '#',
             ],
             [
-                'footer_title_id' => $tree,
+                'footer_title_id' => $three,
                 'content' => 'Políticas de Cambios y Devoluciones',
                 'link' => '#',
             ]
