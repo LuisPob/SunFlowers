@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app', ['company' => $company])
 
 @section('content')
     @include('layouts.navbars.auth.topnav', ['title' => 'User Management'])
@@ -26,6 +26,7 @@
                                 </tr>
                             </thead>
                             <tbody>
+                                @foreach ($users as $user)
                                 <tr>
                                     <td>
                                         <div class="d-flex px-3 py-1">
@@ -33,7 +34,7 @@
                                                 <img src="./img/team-1.jpg" class="avatar me-3" alt="image">
                                             </div>
                                             <div class="d-flex flex-column justify-content-center">
-                                                <h6 class="mb-0 text-sm">SunFlower</h6>
+                                                <h6 class="mb-0 text-sm">{{$user->username}}</h6>
                                             </div>
                                         </div>
                                     </td>
@@ -50,6 +51,7 @@
                                         </div>
                                     </td>
                                 </tr>
+                                @endforeach
                                 <tr>
                                     <td>
                                         <div class="d-flex px-3 py-1">

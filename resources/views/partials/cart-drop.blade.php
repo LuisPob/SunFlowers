@@ -4,7 +4,7 @@
     <a class="dropdown-item border-radius-md" href="javascript:;">
         <div class="d-flex py-1">
             <div class="my-auto ">
-                <img src="/images/{{ $item->attributes->image }}" class="avatar avatar-sm bg-gradient-dark  me-3 ">
+                <img src="{{ asset('storage/images/'.$item->attributes->image) }}" class="avatar avatar-sm bg-gradient-dark  me-3 ">
             </div>
             <div class="d-flex flex-column justify-content-center p-2">
                 <h6 class="text-sm font-weight-normal mb-1">
@@ -37,13 +37,17 @@
     </div>
 </li>
 <br>
-<div class="row" style="margin: 0px;">
-    <a class="btn btn-dark btn-sm btn-block" href="{{ route('cart.index') }}">
-        CARRITO <i class="fa fa-arrow-right"></i>
-    </a>
-    <a class="btn btn-dark btn-sm btn-block" href="">
-        IR A PAGAR <i class="fa fa-arrow-right"></i>
-    </a>
+<form action="{{ url('api/iniciar_compra') }}" method="POST">
+    <div class="row" style="margin: 0px;">
+        <a class="btn btn-dark btn-sm btn-block" href="{{ route('cart.index') }}">
+            CARRITO <i class="fa fa-arrow-right"></i>
+        </a>
+        @csrf
+        <input type="hidden" name="total_amount" value="{{ \Cart::getTotal() }}">
+        <button type="submit" class="btn btn-dark btn-sm btn-block">
+            IR A PAGAR <i class="fa fa-arrow-right"></i>
+        </button>
+</form>
 </div>
 @else
 <li class="list-group-item">Tu carrito esta vacío</li>

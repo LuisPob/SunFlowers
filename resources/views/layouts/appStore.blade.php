@@ -5,9 +5,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-icon.png">
-    <link rel="icon" type="image/png" href="/img/ICONO_SINFONDO.png">
+    <link rel="icon" type="image/png" href="{{asset('storage/'. $company->logo)}}">
     <title>
-    {{ config('app.name') }}
+    {{ $company->company_name }}
     </title>
     <!--     Fonts and icons     -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
@@ -28,6 +28,38 @@
 </head>
 
 <body class="{{ $class ?? '' }}">
+    <style>
+        :root {
+            --color-primary: {{ $company->color_primary }};
+            --color-secondary: {{ $company->color_secondary }};
+            --bs-dark: {{ $company->color_tertiary }};
+            
+            .bg-primary{
+                background-color: var(--color-primary) !important;
+            }
+            --bs-warning: var(--color-primary);
+            .btn-primary{
+                background-color: var(--color-primary) !important;
+            }
+            .btn-secondary {
+                background-color: var(--color-secondary) !important;
+                border-color: var(--color-secondary) !important;
+            }
+            .text-dark {
+                color: var(--bs-dark) !important;
+            }
+
+            .navbar .nav-link {
+                color: var(--bs-dark) !important;
+            }
+            .navbar .navbar-brand {
+                color: var(--bs-dark) !important;
+            }
+            .navbar-vertical .navbar-nav .nav-link {
+                color: #67748e !important;
+            }
+        }
+    </style>
 
     @guest
         @include('partials.navbar')
@@ -36,7 +68,7 @@
         
     @auth
         
-        @include('partials.navbar')
+        @include('layouts.navbars.guest.navbar-pru')
         <main class="main-content border-radius-lg">
             @yield('content')
         </main>

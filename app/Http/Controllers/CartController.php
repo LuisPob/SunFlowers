@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Company;
 use Illuminate\Http\Request;
 use App\Models\Product;
 
@@ -10,7 +11,9 @@ class CartController extends Controller
     public function shop()
     {
         $products = Product::all();
-        return view('shop')->withTitle('SunFlowers | SHOP')->with(['products' => $products]);
+        $company = Company::findOrFail(1);
+        // return view('shop', compact('company'))->withTitle('SunFlowers | SHOP')->with(['products' => $products]);
+        return view('shop')->withTitle('SunFlowers | SHOP')->with(['products' => $products, 'company' => $company]);
     }
 
     public function cart()  {

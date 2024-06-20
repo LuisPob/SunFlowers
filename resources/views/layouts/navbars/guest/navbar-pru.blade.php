@@ -7,9 +7,10 @@
                     <a class="navbar-brand font-weight-bolder ms-lg-0 ms-3 d-flex justify-content-center align-items-center text-center" href="{{ route('home') }}">
                         <div class="d-flex align-items-center justify-content-center">
                             <div class="d-flex justify-content-center align-items-center">
-                                <img src="img/ICONO_SINFONDO.png" class="img-fluid mb-md-0 mb-0 mx-auto align-self-center" width="30" height="24" />
+                                <img src="{{ asset('storage/'. $company->logo) }}" class="img-fluid mb-md-0 mb-0 mx-auto align-self-center" width="30" height="24" />
                             </div>
-                            <span class="align-self-center align-text-center align-middle">{{ config('app.name') }}🌻</span>
+                            
+                            <span class="align-self-center align-text-center align-middle">{{ $company->company_name }}</span>
                         </div>
                     </a>
 
@@ -49,9 +50,9 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link me-2" href="/">
+                                <a class="nav-link me-2" href="/calendario">
                                     <!-- <i class="fas fa-user-circle opacity-6 text-dark me-1"></i> -->
-                                    Información
+                                    Entregas
                                 </a>
                             </li>
                             <li class="nav-item">

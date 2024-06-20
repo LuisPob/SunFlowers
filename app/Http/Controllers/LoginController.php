@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Company;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\ValidationException;
@@ -16,7 +17,8 @@ class LoginController extends Controller
      */
     public function show()
     {
-        return view('auth.login');
+        $company = Company::findOrFail(1);
+        return view('auth.login', compact('company'));
     }
 
     public function login(Request $request)

@@ -5,9 +5,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-icon.png">
-    <link rel="icon" type="image/png" href="/img/ICONO_SINFONDO.png">
+    <link rel="icon" type="image/png" href="{{asset('storage/'.$company->logo)}}">
     <title>
-        {{ config('app.name') }}
+        {{ $company->company_name }}
     </title>
     <!--     Fonts and icons     -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
@@ -19,9 +19,41 @@
     <link href="{{asset('assets/css/nucleo-svg.css')}}" rel="stylesheet" />
     <!-- CSS Files -->
     <link id="pagestyle" href="{{asset('assets/css/argon-dashboard.css')}}" rel="stylesheet" />
+
+    <!-- Incluir CSS de DataTables -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
 </head>
 
 <body class="{{ $class ?? '' }}">
+    <style>
+        :root {
+            --color-primary: {{ $company->color_primary }};
+            --color-secondary: {{ $company->color_secondary }};
+            --bs-dark: {{ $company->color_tertiary }};
+            
+            .bg-primary{
+                background-color: var(--color-primary) !important;
+            }
+            --bs-warning: var(--color-primary);
+            .btn-primary{
+                background-color: var(--color-primary) !important;
+            }
+            .btn-secondary {
+                background-color: var(--color-secondary) !important;
+                border-color: var(--color-secondary) !important;
+            }
+            .text-dark {
+                color: var(--bs-dark) !important;
+            }
+
+            .navbar .nav-link {
+                color: var(--bs-dark) !important;
+            }
+            .navbar-vertical .navbar-nav .nav-link {
+                color: #67748e !important;
+            }
+        }
+    </style>
 
     @guest
         @yield('content')
@@ -45,6 +77,67 @@
             @include('components.fixed-plugin')
         @endif
     @endauth
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Incluir JavaScript de DataTables -->
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#example').DataTable({
+                language: {
+                    url: '//cdn.datatables.net/plug-ins/2.0.7/i18n/es-CL.json'
+                },
+                responsive: true
+            });
+            
+        });
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('select[name="region_id"]').on('change', function() {
+                var regionId = $(this).val();
+                if (regionId) {
+                    $.ajax({
+                        url: '/provinces/' + regionId,
+                        type: 'GET',
+                        dataType: 'json',
+                        success: function(data) {
+                            $('select[name="province_id"]').empty();
+                            $('select[name="province_id"]').append('<option value="">Seleccione la provincia</option>');
+                            $.each(data, function(key, value) {
+                                $('select[name="province_id"]').append('<option value="' + key + '">' + value + '</option>');
+                            });
+                        }
+                    });
+                } else {
+                    $('select[name="province_id"]').empty();
+                }
+            });
+
+            $('select[name="province_id"]').on('change', function() {
+                var provinceId = $(this).val();
+                if (provinceId) {
+                    $.ajax({
+                        url: '/communes/' + provinceId,
+                        type: 'GET',
+                        dataType: 'json',
+                        success: function(data) {
+                            $('select[name="commune_id"]').empty();
+                            $('select[name="commune_id"]').append('<option value="">Seleccione la comuna</option>');
+                            $.each(data, function(key, value) {
+                                $('select[name="commune_id"]').append('<option value="' + key + '">' + value + '</option>');
+                            });
+                        }
+                    });
+                } else {
+                    $('select[name="commune_id"]').empty();
+                }
+            });
+        });
+    </script>
+    
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!--   Core JS Files   -->
     <script src="{{asset('assets/js/core/popper.min.js')}}"></script>

@@ -4,8 +4,9 @@
             aria-hidden="true" id="iconSidenav"></i>
         <a class="navbar-brand m-0" href="{{ route('lnading') }}"
             target="_blank">
-            <img src="./img/ICONO_SINFONDO.png" class="navbar-brand-img h-100" alt="main_logo">
-            <span class="ms-1 font-weight-bold">{{ config('app.name') }}</span>
+            
+            <img src="{{asset('storage/'. $company->logo)}}" class="navbar-brand-img h-100" alt="main_logo">
+            <span class="ms-1 font-weight-bold">{{ $company->company_name }}</span>
         </a>
     </div>
     <hr class="horizontal dark mt-0">
@@ -21,7 +22,7 @@
             <li class="nav-item">
                 <a class="nav-link {{ Route::currentRouteName() == 'shop' ? 'active' : '' }}" href="{{ route('shop') }}">
                     <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                        <i class="ni ni-single-02 text-dark text-sm opacity-10"></i>
+                        <i class="ni ni-shop text-dark text-sm opacity-10"></i>
                     </div>
                     <span class="nav-link-text ms-1">Ir a la tienda</span>
                 </a>
@@ -59,50 +60,73 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link {{ str_contains(request()->url(), 'tipo-productos') == true ? 'active' : '' }}" href="{{ url('tipo-productos') }}">
+                <a class="nav-link {{ str_contains(request()->url(), 'products') == true ? 'active' : '' }}" href="{{ url('products') }}">
+                    <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                        <i class="ni ni-single-02 text-dark text-sm opacity-10"></i>
+                    </div>
+                    <span class="nav-link-text ms-1">Productos</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{ str_contains(request()->url(), 'roles') == true ? 'active' : '' }}" href="{{ url('roles') }}">
                     <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="ni ni-single-02 text-dark text-sm opacity-10"></i>
                     </div>
                     <span class="nav-link-text ms-1">Tipo rol</span>
                 </a>
             </li>
-
+            <li class="nav-item">
+                <a class="nav-link {{ Route::currentRouteName() == 'footer-title' ? 'active' : '' }}" href="{{ url('footer-title') }}">
+                    <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                        <i class="ni ni-single-02 text-dark text-sm opacity-10"></i>
+                    </div>
+                    <span class="nav-link-text ms-1">Titulos footer</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{ Route::currentRouteName() == 'footer-content' ? 'active' : '' }}" href="{{ url('footer-content') }}">
+                    <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                        <i class="ni ni-single-02 text-dark text-sm opacity-10"></i>
+                    </div>
+                    <span class="nav-link-text ms-1">Contenido footers</span>
+                </a>
+            </li>
 
 
 
             <li class="nav-item mt-3">
-                <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">CATEGORÍAS</h6>
+                <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">CONFIGURACIONES</h6>
             </li>
             <li class="nav-item">
                 <a class="nav-link {{ Route::currentRouteName() == 'profile-static' ? 'active' : '' }}" href="{{ route('profile-static') }}">
                     <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="ni ni-single-02 text-dark text-sm opacity-10"></i>
                     </div>
-                    <span class="nav-link-text ms-1">Collares</span>
+                    <span class="nav-link-text ms-1">Página principal</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link " href="{{ route('sign-in-static') }}">
+                <a class="nav-link {{ Route::currentRouteName() == 'general-info' ? 'active' : '' }}" href="{{ route('general-info') }}">
                     <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                        <i class="ni ni-single-copy-04 text-warning text-sm opacity-10"></i>
+                        <i class="ni ni-single-02 text-dark text-sm opacity-10"></i>
                     </div>
-                    <span class="nav-link-text ms-1">Pulseras</span>
+                    <span class="nav-link-text ms-1">Información general</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link " href="{{ route('sign-up-static') }}">
+                <a class="nav-link" href="{{route('reporte-usuarios') }}">
                     <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                        <i class="ni ni-collection text-info text-sm opacity-10"></i>
+                        <i class="ni ni-single-02 text-dark text-sm opacity-10"></i>
                     </div>
-                    <span class="nav-link-text ms-1">Tobilleras</span>
+                    <span class="nav-link-text ms-1">Reporte Usuarios</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link " href="{{ route('sign-up-static') }}">
+                <a class="nav-link {{ str_contains(request()->url(), 'Reportes') == true ? 'active' : '' }}" href="{{ url('reporte-carro') }}">
                     <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                        <i class="ni ni-collection text-info text-sm opacity-10"></i>
+                        <i class="ni ni-single-02 text-dark text-sm opacity-10"></i>
                     </div>
-                    <span class="nav-link-text ms-1">Aros</span>
+                    <span class="nav-link-text ms-1">Reporte Ventas</span>
                 </a>
             </li>
             @endrole

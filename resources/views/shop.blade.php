@@ -1,4 +1,4 @@
-@extends('layouts.appStore')
+@extends('layouts.appStore' , ['company' => $company])
 
 @section('content')
 <div class="container" style="margin-top: 80px">
@@ -16,8 +16,8 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="card mb-4" style="height: auto;">
                         <div class="card-body">
-                            <img src="/images/{{ $pro->image_path }}" class="img-fluid border-radius-lg mx-auto d-block" style="object-fit: cover;" alt="{{ $pro->image_path }}">
-                            <a href="#">
+                            <img src="{{ asset('storage/images/' . $pro->image_path) }}" class="img-fluid border-radius-lg mx-auto px-0 py-1" style="display: block;  object-fit: cover;" alt="{{ $pro->image_path }}">
+                            <a href="">
                                 <h6 class="card-title">{{ $pro->name }}</h6>
                             </a>
                             <p>${{ $pro->price }}</p>

@@ -28,6 +28,39 @@
 </head>
 
 <body class="{{ $class ?? '' }}">
+    <style>
+        :root {
+            --color-primary: {{ $company->color_primary }};
+            --color-secondary: {{ $company->color_secondary }};
+            --bs-dark: {{ $company->color_tertiary }};
+            
+            .bg-primary{
+                background-color: var(--color-primary) !important;
+            }
+            --bs-warning: var(--color-primary);
+            .btn-primary{
+                background-color: var(--color-primary) !important;
+            }
+            .btn-secondary {
+                background-color: var(--color-secondary) !important;
+                border-color: var(--color-secondary) !important;
+            }
+            .text-dark {
+                color: var(--bs-dark) !important;
+            }
+
+            .navbar .nav-link {
+                color: var(--bs-dark) !important;
+            }
+
+            .navbar .navbar-brand {
+                color: var(--bs-dark) !important;
+            }
+            .navbar-vertical .navbar-nav .nav-link {
+                color: #67748e !important;
+            }
+        }
+    </style>
 
     @guest
         @yield('content')
