@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\EventController;
 use App\Http\Controllers\FooterContentController;
 use App\Http\Controllers\FooterTitleController;
 use App\Http\Controllers\CarouselImageController;
@@ -72,6 +73,7 @@ Route::get('/', [LandingController::class, 'index'])->name('lnading');
 	Route::get('/dashboard', [HomeController::class, 'index'])->name('home')->middleware('auth');
 	
 	Route::resource('/tipo-productos', TipoProductoController::class)->middleware('auth');
+	Route::resource('/events', EventController::class)->middleware('auth');
 	Route::resource('/type-events', TypeEventController::class)->middleware('auth');
 	Route::resource('/products', ProductController::class)->middleware('auth');
 	Route::resource('/roles', RoleController::class)->middleware('auth');
