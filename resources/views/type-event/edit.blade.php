@@ -1,25 +1,26 @@
 @extends('layouts.app')
 
 @section('template_title')
-    Crear Tipo Evento
+    Update Type Event
 @endsection
 
 @section('content')
-    <section class="content container-fluid mt-3">
-        <div class="row">
+    <section class="content container-fluid">
+        <div class="">
             <div class="col-md-12">
 
                 @includeif('partials.errors')
 
                 <div class="card card-default">
                     <div class="card-header">
-                        <span class="card-title">Crear Tipo Evento</span>
+                        <span class="card-title">Update Type Event</span>
                     </div>
                     <div class="card-body">
-                        <form method="POST" action="{{ route('tipo-eventos.store') }}" role="form" enctype="multipart/form-data">
+                        <form method="POST" action="{{ route('type-events.update', $typeEvent->id) }}"  role="form" enctype="multipart/form-data">
+                            {{ method_field('PATCH') }}
                             @csrf
 
-                            @include('tipo-evento.form')
+                            @include('type-event.form')
 
                         </form>
                     </div>

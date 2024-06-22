@@ -1,10 +1,11 @@
+@extends('layouts.app')
+
 @section('template_title')
-    Tipo Evento
+    Type Event
 @endsection
 
 @section('content')
-@include('layouts.navbars.auth.topnav', ['title' => 'Tipo Evento'])
-    <div class="container-fluid mt-3">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12">
                 <div class="card">
@@ -12,12 +13,12 @@
                         <div style="display: flex; justify-content: space-between; align-items: center;">
 
                             <span id="card_title">
-                                {{ __('Tipo Evento') }}
+                                {{ __('Type Event') }}
                             </span>
 
                              <div class="float-right">
-                                <a href="{{ route('tipo-eventos.create') }}" class="btn btn-primary btn-sm float-right" data-placement="left">
-                                  <span style="color: black;">{{ __('Create New') }}</span> 
+                                <a href="{{ route('type-events.create') }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
+                                  {{ __('Create New') }}
                                 </a>
                               </div>
                         </div>
@@ -34,24 +35,26 @@
                                 <thead class="thead">
                                     <tr>
                                         <th>No</th>
-                                        <th>Nombre</th>
-                                        <th>Slug</th>
+                                        
+										<th>Nombre</th>
+
                                         <th></th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach ($tipoEventos as $tipoEvento)
+                                    @foreach ($typeEvents as $typeEvent)
                                         <tr>
                                             <td>{{ ++$i }}</td>
-                                            <td>{{ $tipoEvento->name }}</td>
-                                            <td>{{ $tipoEvento->slug }}</td>
+                                            
+											<td>{{ $typeEvent->nombre }}</td>
+
                                             <td>
-                                                <form action="{{ route('tipo-eventos.destroy',$tipoEvento->id) }}" method="POST">
-                                                    <a class="btn btn-sm btn-primary" href="{{ route('tipo-eventos.show',$tipoEvento->id) }}"><i class="fa fa-fw fa-eye"></i> Mostrar</a>
-                                                    <a class="btn btn-sm btn-success" href="{{ route('tipo-eventos.edit',$tipoEvento->id) }}"><i class="fa fa-fw fa-edit"></i> Editar</a>
+                                                <form action="{{ route('type-events.destroy',$typeEvent->id) }}" method="POST">
+                                                    <a class="btn btn-sm btn-primary " href="{{ route('type-events.show',$typeEvent->id) }}"><i class="fa fa-fw fa-eye"></i> Show</a>
+                                                    <a class="btn btn-sm btn-success" href="{{ route('type-events.edit',$typeEvent->id) }}"><i class="fa fa-fw fa-edit"></i> Edit</a>
                                                     @csrf
                                                     @method('DELETE')
-                                                    <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i> Eliminar</button>
+                                                    <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i> Delete</button>
                                                 </form>
                                             </td>
                                         </tr>
@@ -61,7 +64,7 @@
                         </div>
                     </div>
                 </div>
-                {!! $tipoEventos->links() !!}
+                {!! $typeEvents->links() !!}
             </div>
         </div>
     </div>

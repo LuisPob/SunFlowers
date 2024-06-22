@@ -2,11 +2,11 @@
 
 namespace Database\Seeders;
 
-use App\Models\TipoProducto;
+use App\Models\TypeEvent;
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
-class TipoProductosTableSeeder extends Seeder
+class TipoEventosSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,21 +15,13 @@ class TipoProductosTableSeeder extends Seeder
      */
     public function run()
     {
-        TipoProducto::create([
-            'name' => 'Collar',
+        TypeEvent::create([
+            'nombre' => 'Oferta',
         ]);
 
-        TipoProducto::create([
-            'name' => 'Pulsera',
+        TypeEvent::create([
+            'nombre' => 'Cyberday',
         ]);
-
-        TipoProducto::create([
-            'name' => 'Tobillera',
-        ]);
-        
-        TipoProducto::create([
-            'name' => 'Aros',
-        ]); 
 
     }
 }

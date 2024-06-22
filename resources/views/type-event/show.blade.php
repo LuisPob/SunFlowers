@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('template_title')
-    {{ $tipoEvento->name ?? 'Mostrar Tipo Evento' }}
+    {{ $typeEvent->name ?? 'Show Type Event' }}
 @endsection
 
 @section('content')
@@ -11,10 +11,10 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="float-left">
-                            <span class="card-title">Mostrar Tipo Evento</span>
+                            <span class="card-title">Show Type Event</span>
                         </div>
                         <div class="float-right">
-                            <a class="btn btn-primary" href="{{ route('tipo-eventos.index') }}"> Atrás</a>
+                            <a class="btn btn-primary" href="{{ route('type-events.index') }}"> Back</a>
                         </div>
                     </div>
 
@@ -22,11 +22,7 @@
                         
                         <div class="form-group">
                             <strong>Nombre:</strong>
-                            {{ $tipoEvento->name }}
-                        </div>
-                        <div class="form-group">
-                            <strong>Slug:</strong>
-                            {{ $tipoEvento->slug }}
+                            {{ $typeEvent->nombre }}
                         </div>
 
                     </div>
