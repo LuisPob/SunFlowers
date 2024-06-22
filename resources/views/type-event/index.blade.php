@@ -1,10 +1,12 @@
-@extends('layouts.app')
+
+@extends('layouts.app', ['class' => 'g-sidenav-show bg-gray-100'])
 
 @section('template_title')
-    Type Event
+Tipo Evento
 @endsection
 
 @section('content')
+@include('layouts.navbars.auth.topnav', ['title' => 'Tipo Evento'])
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12">
@@ -13,7 +15,7 @@
                         <div style="display: flex; justify-content: space-between; align-items: center;">
 
                             <span id="card_title">
-                                {{ __('Type Event') }}
+                                {{ __('Tipo Evento') }}
                             </span>
 
                              <div class="float-right">
