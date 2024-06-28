@@ -119,7 +119,7 @@
     });
 </script>
 <div>
-<footer class="pt-5 pb-3 blurred-background" style="background-color: rgba(255, 255, 255, 0.8);">
+<footer class="pt-5 pb-3 blurred-background" style="background-color: rgba(255, 255, 255, 0.8);" id="footer">
    
    <div class="container-fluid " style="text-align: justify;">
        <div class="row text-md-left">
