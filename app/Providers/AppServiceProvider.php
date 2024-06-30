@@ -25,8 +25,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //$company = Company::find(1);
-        //View::share('company', $company);
+        $company = Company::find(1);
+        View::share('company', $company);
         if (config('app.env') === 'production'){
             \URL::forceScheme('https');
         }

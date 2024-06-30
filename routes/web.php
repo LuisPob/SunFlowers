@@ -29,6 +29,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\UserProfileController;
 use App\Http\Controllers\ResetPassword;
 use App\Http\Controllers\ChangePassword;
+use App\Http\Controllers\EstadoController;
 use App\Http\Controllers\GeneralInfoController;
 use App\Http\Controllers\VerificationController;
 use App\Http\Controllers\LandingController;
@@ -76,6 +77,7 @@ Route::get('/', [LandingController::class, 'index'])->name('lnading');
 	Route::resource('/carousel-image', CarouselImageController::class)->middleware('auth');
 	Route::resource('/footer-title', FooterTitleController::class)->middleware('auth');
 	Route::resource('/footer-content', FooterContentController::class)->middleware('auth');
+	Route::resource('/estados', EstadoController::class)->middleware('auth');
 	
 	
 	
@@ -110,6 +112,7 @@ Route::group(['middleware' => ['auth', 'verified']], function () {
 	Route::post('/general-info', [GeneralInfoController::class, 'update'])->name('general-info.update'); 
 	Route::get('/sign-in-static', [PageController::class, 'signin'])->name('sign-in-static');
 	Route::get('/sign-up-static', [PageController::class, 'signup'])->name('sign-up-static'); 
+	Route::get('/user-recipts', [PageController::class, 'userrecipts'])->name('user-recipts');
 	Route::get('/{page}', [PageController::class, 'index'])->name('page');
 	Route::post('logout', [LoginController::class, 'logout'])->name('logout');
 	Route::delete('/', [UserProfileController::class, 'delete'])->name('account.delete');
