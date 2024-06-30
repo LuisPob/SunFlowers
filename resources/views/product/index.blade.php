@@ -17,7 +17,10 @@ Productos
                         <span id="card_title">
                             {{ __('Productos') }}
                         </span>
-
+                        <!-- Botón para generar el PDF -->
+                <a href="{{ route('products.pdf') }}" class="btn btn-primary" style="margin-bottom: 20px;">
+                    Descargar PDF
+                </a>
                         <div class="float-right">
                             <a href="{{ route('products.create') }}" style="color: white;" class="btn btn-primary btn-sm float-right" data-placement="left">
                                 {{ __('Nuevo producto') }}

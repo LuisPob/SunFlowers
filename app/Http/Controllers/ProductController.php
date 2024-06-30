@@ -6,6 +6,7 @@ use App\Models\Company;
 use App\Models\Product;
 use App\Models\TipoProducto;
 use Illuminate\Http\Request;
+use Barryvdh\DomPDF\Facade\Pdf;
 
 /**
  * Class ProductController
@@ -13,11 +14,6 @@ use Illuminate\Http\Request;
  */
 class ProductController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
         $products = Product::paginate();
@@ -27,11 +23,6 @@ class ProductController extends Controller
             ->with('i', (request()->input('page', 1) - 1) * $products->perPage());
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function create()
     {
         $product = new Product();
@@ -39,23 +30,14 @@ class ProductController extends Controller
         return view('product.create', compact('product', 'categories'));
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request)
     {
-        // dd($request->all());
         $validatedData = request()->validate(Product::$rules);
 
         if ($request->hasFile('image_path')) {
             $path = $request->file('image_path')->store('images', ['disk' => 'public']); 
-            // $path = $request->file('image_path')->store('public/images');
             $validatedData['image_path'] = basename($path);
         }
-        // dd($validatedData);
 
         $product = Product::create($validatedData);
 
@@ -63,12 +45,6 @@ class ProductController extends Controller
             ->with('success', 'Product created successfully.');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int $id
-     * @return \Illuminate\Http\Response
-     */
     public function show($id)
     {
         $product = Product::with('category')->find($id);
@@ -77,12 +53,6 @@ class ProductController extends Controller
         return view('product.show', compact('product', 'category'));
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int $id
-     * @return \Illuminate\Http\Response
-     */
     public function edit($id)
     {
         $product = Product::find($id);
@@ -91,13 +61,6 @@ class ProductController extends Controller
         return view('product.edit', compact('product', 'categories'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request $request
-     * @param  Product $product
-     * @return \Illuminate\Http\Response
-     */
     public function update(Request $request, Product $product)
     {
         request()->validate(Product::$rules);
@@ -108,16 +71,28 @@ class ProductController extends Controller
             ->with('success', 'Product updated successfully');
     }
 
-    /**
-     * @param int $id
-     * @return \Illuminate\Http\RedirectResponse
-     * @throws \Exception
-     */
     public function destroy($id)
     {
         $product = Product::find($id)->delete();
 
         return redirect()->route('products.index')
             ->with('success', 'Product deleted successfully');
+    }
+
+    public function generatePDF()
+    {
+        $products = Product::all();
+        $company = Company::findOrFail(1);
+
+        $data = [
+            'products' => $products,
+            'company' => $company,
+            'title' => 'Lista de Productos',
+            'date' => date('m/d/Y')
+        ];
+
+        $pdf = Pdf::loadView('pdf.products', $data);
+
+        return $pdf->download('productos.pdf');
     }
 }

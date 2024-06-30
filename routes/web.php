@@ -7,6 +7,9 @@ use App\Http\Controllers\LocationController;
 use Illuminate\Support\Facades\Route;
 
 
+
+Route::get('/products/pdf', [ProductController::class, 'generatePDF'])->name('products.pdf');
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -76,7 +79,7 @@ Route::get('/', [LandingController::class, 'index'])->name('lnading');
 	Route::resource('/carousel-image', CarouselImageController::class)->middleware('auth');
 	Route::resource('/footer-title', FooterTitleController::class)->middleware('auth');
 	Route::resource('/footer-content', FooterContentController::class)->middleware('auth');
-	
+	Route::get('/products/pdf', [ProductController::class, 'generatePDF'])->name('products.pdf');
 	
 	
 	// Route::middleware(['auth:sanctum', 'verified'])->group(function(){
