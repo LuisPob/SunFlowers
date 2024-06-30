@@ -72,7 +72,7 @@ Route::get('/', [LandingController::class, 'index'])->name('lnading');
 	Route::get('/change-password', [ChangePassword::class, 'show'])->middleware('guest')->name('change-password');
 	Route::post('/change-password', [ChangePassword::class, 'update'])->middleware('guest')->name('change.perform');
 	Route::get('/dashboard', [HomeController::class, 'index'])->name('home')->middleware('auth');
-	
+	Route::get('/users/pdf', [UserProfileController::class, 'generatePDF'])->name('users.pdf');
 	Route::resource('/tipo-productos', TipoProductoController::class)->middleware('auth');
 	Route::resource('/products', ProductController::class)->middleware('auth');
 	Route::resource('/roles', RoleController::class)->middleware('auth');

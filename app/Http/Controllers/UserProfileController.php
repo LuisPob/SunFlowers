@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\Rule;
 use Illuminate\Notifications\Notifiable;
-
+use Barryvdh\DomPDF\Facade\Pdf;
 
 
 class UserProfileController extends Controller
@@ -65,5 +65,21 @@ class UserProfileController extends Controller
         } else {
             return redirect()->route('login')->with('error', 'No se pudo eliminar la cuenta. Por favor, inténtalo de nuevo.');
         }
+    }
+    public function generatePDF()
+    {
+        $users = User::all();
+        $company = Company::findOrFail(1);
+
+        $data = [
+            'users' => $users,
+            'company' => $company,
+            'title' => 'Lista de Usuarios',
+            'date' => date('m/d/Y')
+        ];
+
+        $pdf = Pdf::loadView('pdf.users', $data);
+
+        return $pdf->download('usuarios.pdf');
     }
 }
