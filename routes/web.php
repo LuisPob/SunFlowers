@@ -7,6 +7,9 @@ use App\Http\Controllers\LocationController;
 use Illuminate\Support\Facades\Route;
 
 
+
+Route::get('/products/pdf', [ProductController::class, 'generatePDF'])->name('products.pdf');
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -70,7 +73,7 @@ Route::get('/', [LandingController::class, 'index'])->name('lnading');
 	Route::get('/change-password', [ChangePassword::class, 'show'])->middleware('guest')->name('change-password');
 	Route::post('/change-password', [ChangePassword::class, 'update'])->middleware('guest')->name('change.perform');
 	Route::get('/dashboard', [HomeController::class, 'index'])->name('home')->middleware('auth');
-	
+	Route::get('/users/pdf', [UserProfileController::class, 'generatePDF'])->name('users.pdf');
 	Route::resource('/tipo-productos', TipoProductoController::class)->middleware('auth');
 	Route::resource('/products', ProductController::class)->middleware('auth');
 	Route::resource('/roles', RoleController::class)->middleware('auth');
@@ -79,6 +82,7 @@ Route::get('/', [LandingController::class, 'index'])->name('lnading');
 	Route::resource('/footer-content', FooterContentController::class)->middleware('auth');
 	Route::resource('/estados', EstadoController::class)->middleware('auth');
 	
+	Route::get('/products/pdf', [ProductController::class, 'generatePDF'])->name('products.pdf');
 	
 	
 	// Route::middleware(['auth:sanctum', 'verified'])->group(function(){
