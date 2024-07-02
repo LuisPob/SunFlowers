@@ -1,36 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>{{ $title }}</title>
+    <title>Productos</title>
     <style>
-        body { font-family: Arial, sans-serif; }
-        table { width: 100%; border-collapse: collapse; }
-        th, td { border: 1px solid #dddddd; text-align: left; padding: 8px; }
-        th { background-color: #f2f2f2; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        .img-fluid {
+            width: 90px;
+            height: auto;
+        }
     </style>
 </head>
 <body>
-    <h1>{{ $title }}</h1>
-    <p>Fecha: {{ $date }}</p>
-    <p>Compañía: {{ $company->name }}</p>
-    
+    <h2>Lista de Productos</h2>
     <table>
         <thead>
             <tr>
-                <th>ID</th>
+                <th>No</th>
+                <th>Imagen</th>
                 <th>Nombre</th>
-                <th>Categoría</th>
                 <th>Precio</th>
+                
             </tr>
         </thead>
         <tbody>
             @foreach ($products as $product)
-                <tr>
-                    <td>{{ $product->id }}</td>
-                    <td>{{ $product->name }}</td>
-                    <td>{{ $product->category->name }}</td>
-                    <td>{{ $product->price }}</td>
-                </tr>
+            <tr>
+                <td>{{ $loop->iteration }}</td>
+                <td><img src="{{ public_path('storage/images/' . $product->image_path) }}" alt="{{ $product->name }}" class="img-fluid rounded"></td>
+                <td>{{ $product->name }}</td>
+                <td>{{ $product->price }}</td>
+               
+            </tr>
             @endforeach
         </tbody>
     </table>
