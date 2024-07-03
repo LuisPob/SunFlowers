@@ -5,25 +5,21 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * Class Event
+ * Class TypeEvent
  *
+ * @property $nombre
  * @property $id
- * @property $event
- * @property $start_date
- * @property $end_date
  * @property $created_at
  * @property $updated_at
  *
  * @package App
  * @mixin \Illuminate\Database\Eloquent\Builder
  */
-class Event extends Model
+class TypeEvent extends Model
 {
     
     static $rules = [
-		'event' => 'required',
-		'start_date' => 'required',
-		'end_date' => 'required',
+		'nombre' => 'required',
     ];
 
     protected $perPage = 20;
@@ -33,7 +29,7 @@ class Event extends Model
      *
      * @var array
      */
-    protected $fillable = ['event','start_date','end_date'];
+    protected $fillable = ['nombre'];
 
 
 

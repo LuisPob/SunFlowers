@@ -1,10 +1,12 @@
 <?php
 
+use App\Http\Controllers\EventController;
 use App\Http\Controllers\FooterContentController;
 use App\Http\Controllers\FooterTitleController;
 use App\Http\Controllers\CarouselImageController;
 use App\Http\Controllers\LocationController;
 use App\Http\Controllers\ReciboController;
+use App\Http\Controllers\TypeEventController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -71,6 +73,8 @@ Route::get('/', [LandingController::class, 'index'])->name('lnading');
 	Route::get('/dashboard', [HomeController::class, 'index'])->name('home')->middleware('auth');
 	Route::get('/users/pdf', [UserProfileController::class, 'generatePDF'])->name('users.pdf');
 	Route::resource('/tipo-productos', TipoProductoController::class)->middleware('auth');
+	Route::resource('/events', EventController::class)->middleware('auth');
+	Route::resource('/type-events', TypeEventController::class)->middleware('auth');
 	Route::resource('/products', ProductController::class)->middleware('auth');
 	Route::resource('/roles', RoleController::class)->middleware('auth');
 	Route::resource('/carousel-image', CarouselImageController::class)->middleware('auth');
@@ -117,7 +121,7 @@ Route::group(['middleware' => ['auth', 'verified']], function () {
 	Route::get('/general-info', [GeneralInfoController::class, 'show'])->name('general-info'); 
 	Route::post('/general-info', [GeneralInfoController::class, 'update'])->name('general-info.update'); 
 	Route::get('/sign-in-static', [PageController::class, 'signin'])->name('sign-in-static');
-	Route::get('/sign-up-static', [PageController::class, 'signup'])->name('sign-up-static'); 
+	Route::get('/sign-up-static', [PageController::class, 'signup'])->name('sign-up-static');
 	Route::get('/{page}', [PageController::class, 'index'])->name('page');
 	Route::post('logout', [LoginController::class, 'logout'])->name('logout');
 	Route::delete('/', [UserProfileController::class, 'delete'])->name('account.delete');

@@ -13,6 +13,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+        $this->call([TipoEventosSeeder::class]);
         $this->call([ChileanDivisionSeeder::class]);
         $this->call([UsersTableSeeder::class]);
         $this->call([PermissionsSeeder::class]);
