@@ -29,6 +29,10 @@ class LandingController extends Controller
             ->get()
             ->toArray();
             // dd($compra);
+            return view('welcome', compact('carouselImages', 'company', 'footerTitles', 'compras'));
+        }else{
+            return view('welcome', compact('carouselImages', 'company', 'footerTitles'));
+
         }
 
         // $footerContent = FooterContent::all();
@@ -44,6 +48,5 @@ class LandingController extends Controller
         // return view('welcome', compact('carouselImages', 'company'));
 
         // return view('welcome')->with(['carouselImages'=> $carouselImages, 'company' => $company, 'footerTitles' => $footerTitles, 'footerContent' => $footerContent]);
-        return view('welcome', compact('carouselImages', 'company', 'footerTitles', 'compras'));
     }
 }
