@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('compras', function (Blueprint $table) {
             $table->id();
+            $table->string('user_id');
             $table->string('session_id');
             $table->float('total', 9,2);
             $table->tinyInteger('status')->comment('1: pendiente. 2: Aprobada')->default(1);

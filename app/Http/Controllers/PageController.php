@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\CarouselImage;
 use App\Models\Company;
+use App\Models\compra;
 use App\Models\Recibo;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -31,11 +32,10 @@ class PageController extends Controller
         // return view('pages.dashboard');
         $carouselImages = CarouselImage::all();
         $company = Company::findOrFail(1);
-        
-      
+
+
 
         return view('pages.dashboard', compact('company', 'carouselImages'));
-
     }
     public function vr()
     {
@@ -65,14 +65,5 @@ class PageController extends Controller
     {
         return view("pages.sign-up-static");
     }
-    public function userrecipts()
-    {
-        // dd('userrecipts');
-        // Recibos del usuario autenticado
-        $recibos = Recibo::where('id_usuario', auth()->id())->get();
 
-        // dd($recibos);
-        return view("pages.user-recipts", compact('recibos'));
-      
-    }
 }

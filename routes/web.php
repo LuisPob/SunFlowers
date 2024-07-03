@@ -4,6 +4,7 @@ use App\Http\Controllers\FooterContentController;
 use App\Http\Controllers\FooterTitleController;
 use App\Http\Controllers\CarouselImageController;
 use App\Http\Controllers\LocationController;
+use App\Http\Controllers\ReciboController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -41,12 +42,7 @@ use App\Http\Controllers\TipoProductoController;
 use App\Http\Controllers\ProductoController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\TransbankController;
-
-
-
-
-
-
+use Barryvdh\DomPDF\Facade\Pdf;
 
 Auth::routes();
 //Route::post('/iniciar_compra', [TransbankController::class, 'iniciar_compra']);
@@ -98,6 +94,12 @@ Route::group(['middleware' => 'auth'], function() {
 	Route::get('/email/verify', [VerificationController::class, 'show'])->name('verification.notice');
 	Route::get('/email/verify/{id}/{hash}', [VerificationController::class, 'verify'])->name('verification.verify')->middleware(['signed']);
 	Route::post('/email/resend', [VerificationController::class, 'resend'])->name('verification.resend');
+	// recibos de compra
+	Route::get('/user-recipts', [ReciboController::class, 'userrecipts'])->name('user-recipts');
+	Route::get('view-recipt/{id}', [ReciboController::class, 'viewRecibo'])->name('view.recibo');
+	Route::post('/send-recibo/{id}', [ReciboController::class, 'sendRecibo'])->name('send.recibo');
+
+
 });
 
 // Solo usuarios autenticados y con email verificado pueden acceder a las rutas dentro de este grupo
@@ -116,10 +118,10 @@ Route::group(['middleware' => ['auth', 'verified']], function () {
 	Route::post('/general-info', [GeneralInfoController::class, 'update'])->name('general-info.update'); 
 	Route::get('/sign-in-static', [PageController::class, 'signin'])->name('sign-in-static');
 	Route::get('/sign-up-static', [PageController::class, 'signup'])->name('sign-up-static'); 
-	Route::get('/user-recipts', [PageController::class, 'userrecipts'])->name('user-recipts');
 	Route::get('/{page}', [PageController::class, 'index'])->name('page');
 	Route::post('logout', [LoginController::class, 'logout'])->name('logout');
 	Route::delete('/', [UserProfileController::class, 'delete'])->name('account.delete');
+
 });
 
 

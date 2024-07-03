@@ -142,6 +142,10 @@
                 <br><a href="{{ route('shop') }}" class="btn btn-dark" style="background-color: #A67b5b; color: black;">Continuar en la tienda</a>
                 <form action="{{ url('api/iniciar_compra') }}" method="POST">
                     @csrf
+                    @if(auth()->check())
+                    <input type="hidden" name="user_id" value="{{ auth()->user()->id }}">
+                    <input type="hidden" id="cart_items" name="cartItems" value="{{ json_encode($cartCollection) }}">
+                    @endif
                     <input type="hidden" name="total_amount" value="{{ \Cart::getTotal() }}">
                     <button type="submit" class="btn btn-success" style="background-color: #a5eea0; color: black;">Ir a pagar</button>
                 </form>
