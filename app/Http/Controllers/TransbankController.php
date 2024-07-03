@@ -2,12 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Company;
+use App\Models\Product;
 use App\Models\Recibo;
 use Illuminate\Http\Request;
 use Transbank\Webpay\WebpayPlus;
 use Transbank\Webpay\WebpayPlus\Transaction;
 use App\Models\Compra;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Mail;
 
 class TransbankController extends Controller
 {
@@ -39,11 +42,22 @@ class TransbankController extends Controller
 
         //otenemos la fecha actual
         $fecha = date('Y-m-d H:i:s');
-
-        $cartItems = json_decode($request->input('cartItems'), true);
         
+        $cartItems = json_decode($request->input('cartItems'), true);
+        $company = Company::find(1)->toArray();
         // dd($cartItems);
+        // dd($company->toArray());
         foreach ($cartItems as $item) {
+            $producto = Product::findOrFail($item['id']);
+            $producto->quantity = $producto->quantity - $item['quantity'];
+            $producto->update();
+            
+            if ($producto->quantity <= 5) {
+                Mail::send('emails.stock', compact('producto'), function ($message) use ($company){
+                    $message->to($company['email'] )
+                        ->subject('No te quedes sin stock');
+                });
+            }
             $recibo = new Recibo();
             $recibo->id_producto = $item['id'];
             $recibo->nombre_producto = $item['name'];

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\CarouselImage;
 use App\Models\Company;
+use App\Models\compra;
 use App\Models\FooterContent;
 use App\Models\FooterTitle;
 use Illuminate\Support\Facades\Auth;;
@@ -20,6 +21,16 @@ class LandingController extends Controller
 
         $company = Company::findOrFail(1);
         $footerTitles = FooterTitle::all()->load('footerContents');
+        // consulta para ver si el usuario autenticado ha comprado
+        if (Auth::check()) {
+            $user_id = auth()->user()->id;
+            $compras = compra::where('user_id', auth()->id())
+            ->where('status', 2)
+            ->get()
+            ->toArray();
+            // dd($compra);
+        }
+
         // $footerContent = FooterContent::all();
 
         // dd($footerTitles);
@@ -33,6 +44,6 @@ class LandingController extends Controller
         // return view('welcome', compact('carouselImages', 'company'));
 
         // return view('welcome')->with(['carouselImages'=> $carouselImages, 'company' => $company, 'footerTitles' => $footerTitles, 'footerContent' => $footerContent]);
-        return view('welcome', compact('carouselImages', 'company', 'footerTitles'));
+        return view('welcome', compact('carouselImages', 'company', 'footerTitles', 'compras'));
     }
 }

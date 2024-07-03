@@ -537,12 +537,7 @@
       <div id='component-102190' class='theme-component show'>
         <div class="container-fluid mb-5">
           <div class="row">
-            <div class="col-12">
-              <h2 class="block-header text-center " style="color: black;">🌻¡QUEREMOS SABER TU OPINIÓN DE @SUNFLOWER._CCP!🦋</h2>
-            </div>
-            <br>
-            <br>
-            <br>
+
             <style>
               .flower-rating .flower {
                 font-size: 30px;
@@ -575,6 +570,15 @@
             <body>
               <div class="container mb-5 col-5" id="reviews-section">
                 <form id="review-form">
+                  @if (Auth::check())
+                  @if(!empty($compras))
+                  <div class="col-12">
+                    <h2 class="block-header text-center " style="color: black;">🌻¡QUEREMOS SABER TU OPINIÓN DE @SUNFLOWER._CCP!🦋</h2>
+                  </div>
+                  <br>
+                  <br>
+                  <br>
+
                   <div class="form-group">
                     <label for="name">NOMBRE.</label>
                     <input type="text" class="form-control" id="name" required>
@@ -595,6 +599,10 @@
                   </div>
                   <button type="submit" class="btn btn-custom-color">ENVIAR.</button>
                 </form>
+
+                @endif
+
+                @endif
               </div>
               <h4 class="text-center">🦋TESTIMONIOS🦋</h4>
               <div class="container mb-5 col-4" id="reviews-container" style="max-height: 200px; overflow-y: scroll;">
