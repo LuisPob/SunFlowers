@@ -52,7 +52,27 @@
 
 <body>
     <div class="container">
-        @if(session()->has('success_msg'))
+    <div class="form-group col-3">
+        <lavel class="-pb-2">Presio</lavel>
+        <select name="precio" id="precio" class="form-control">
+            <option value="asc">🌻Menor A Mayor🌻</option>
+            <option value="desc">🌻Mayor A Menor🌻</option>
+        </select>
+
+    </div>
+    <div class="form-group col-3">
+    <lavel class="-pb-2">Presio</lavel>
+    <select name="categoria" id="categoria" class="form-control">
+            <option value="Collar">🌻Collares🌻</option>
+            <option value="Pulsera">🌻Pulseras🌻</option>
+            <option value="Otro">🌻Otros🌻</option>
+        </select>
+    </div>
+    <div class="form-group col-3 pt-4">
+    <button class="btn btn-outline-succes col-12 mt-2" type="submit" onclick="filtrar($('#precio').val(),$('#categoria').val());">Filtrar</button>
+    </div>
+    @if(session()->has('success_msg'))
+        
         <div class="alert alert-success alert-dismissible fade show" role="alert">
             <span class="alert-icon"><i class="ni ni-like-2"></i></span>
             <span class="alert-text"><strong>{{ session()->get('success_msg') }}</strong></span>
